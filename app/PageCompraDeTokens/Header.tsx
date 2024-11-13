@@ -68,7 +68,7 @@ const Header = () => {
                 </Box>
                 <Box sx={{
                     marginLeft: {xs: '0px', sm: '20px', md: '130px', lg: '130px',},
-                    marginTop: {xs: '200px', sm: '50px', md: '50px', lg: '50px',},
+                    marginTop: {xs: '50px', sm: '50px', md: '50px', lg: '50px',},
                     position: 'relative'
                 }}>
                     <Link href={'https://i.mtr.cool/GJMQKSAQQG'}>

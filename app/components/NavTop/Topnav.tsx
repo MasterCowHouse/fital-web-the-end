@@ -1,12 +1,13 @@
 'use client'
 
 import { Box } from "@mui/material";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai"; //libreria instalado
 import Link from "next/link";
 import Image from "next/image";
 import logo from "@/public/img/logo-fital.svg";
 import {Typography} from "@mui/material";
+import { handleClientScriptLoad } from "next/script";
 // Dropdown
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
@@ -15,10 +16,14 @@ import React from "react";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 // End Dropdown
 import ListItemButton from '@mui/material/ListItemButton';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import ListItemText from '@mui/material/ListItemText';
 import Collapse from '@mui/material/Collapse';
+import InboxIcon from '@mui/icons-material/MoveToInbox';
 import ExpandLess from '@mui/icons-material/ExpandLess';
 import ExpandMore from '@mui/icons-material/ExpandMore';
 import List from '@mui/material/List';
+import StarBorder from '@mui/icons-material/StarBorder';
 
 export default function TopNav () {
     // Dropdown
@@ -44,6 +49,36 @@ export default function TopNav () {
     const handleSmallerScreensNavigation = () => {
         setIcon(!menuIcon);
     }
+    // Contador
+    const [days, setDays] = useState<number>(0)
+    const [hours, setHours] = useState<number>(0)
+    const [minutes, setMinutes] = useState<number>(0)
+    const [seconds, setSeconds] = useState<number>(0)
+
+    useEffect (() => {
+
+        const target = new Date("12/13/2024 23:59:59")
+
+        const interval = setInterval(() => {
+        const now = new Date()
+        const difference = target.getTime() - now.getTime()
+
+        const d = Math.floor(difference / (1000 * 60 * 60 * 24))
+        setDays(d);
+            const h = Math.floor(
+                (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+            );
+            setHours(h);
+            const m = Math.floor(
+                (difference % (1000 * 60 * 60)) / (1000 * 60)
+            )
+            setMinutes(m);
+            const s = Math.floor((difference % (1000 * 60)) / 1000)
+            setSeconds(s);
+        }, 1000)
+        return () => clearInterval(interval)
+    }, [])
+
     return (
         <Box className="bg-[#352B5E] w-full ease-in duration-300 fixed top-0 left-0 z-10">
             <Box className="max-w-[1366px] mx-auto h-[100px] flex justify-between items-center p-4">
@@ -164,9 +199,58 @@ export default function TopNav () {
                 <Box className="hidden md:flex">
                     <Box className="flex">
                         {/* <Link href={'/PageBlogArticulo'} className="mr-5 bg-[#524092] text-[#FFFFFF] rounded-full font-bold px-8 py-2"> */}
-                        <Link href={''} className="mr-5 bg-[grey] text-[#5d5d5d] rounded-full font-bold px-8 py-2">
+                        {/* <Link href={''} className="mr-5 bg-[grey] text-[#5d5d5d] rounded-full font-bold px-8 py-2">
                             Accede a tu Wallet
-                        </Link>
+                        </Link> */}
+                        <Box className="timer-wrapper" sx={{
+                            backgroundColor: '#524092',
+                            padding: '15px 50px',
+                            borderRadius: '100px'
+                        }}>
+                            <Box className="timer-inner">
+                                <Box className="timer-segment" sx={{
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    flexDirection: 'column'
+                                }}>
+                                    <Box sx={{
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                        justifyContent: 'center'
+                                    }}>
+                                        <Typography className="time" sx={{
+                                            marginLeft: '10px'
+                                        }}>
+                                            {days}-días /
+                                        </Typography>
+                                        <Typography className="time" sx={{
+                                            marginLeft: '10px'
+                                        }}>
+                                            {hours}-horas /
+                                        </Typography>
+                                        <Typography className="time" sx={{
+                                            marginLeft: '10px'
+                                        }}>
+                                            {minutes}-minutos /
+                                        </Typography>
+                                        <Typography className="time" sx={{
+                                            marginLeft: '10px'
+                                        }}>
+                                            {seconds}-segundos
+                                        </Typography>
+                                    </Box>
+                                    <Box>
+                                        <Typography sx={{
+                                            fontWeight: 900,
+                                            color: '#FFC72C'
+                                        }}>
+                                            Tu Wallet
+                                        </Typography>
+                                    </Box>
+                                </Box>
+                            </Box>
+                        </Box>
                     </Box>
                 </Box>
                 {/* Icono de menu */}
@@ -250,24 +334,24 @@ export default function TopNav () {
                                 </List>
                             </Collapse>
                         </Box>
-                        <Box onClick={handleSmallerScreensNavigation} className="py-5 font-bold text-left text-2xl cursor-pointer" sx={{
+                        {/* <Box onClick={handleSmallerScreensNavigation} className="py-5 font-bold text-left text-2xl cursor-pointer" sx={{
                             marginLeft: '15px'
                         }}>
-                            <Link href={'/PageFideicomiso'}>
+                            <Link href={''}>
                                 Nosotros
                             </Link>
-                        </Box>
+                        </Box> */}
                         <Box onClick={handleSmallerScreensNavigation} className="py-5 font-bold text-left text-2xl cursor-pointer" sx={{
                             marginLeft: '15px'
                         }}>
-                            <Link href={'/PageCompraDeTokens'}>
+                            <Link href={'/PageBlog'}>
                                 Blog
                             </Link>
                         </Box>
                         <Box onClick={handleSmallerScreensNavigation} className="py-5 font-bold text-left text-2xl cursor-pointer" sx={{
                             marginLeft: '15px'
                         }}>
-                            <Link href={'/PageBlog'}>
+                            <Link href={'/PageContacto'}>
                                 Contacto
                             </Link>
                         </Box>
@@ -276,7 +360,7 @@ export default function TopNav () {
                             marginLeft: '15px'
                         }}>
                             {/* <Link href={'/PageBlog'} onClick={handleSmallerScreensNavigation} className="bg-[#524092] text-[white] rounded-full font-bold px-8 py-2 w-(250px) mb-5"> */}
-                            <Link href={'/PageBlog'} onClick={handleSmallerScreensNavigation} className="bg-[grey] text-[#5d5d5d] rounded-full font-bold px-8 py-2 w-(250px) mb-5">
+                            <Link href={''} onClick={handleSmallerScreensNavigation} className="bg-[grey] text-[#5d5d5d] rounded-full font-bold px-8 py-2 w-(250px) mb-5">
                                 Accede a tu Wallet
                             </Link>
                         </Box>

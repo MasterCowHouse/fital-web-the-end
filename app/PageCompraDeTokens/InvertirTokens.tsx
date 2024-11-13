@@ -1,5 +1,6 @@
 'use client'
-import { Box, TextField, Typography } from "@mui/material";
+import { Box, InputLabel, TextField, Typography } from "@mui/material";
+import Link from "next/link";
 import Image from "next/image";
 import styles from "@/app/PageCompraDeTokens/component.module.css";
 import imgIconoUno from "@/public/img/Registrate.png";

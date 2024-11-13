@@ -250,14 +250,20 @@ const Footer = () => {
                     ))}
                 </Box>
                 <Box sx={{
-                    padding: '50px 0px'
+                    padding: '50px 0px',
+                    border: {xs: '1px solid black', sm: '1px solid pink', md: '1px solid green', lg: '1px solid red',},
+                    width: {xs: '400px', sm: 'auto', md: 'auto', lg: 'auto',},
                 }}>
-                    <Box>
+                    <Box sx={{
+                        textAlign: {xs: 'center', sm: 'center', md: 'center', lg: 'left',},
+                    }}>
                         <Typography>
                             Suscríbete
                         </Typography>
                     </Box>
-                    <Box>
+                    <Box sx={{
+                        textAlign: {xs: 'center', sm: 'center', md: 'center', lg: 'left',},
+                    }}>
                         <Typography>
                             Suscríbete a nuestro News letter.
                         </Typography>
@@ -269,7 +275,8 @@ const Footer = () => {
                         <ThemeProvider theme={customTheme(outerTheme)}>
                             <Box sx={{
                                 // border: '1px solid red',
-                                padding: '25px'
+                                padding: '25px',
+                                
                             }}>
                                 <TextField 
                                     label='porejemplo@gmail.com'
@@ -285,14 +292,15 @@ const Footer = () => {
                                         }
                                     }}
                                     sx={{
-                                        width: '400px',
+                                        // width: '400px',
+                                        width: {xs: '350px', sm: '400px', md: '400px', lg: '400px',},
                                     }}
                                 />
                             </Box>
                             <Box sx={{
                                 padding: '25px',
                                 marginTop: '-100px',
-                                marginLeft: '265px'
+                                marginLeft: {xs: '215px', sm: '265px', md: '265px', lg: '265px',},
                             }}>
                                 <Button sx={{
                                     backgroundColor: '#FFC72C',
@@ -300,6 +308,7 @@ const Footer = () => {
                                     // width: '400px',
                                     padding: '10px 25px',
                                     borderRadius: '100px',
+                                    
                                 }}
                                 className="normal-case"
                                 >

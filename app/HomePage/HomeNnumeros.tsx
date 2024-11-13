@@ -65,25 +65,28 @@ const HomeNumeros = () => {
                     <Box key={id} sx={{
                         border: '2px solid #524092', 
                         width: '430px',
-                        height: '350px'                   
+                        height: '350px',
+                        
                     }}>
                         <Box>
                             <Typography sx={{
                                 fontSize: '150px',
                                 // border: '1px solid red',
                                 color: '#524092',
-                                fontWeight: 900
+                                fontWeight: 900,
+                                padding: {xs: '0px 25px', sm: '0px', md: '0px', lg: '0px',},                  
                             }}>
                                 {numero}
                             </Typography>
                         </Box>
                         <Box>
                             <Typography sx={{
-                                width: '300px',
+                                width: '320px',
                                 height: '105px',
                                 // border: '1px solid red'
                                 marginTop: '-50px',
-                                marginLeft: '20px'
+                                marginLeft: '20px',
+                                padding: {xs: '0px 25px', sm: '0px', md: '0px', lg: '0px',},   
                             }}>
                                 {titulo}
                             </Typography>

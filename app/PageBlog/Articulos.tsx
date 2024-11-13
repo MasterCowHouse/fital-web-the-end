@@ -74,7 +74,7 @@ const Articulos = () => {
                 {customBlog.map(({bg, numero, corazon, fecha, texto}, id) => (
                     <Box key={id} sx={{
                         border: '1px solid red',
-                        padding: '100px'
+                        padding: {xs:'25px', sm:'100px', md:'100px', lg:'100px',},
                     }}>
                         <Box sx={{
                             backgroundImage: `url(${bg})`,
@@ -82,8 +82,9 @@ const Articulos = () => {
                             backgroundPosition: 'center center',
                             backgroundSize: 'cover',
                             backgroundRepeat: 'no-repeat',
-                            width: '300px',
-                            height: '300px'
+                            width: {xs:'350px', sm:'300px', md:'300px', lg:'300px',},
+                            height: {xs:'350px', sm:'300px', md:'300px', lg:'300px',},
+                            
                         }}>
                             <Box sx={{
                                 display: 'flex',
@@ -106,7 +107,7 @@ const Articulos = () => {
                             </Box>
                             <Box sx={{
                                 // border: '1px solid red',
-                                marginTop: '150px',
+                                marginTop: {xs:'200px', sm:'150px', md:'150px', lg:'150px',},
                                 padding: '0px 0px 0px 20px'
                             }}>
                                 <Box>

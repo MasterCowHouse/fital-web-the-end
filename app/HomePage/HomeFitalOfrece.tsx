@@ -78,6 +78,7 @@ const HomeFitalOfrece = () => {
                         <Box key={id} sx={{
                             display: 'flex',
                             alignItems: 'center',
+                            
                         }}>
                             <Box sx={{
                                 bgcolor: '#210044',
@@ -86,7 +87,8 @@ const HomeFitalOfrece = () => {
                                 height: '50px',
                                 display: 'flex',
                                 alignItems: 'center',
-                                justifyContent: 'center'
+                                justifyContent: 'center',
+                                padding: '20px'
                             }}>
                                 <Typography>
                                     {numero}

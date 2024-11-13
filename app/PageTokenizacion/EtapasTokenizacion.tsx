@@ -228,7 +228,9 @@ const EtapasTokenizacion = () => {
                     border: '1px solid red',
                     // textAlign: 'right',
                     textAlign: {xs: 'left', sm: 'left', md: 'right', lg: 'right',},
-                    width: {xs: '400px', sm: '400px', md: 'auto', lg: 'auto',}
+                    width: {xs: '350px', sm: '400px', md: 'auto', lg: 'auto',},
+                    // marginLeft: {xs: '50px', sm: '0px', md: '0px', lg: '0px',},
+                    
                 }}>
                     <Typography sx={{
                         marginBottom: '50px',
@@ -296,7 +298,9 @@ const EtapasTokenizacion = () => {
                 </Box>
                 <Box sx={{
                     border: '1px solid red',
-                    textAlign: {xs: 'right', sm: 'right', md: 'left', lg: 'left',}
+                    textAlign: {xs: 'right', sm: 'right', md: 'left', lg: 'left',},
+                    // marginRight: {xs: '50px', sm: '0px', md: '0px', lg: '0px',},
+                    width: {xs: '350px', sm: 'auto', md: 'auto', lg: 'auto',},
                 }}>
                     <Typography sx={{
                         marginBottom: '50px',

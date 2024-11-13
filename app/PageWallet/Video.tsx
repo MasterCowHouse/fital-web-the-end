@@ -22,9 +22,24 @@ const Video = () => {
                 alignItems: 'center',
                 justifyContent: 'center',
             }}>
-                <Typography>
+                <Box className="flex items-center justify-center" sx={{
+                    width: {xs: '90%', sm: '350px', md: '500px', lg: '700px',},
+                    height: {xs: '500px', sm: '350px', md: '500px', lg: '700px',},
+                    border: {xs: '1px solid black', sm: '1px solid pink', md: '1px solid green', lg: '1px solid red',},
+                }}>
+                    <iframe style={{
+                        width: '100%',
+                        height: '100%',
+                        // border: '1px solid red'
+                    }}
+                        src="https://www.youtube.com/embed/naDjl-XjLiM?si=ySz-bb3GoA2lcc5b" 
+                        title="YouTube video player" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">                        
+                    </iframe> 
+                </Box>
+                {/* <Typography>
                     Video
-                </Typography>
+                </Typography> */}
             </Box>
             <Box sx={{
                 display: 'flex',

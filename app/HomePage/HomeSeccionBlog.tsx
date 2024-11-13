@@ -1,4 +1,5 @@
 import { Box, Typography } from "@mui/material";
+import { url } from "inspector";
 import Link from "next/link";
 
 interface CustomBlog {
@@ -48,11 +49,11 @@ const HomeSeccionBlog = () => {
                 alignItems: 'center',
                 justifyContent: 'center',
                 flexDirection: 'column',
-                padding: '100px'
+                padding: {xs: '0px', sm: '100px', md: '100px', lg: '100px',},
             }}>
                 <Box>
                     <Typography sx={{
-                        fontSize: '68px',
+                        fontSize: {xs: '58px', sm: '68px', md: '68px', lg: '68px',},
                         textAlign: {xs: 'center', sm: 'center', md: 'left', lg: 'left',},
                         border: {xs: '1px solid black', sm: '1px solid pink', md: '1px solid green', lg: '1px solid red',},
                     }}>
