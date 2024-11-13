@@ -151,9 +151,9 @@ export default function TopNav () {
                         Servicios
                     </Link>   */}
                     {/* <Link href={'/PageFideicomiso'} className="text-[#FFFFFF] font-semibold text-1xl lg:text-[20px] mr-4 lg:mr-8"> */}
-                    <Link href={''} className="text-[#FFFFFF] font-semibold text-1xl lg:text-[20px] mr-4 lg:mr-8">
+                    {/* <Link href={''} className="text-[#FFFFFF] font-semibold text-1xl lg:text-[20px] mr-4 lg:mr-8">
                         Nosotros
-                    </Link>  
+                    </Link>   */}
                     <Link href={'/PageBlog'} className="text-[#FFFFFF] font-semibold text-1xl lg:text-[20px] mr-4 lg:mr-8">
                         Blog
                     </Link>
