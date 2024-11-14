@@ -86,7 +86,7 @@ const Header = () => {
           >
             <Typography
               sx={{
-                fontSize: "30px",
+                fontSize: "25px",
               }}
             >
               Es una{" "}
