@@ -9,7 +9,9 @@ import Dudas from "./Dudas";
 
 export default function PageCompraDeTokens () {
     return (
-        <Box>
+        <Box sx={{
+            color: 'white'
+        }}>
             <Header />
             <InvertirTokens />
             <EnFital />

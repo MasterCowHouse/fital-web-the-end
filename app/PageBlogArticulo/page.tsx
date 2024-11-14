@@ -4,7 +4,9 @@ import Articulo from "./Articulo";
 
 export default function PageTokenizacion () {
     return (
-        <Box>
+        <Box sx={{
+            color: 'white'
+        }}>
             <Header />
             <Articulo />
         </Box>

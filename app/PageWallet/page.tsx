@@ -6,7 +6,9 @@ import Video from "./Video";
 
 export default function PageWallet () {
     return (
-        <Box>
+        <Box sx={{
+            color: 'white'
+        }}>
             <Header />
             <ImgHeader />
             <SeccionUnoAmarillo />

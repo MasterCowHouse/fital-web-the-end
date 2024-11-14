@@ -181,7 +181,9 @@ const Footer = () => {
     // TextField
     const outerTheme = useTheme();
     return (
-        <Box>
+        <Box sx={{
+            color: 'white'
+        }}>
             <Box sx={{
                 display: 'flex',
                 alignItems: 'center',

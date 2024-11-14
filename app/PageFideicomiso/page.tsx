@@ -7,7 +7,9 @@ import Beneficios from "./Beneficios";
 
 export default function PageTokenizacion () {
     return (
-        <Box>
+        <Box sx={{
+            color: 'white'
+        }}>
             <Header />
             <Descripcion />
             <TradicionalDigital />

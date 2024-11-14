@@ -10,7 +10,9 @@ import HomeSeccionBlog from "./HomePage/HomeSeccionBlog";
 
 export default function Home() {
   return (
-    <Box>
+    <Box sx={{
+      color: 'white'
+    }}>
       <HomeHeader/>
       <HomeDescription />
       < HomeCards />

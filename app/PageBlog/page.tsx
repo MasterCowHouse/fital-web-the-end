@@ -6,7 +6,9 @@ import Articulos from "./Articulos";
 
 export default function PageCompraDeTokens () {
     return (
-        <Box>
+        <Box sx={{
+            color: 'white'
+        }}>
             <HeaderBtn />
             <HeaderLaEvolucion />
             <Articulos />

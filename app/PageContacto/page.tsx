@@ -3,7 +3,9 @@ import Header from "./Header";
 
 export default function PageCompraDeTokens () {
     return (
-        <Box>
+        <Box sx={{
+            color: 'white'
+        }}>
             <Header />
         </Box>
     )

@@ -11,7 +11,9 @@ import QuieresSerParteDeFital from "./QuieresSerParteDeFital";
 
 export default function PageTokenizacion () {
     return (
-        <Box>
+        <Box sx={{
+            color: 'white'
+        }}>
             <Header />
             <Descripcion />
             <ServiciosVideo />

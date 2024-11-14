@@ -37,7 +37,9 @@ const customLogosFooter: CustomLogosFooter[] = [
 
 const Footerlogos = () => {
     return (
-        <Box>
+        <Box sx={{
+            color: 'white'
+        }}>
             <Box sx={{
                 display: 'flex',
                 alignItems: 'center',
