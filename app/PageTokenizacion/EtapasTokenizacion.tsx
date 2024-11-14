@@ -10,14 +10,14 @@ const EtapasTokenizacion = () => {
             <Box>
                 <Typography sx={{
                     textAlign: 'center',
-                    fontSize: '60px',
+                    fontSize: {xs: '35px', sm: '60px', md: '60px', lg: '60px',},
                     color: '#FFC72C'
                 }}>
                     Etapas de la Tokenización
                 </Typography>
                 <Typography sx={{
                     textAlign: 'center',
-                    fontSize: '40px'
+                    fontSize: {xs: '25px', sm: '40px', md: '40px', lg: '40px',},
                 }}>
                     <span style={{color: '#26D3CA'}}>Mundo físico</span> en paralelo con <span style={{color: '#FFC72C'}}>Mundo virtual</span>
                 </Typography>
@@ -33,7 +33,8 @@ const EtapasTokenizacion = () => {
                 <Box sx={{
                     textAlign: {xs: 'left', sm: 'left', md: 'right', lg: 'right',},
                     width: {xs: '350px', sm: '400px', md: 'auto', lg: 'auto',},
-                    
+                    paddingLeft: {xs: '25px', sm: '0px', md: '0px', lg: '0px',},
+                    // border: {xs: '1px solid black', sm: '1px solid pink', md: '1px solid green', lg: '1px solid red',},
                 }}>
                     <Typography sx={{
                         marginBottom: '50px',
@@ -96,6 +97,7 @@ const EtapasTokenizacion = () => {
                 <Box sx={{
                     textAlign: {xs: 'right', sm: 'right', md: 'left', lg: 'left',},
                     width: {xs: '350px', sm: 'auto', md: 'auto', lg: 'auto',},
+                    paddingRight: {xs: '25px', sm: '0px', md: '0px', lg: '0px',},
                 }}>
                     <Typography sx={{
                         marginBottom: '50px',
@@ -155,6 +157,10 @@ const EtapasTokenizacion = () => {
                         en su proyecto.
                     </Typography>
                 </Box>
+            </Box>
+            {/* //responsive */}
+            <Box>
+                
             </Box>
         </Box>
     )

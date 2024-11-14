@@ -273,16 +273,18 @@ const Footer = () => {
                                     label='porejemplo@gmail.com'
                                     InputLabelProps={{
                                         sx: {
-                                            color: "white"
+                                            color: "white",
+                                            fontSize: {xs: '14px', sm: '16px', md: '16px', lg: '16px',},
                                         }
                                     }}
                                     inputProps={{
                                         sx: {
-                                            color: 'white'
+                                            color: 'white',
                                         }
                                     }}
                                     sx={{
                                         width: {xs: '300px', sm: '400px', md: '400px', lg: '400px',},
+                                        
                                     }}
                                 />
                             </Box>

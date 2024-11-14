@@ -54,24 +54,26 @@ const Suscripciones = () => {
                     alignItems: 'center',
                     justifyContent: 'center',
                     flexDirection: 'column',
-                    width: {xs: '80%', sm: '80%', md: '50%', lg: '50%',},
+                    width: {xs: '90%', sm: '80%', md: '50%', lg: '50%',},
                 }}>
                     {customSuscripciones.map(({titulo, texto, margenB}, id) => (
                         <Box key={id} sx={{
                             display: 'flex',
                             alignItems: 'start',
                             flexDirection: 'column',
-                            width: '100%'
+                            width: '100%',
+                            border: {xs: '1px solid black', sm: '1px solid pink', md: '1px solid green', lg: '1px solid red',},
                         }}>
                             <Typography sx={{
                                 border: '2px solid #FFC72C',
                                 borderRadius: '100px',
                                 padding: '30px 100px 30px 70px',
                                 color: '#FFC72C',                                
-                                fontSize: {xs: '25px', sm: '35px', md: '35px', lg: '35px',},
+                                fontSize: {xs: '20px', sm: '35px', md: '35px', lg: '35px',},
                                 width: '100%',
                                 marginTop: '100px',
                                 marginLeft: {xs: '0px', sm: '0px', md: '100px', lg: '100px',},
+                                
                             }}>
                                 {titulo}
                             </Typography>
