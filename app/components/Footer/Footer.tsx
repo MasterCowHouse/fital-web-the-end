@@ -244,7 +244,7 @@ const Footer = () => {
                 </Box>
                 <Box sx={{
                     padding: '50px 0px',
-                    width: {xs: '400px', sm: 'auto', md: 'auto', lg: 'auto',},
+                    width: {xs: '350px', sm: 'auto', md: 'auto', lg: 'auto',},
                 }}>
                     <Box sx={{
                         textAlign: {xs: 'center', sm: 'center', md: 'center', lg: 'left',},
@@ -282,14 +282,14 @@ const Footer = () => {
                                         }
                                     }}
                                     sx={{
-                                        width: {xs: '350px', sm: '400px', md: '400px', lg: '400px',},
+                                        width: {xs: '300px', sm: '400px', md: '400px', lg: '400px',},
                                     }}
                                 />
                             </Box>
                             <Box sx={{
                                 padding: '25px',
                                 marginTop: '-100px',
-                                marginLeft: {xs: '215px', sm: '265px', md: '265px', lg: '265px',},
+                                marginLeft: {xs: '165px', sm: '265px', md: '265px', lg: '265px',},
                             }}>
                                 <Button sx={{
                                     backgroundColor: '#FFC72C',

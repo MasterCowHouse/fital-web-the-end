@@ -136,7 +136,8 @@ const Header = () => {
                                 }
                             }}
                             sx={{
-                                width: '400px',
+                                // width: '400px',
+                                width: {xs: '100%', sm: '400px', md: '400px', lg: '400px',},
                             }}
                         />
                     </Box>
@@ -147,7 +148,8 @@ const Header = () => {
                     <Button sx={{
                         backgroundColor: '#FFC72C',
                         color: '#7F4CA5',
-                        width: '400px',
+                        // width: '400px',
+                        width: {xs: '200px', sm: '400px', md: '400px', lg: '400px',},
                         
                     }}
                     className="normal-case"

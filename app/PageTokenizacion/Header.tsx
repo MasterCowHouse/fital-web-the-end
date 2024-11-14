@@ -48,7 +48,7 @@ const Header = () => {
                     </Box>
                     <Box sx={{
                         marginLeft: {xs: '0px', sm: '20px', md: '130px', lg: '130px',},
-                        marginTop: {xs: '250px', sm: '50px', md: '50px', lg: '50px',}
+                        marginTop: {xs: '50px', sm: '50px', md: '50px', lg: '50px',}
                     }}>
                         <Link href={'https://api.whatsapp.com/send?phone=+525619776800&text=Quiero%20tokenizar%20mi%20proyecto%20%F0%9F%8F%A0'} style={{
                             fontSize: '30px'
