@@ -5,7 +5,7 @@ const HomeHeader = () => {
     <Box
       sx={{
         widhth: "100%",
-        height: "100vh",
+        // height: "100vh",
       }}
     >
       <video width="100%" height="100vh" loop autoPlay>
