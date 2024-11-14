@@ -352,14 +352,14 @@ export default function TopNav () {
                             </Link>
                         </Box>
 
-                        <Box className="flex flex-col justify-center items-start mt-5" sx={{
+                        {/* <Box className="flex flex-col justify-center items-start mt-5" sx={{
                             marginLeft: '15px'
                         }}>
                             {/* <Link href={'/PageBlog'} onClick={handleSmallerScreensNavigation} className="bg-[#524092] text-[white] rounded-full font-bold px-8 py-2 w-(250px) mb-5"> */}
-                            <Link href={''} onClick={handleSmallerScreensNavigation} className="bg-[grey] text-[#5d5d5d] rounded-full font-bold px-8 py-2 w-(250px) mb-5">
+                            {/* <Link href={''} onClick={handleSmallerScreensNavigation} className="bg-[grey] text-[#5d5d5d] rounded-full font-bold px-8 py-2 w-(250px) mb-5">
                                 Accede a tu Wallet
-                            </Link>
-                        </Box>
+                            </Link> */}
+                        {/* </Box> */}
                     </Box>
                     
                 </Box>
