@@ -41,7 +41,6 @@ const ERC = () => {
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'space-around',
-            border: {xs: '1px solid black', sm: '1px solid pink', md: '1px solid green', lg: '1px solid red',},
             flexDirection: {xs: 'column', sm: 'column', md: 'row', lg: 'row',},
             padding: '100px 0px'
         }}>
@@ -50,7 +49,6 @@ const ERC = () => {
             }}>
                 <Box sx={{
                     marginBottom: '50px',
-                    border: {xs: '1px solid black', sm: '1px solid pink', md: '1px solid green', lg: '1px solid red',},
                     marginLeft: {xs: '0px', sm: '0px', md: '100px', lg: '100px',},
                 }}>
                     <Typography sx={{
@@ -60,12 +58,11 @@ const ERC = () => {
                     </Typography>
                 </Box>
                 <Box sx={{
-                    // border: '1px solid red',
                     display: 'flex',
                     alignItems: 'start',
                     flexDirection: 'column',
                     marginLeft: {xs: '0px', sm: '0px', md: '100px', lg: '100px',},
-                    border: {xs: '1px solid black', sm: '1px solid pink', md: '1px solid green', lg: '1px solid red',},
+                    
                 }}>
                     {customPuntosERC.map(({texto}, id) => (
                         <Box key={id} sx={{
@@ -96,7 +93,7 @@ const ERC = () => {
                 </Box>
                 <Box sx={{
                     marginLeft: {xs: '0px', sm: '0px', md: '100px', lg: '100px',},
-                    border: {xs: '1px solid black', sm: '1px solid pink', md: '1px solid green', lg: '1px solid red',},
+                    
                 }}>
                     <Typography sx={{
                         color: '#FFC72C'
@@ -106,7 +103,7 @@ const ERC = () => {
                 </Box>
                 <Box sx={{
                     marginLeft: {xs: '0px', sm: '0px', md: '100px', lg: '100px',},
-                    border: {xs: '1px solid black', sm: '1px solid pink', md: '1px solid green', lg: '1px solid red',},
+                    
                 }}>
                     <Typography>
                         <span style={{ fontWeight: 900,}}>Seguridad:</span> Refuerza la confianza en transacciones con activos tokenizados.

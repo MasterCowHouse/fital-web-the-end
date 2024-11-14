@@ -13,7 +13,7 @@ const Dudas = () => {
                         color: '#FFC72C',
                         fontSize: '50px',
                         textAlign: 'center',
-                        border: {xs: '1px solid black', sm: '1px solid pink', md: '1px solid green', lg: '1px solid red',},
+                        
                     }}>
                         ¿Dudas?
                     </Typography>
@@ -21,7 +21,6 @@ const Dudas = () => {
                 <Box>
                     <Typography sx={{
                         fontSize: {xs: '30px', sm: '35px', md: '50px', lg: '50px',},
-                        border: {xs: '1px solid black', sm: '1px solid pink', md: '1px solid green', lg: '1px solid red',},
                         textAlign: 'center'
                     }}>
                         Habla con <span style={{fontWeight: 900}}>nuestros expertos.</span> 
@@ -34,7 +33,7 @@ const Dudas = () => {
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                border: {xs: '1px solid black', sm: '1px solid pink', md: '1px solid green', lg: '1px solid red',},
+                
 
             }}>
                 <Link href={'https://api.whatsapp.com/send?phone=+525619776800&text=Quiero%20comprar%20tokens,%20me%20comparten%20m%C3%A1s%20informaci%C3%B3n%20%F0%9F%8F%A0%20'}>

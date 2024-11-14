@@ -51,15 +51,12 @@ const HomeFitalOfrece = () => {
         <Box sx={{
             display: 'flex',
             alignItems: 'center',
-            justifyContent: 'center',
-            border: {xs: '1px solid black', sm: '1px solid pink', md: '1px solid green', lg: '1px solid red',},
+            justifyContent: 'center',            
             flexDirection: {xs: 'column', sm: 'column', md: 'row', lg: 'row',},
         }}>
             <Box>
                 <Box sx={{
-                    // border: '1px solid red',
                     marginLeft: '55px',
-                    border: {xs: '1px solid black', sm: '1px solid pink', md: '1px solid green', lg: '1px solid red',},
                     padding: {xs: '0px 50px', sm: '0px 100px', md: '0px 0px 0px 100px', lg: '0px 0px 0px 100px',},
                 }}>
                     <Typography sx={{
@@ -71,8 +68,7 @@ const HomeFitalOfrece = () => {
                     </Typography>
                 </Box>
                 <Box sx={{
-                    padding: {xs: '0px 50px', sm: '0px 100px', md: '0px 0px 0px 100px', lg: '0px 0px 0px 100px',},
-                    border: {xs: '1px solid black', sm: '1px solid pink', md: '1px solid green', lg: '1px solid red',},
+                    padding: {xs: '0px 50px', sm: '0px 100px', md: '0px 0px 0px 100px', lg: '0px 0px 0px 100px',},                    
                 }}>
                     {customFitalOfrece.map(({numero, titulo}, id) => (
                         <Box key={id} sx={{
@@ -96,7 +92,6 @@ const HomeFitalOfrece = () => {
                             </Box>
                             <Box>
                                 <Typography sx={{
-                                    // fontSize: '25px',
                                     marginLeft: '10px',
                                     fontSize: {xs: '16px', sm: '25px', md: '18px', lg: '25px',},
                                 }}>
@@ -108,7 +103,6 @@ const HomeFitalOfrece = () => {
                 </Box>
             </Box>
             <Box sx={{
-                border: {xs: '1px solid black', sm: '1px solid pink', md: '1px solid green', lg: '1px solid red',},
                 padding: {xs: '0px 100px 0px 0px', sm: '0px 100px 0px 0px', md: '0px 100px 0px 0px', lg: '0px 100px 0px 0px',},
                 width: {xs: '100%', sm: '100%', md: '40%', lg: '50%',},
             }}>

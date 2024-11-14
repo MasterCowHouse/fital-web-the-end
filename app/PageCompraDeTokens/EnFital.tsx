@@ -27,8 +27,7 @@ const EnFital = () => {
                 alignItems: 'center',
                 justifyContent: 'center'
             }}>
-                <Typography sx={{
-                    // border: '2px solid red',
+                <Typography sx={{ 
                     fontSize: {xs: '25px', sm: '35px', md: '35px', lg: '35px',},
                     padding: '50px 50px',
                     textAlign: {xs: 'left', sm: 'center', md: 'center', lg: 'center',},

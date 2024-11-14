@@ -35,15 +35,13 @@ const customNumeros: CustomNumeros[] = [
 const HomeNumeros = () => {
     return (
         <Box sx={{
-            bgcolor: '#29184A',
-            border: {xs: '1px solid black', sm: '1px solid pink', md: '1px solid green', lg: '1px solid red',},
+            bgcolor: '#29184A',            
         }}>
             <Box sx={{
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
                 padding: '25px',
-                border: {xs: '1px solid black', sm: '1px solid pink', md: '1px solid green', lg: '1px solid red',},
             }}>
                 <Typography sx={{
                     fontSize: '37px',
@@ -58,7 +56,6 @@ const HomeNumeros = () => {
                 justifyContent: 'center',
                 gap: 8,
                 flexWrap: 'wrap',
-                // border: '1px solid red',
                 padding: '0px 0px 100px 0px'
             }}>
                 {customNumeros.map(({titulo, btnText, hrefNumeros, numero}, id) => (
@@ -71,7 +68,6 @@ const HomeNumeros = () => {
                         <Box>
                             <Typography sx={{
                                 fontSize: '150px',
-                                // border: '1px solid red',
                                 color: '#524092',
                                 fontWeight: 900,
                                 padding: {xs: '0px 25px', sm: '0px', md: '0px', lg: '0px',},                  
@@ -83,7 +79,6 @@ const HomeNumeros = () => {
                             <Typography sx={{
                                 width: '320px',
                                 height: '105px',
-                                // border: '1px solid red'
                                 marginTop: '-50px',
                                 marginLeft: '20px',
                                 padding: {xs: '0px 25px', sm: '0px', md: '0px', lg: '0px',},   

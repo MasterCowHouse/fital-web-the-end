@@ -119,9 +119,6 @@ const customTheme = (outerTheme: Theme) =>
       MuiTextField: {
         styleOverrides: {
           root: {
-            // '--TextField-brandBorderColor': '#E0E3E7',
-            // '--TextField-brandBorderHoverColor': '#B2BAC2',
-            // '--TextField-brandBorderFocusedColor': '#6F7E8C',
             '--TextField-brandBorderColor': 'white',
             '--TextField-brandBorderHoverColor': 'white',
             '--TextField-brandBorderFocusedColor': 'white',
@@ -184,9 +181,7 @@ const Footer = () => {
     // TextField
     const outerTheme = useTheme();
     return (
-        <Box sx={{
-            border: {xs: '1px solid black', sm: '1px solid pink', md: '1px solid green', lg: '1px solid red',},
-        }}>
+        <Box>
             <Box sx={{
                 display: 'flex',
                 alignItems: 'center',
@@ -213,7 +208,6 @@ const Footer = () => {
                 />
             </Box>
             <Box sx={{
-                // border: '1px solid red',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'space-around',
@@ -223,7 +217,6 @@ const Footer = () => {
                 <Box>
                     <Box sx={{
                         padding: '50px 0px',
-                        border: {xs: '1px solid black', sm: '1px solid pink', md: '1px solid green', lg: '1px solid red',},
                         textAlign: {xs: 'center', sm: 'center', md: 'center', lg: 'left',},
                     }}>
                         <Typography>
@@ -251,7 +244,6 @@ const Footer = () => {
                 </Box>
                 <Box sx={{
                     padding: '50px 0px',
-                    border: {xs: '1px solid black', sm: '1px solid pink', md: '1px solid green', lg: '1px solid red',},
                     width: {xs: '400px', sm: 'auto', md: 'auto', lg: 'auto',},
                 }}>
                     <Box sx={{
@@ -274,13 +266,11 @@ const Footer = () => {
                         {/* input */}
                         <ThemeProvider theme={customTheme(outerTheme)}>
                             <Box sx={{
-                                // border: '1px solid red',
                                 padding: '25px',
                                 
                             }}>
                                 <TextField 
                                     label='porejemplo@gmail.com'
-                                    // variant="standard"    
                                     InputLabelProps={{
                                         sx: {
                                             color: "white"
@@ -292,7 +282,6 @@ const Footer = () => {
                                         }
                                     }}
                                     sx={{
-                                        // width: '400px',
                                         width: {xs: '350px', sm: '400px', md: '400px', lg: '400px',},
                                     }}
                                 />
@@ -305,7 +294,6 @@ const Footer = () => {
                                 <Button sx={{
                                     backgroundColor: '#FFC72C',
                                     color: '#7F4CA5',
-                                    // width: '400px',
                                     padding: '10px 25px',
                                     borderRadius: '100px',
                                     

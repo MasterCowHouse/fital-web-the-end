@@ -31,11 +31,10 @@ const QuieresSerParteDeFital = () => {
                 alignItems: 'center',
                 justifyContent: 'center',
                 marginBottom: '50px',
-                border: {xs: '1px solid black', sm: '1px solid pink', md: '1px solid green', lg: '1px solid red',},
+                
             }}>
                 <Typography sx={{
                     fontSize: '50px',
-                    // textAlign: 'center',
                     textAlign: {xs: 'center', sm: 'center', md: 'center', lg: 'center',},
                     
                 }}>
@@ -46,9 +45,7 @@ const QuieresSerParteDeFital = () => {
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                // gap: 10,
                 gap: {xs: 5, sm: 10, md: 10, lg: 10,},
-                border: {xs: '1px solid black', sm: '1px solid pink', md: '1px solid green', lg: '1px solid red',},
                 flexDirection: {xs: 'column', sm: 'row', md: 'row', lg: 'row',},
                 
             }}>
@@ -57,7 +54,6 @@ const QuieresSerParteDeFital = () => {
                         bgcolor: '#7F4CA5',
                         padding: '10px 20px',
                         borderRadius: '10px',
-                        // width: '100%' 
                         width: {xs: '100%', sm: 'auto', md: 'auto', lg: 'auto',},
                         textAlign: 'center',
                     }}>

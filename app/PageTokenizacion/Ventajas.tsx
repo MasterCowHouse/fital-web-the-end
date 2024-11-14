@@ -76,7 +76,6 @@ const Ventajas = () => {
                 alignItems: 'center',
                 justifyContent: 'center',
                 padding: '100px',
-                border: {xs: '1px solid black', sm: '1px solid pink', md: '1px solid green', lg: '1px solid red',},
                 textAlign: {xs: 'center', sm: 'center', md: 'center', lg: 'center',},
             }}>
                 <Typography sx={{
@@ -86,7 +85,6 @@ const Ventajas = () => {
                 </Typography>
             </Box>
             <Box sx={{
-                // border: '1px solid red',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'space-around',
@@ -94,11 +92,8 @@ const Ventajas = () => {
                 paddingBottom: '100px'
             }}>
                 {customIconosVentajas.map(({srcIcono, titulo, texto}, id) => (
-                    <Box key={id} sx={{
-                        // border: '1px solid black',
-                    }}>
+                    <Box key={id}>
                         <Box sx={{
-                            // border: '1px solid pink',
                             display: 'flex',
                             alignItems: 'center',
                             justifyContent: 'center',
@@ -110,9 +105,7 @@ const Ventajas = () => {
                                 alt="Ventajas de la tokenización"
                             />
                         </Box>
-                        <Box sx={{
-                            // border: '1px solid green',
-                        }}>
+                        <Box>
                             <Typography sx={{
                                 color: '#FFC72C'
                             }}>
@@ -120,7 +113,6 @@ const Ventajas = () => {
                             </Typography>
                         </Box>
                         <Box sx={{
-                            // border: '1px solid black',
                             height: '150px'
                         }}>
                             <Typography>

@@ -68,21 +68,18 @@ const ComoEmpiezoResponsive = () => {
                         alignItems: 'center',
                         justifyContent: 'center',
                         flexDirection: 'column',
-                        border: '1px solid red',
                         width: '100%'
                     }}>
                         <Box sx={{
                             display: 'flex',
                             alignItems: 'center',
                             justifyContent: 'center',
-                            border: '1px solid red',
                             paddingTop: '50px'
                         }}>
                             <Typography sx={{
                                 fontSize: '100px',
                                 color: '#210044',
                                 fontWeight: 900,
-                                border: '1px solid red',
                                 margin: '0px 30px 0px 30px'
                             }}>
                                 {numero}
@@ -90,7 +87,6 @@ const ComoEmpiezoResponsive = () => {
                             <Typography sx={{
                                 fontWeight: 900,
                                 fontSize: '25px',
-                                border: '1px solid red',
                                 margin: '0px 30px 0px 0px'
                             }}>
                                 {texto}

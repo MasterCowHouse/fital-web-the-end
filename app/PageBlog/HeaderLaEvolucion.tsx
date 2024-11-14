@@ -10,12 +10,8 @@ const HeaderLaEvolucion = () => {
             flexDirection: {xs: 'column-reverse', sm: 'column-reverse', md: 'row', lg: 'row',},
             backgroundColor: '#2A2449',
             padding: '100px 0px',
-            border: {xs: '1px solid black', sm: '1px solid pink', md: '1px solid green', lg: '1px solid red',},
         }}>
-            <Box sx={{
-                border: '1px solid red',
-                
-            }}>
+            <Box>
                 <Box>
                     <Typography sx={{
                         fontSize: {xs: '40px', sm: '40px', md: '30px', lg: '50px',},
@@ -31,7 +27,6 @@ const HeaderLaEvolucion = () => {
                     </Typography>
                 </Box>
                 <Box sx={{
-                    // padding: '50px 0px',
                     padding: {xs: '50px 0px', sm: '50px 0px', md: '50px 0px 50px 50px', lg: '50px 0px',},
                 }}>
                     <Link href={'/PageBlogArticulo'}>
@@ -48,16 +43,12 @@ const HeaderLaEvolucion = () => {
                 </Box>
             </Box>
             <Box sx={{
-                border: '1px solid red',
                 padding: {xs: '20px', sm: '0px', md: '0px 50px 0px 0px', lg: '0px',},
             }}>
                 <Box
                     component={'img'} 
-                    // src={fideicomiso}
                     src="./img/fideicomiso.png"
                     alt="Fideicomiso"
-                    // width={760}
-                    // height={500}
                     sx={{
                         width: {xs: '490px', sm: '560px', md: '760px', lg: '760px',},
                         height: {xs: '320px', sm: '400px', md: '500px', lg: '500px',},

@@ -14,9 +14,6 @@ const customTheme = (outerTheme: Theme) =>
       MuiTextField: {
         styleOverrides: {
           root: {
-            // '--TextField-brandBorderColor': '#E0E3E7',
-            // '--TextField-brandBorderHoverColor': '#B2BAC2',
-            // '--TextField-brandBorderFocusedColor': '#6F7E8C',
             '--TextField-brandBorderColor': '#FFC72C',
             '--TextField-brandBorderHoverColor': '#FFC72C',
             '--TextField-brandBorderFocusedColor': '#FFC72C',
@@ -124,12 +121,10 @@ const Header = () => {
             <ThemeProvider theme={customTheme(outerTheme)}>
                 {customFormContact.map(({nombre}, id) => (
                     <Box key={id} sx={{
-                        // border: '1px solid red',
                         padding: '25px'
                     }}>
                         <TextField 
                             label={nombre}
-                            // variant="standard"    
                             InputLabelProps={{
                                 sx: {
                                     color: "white"

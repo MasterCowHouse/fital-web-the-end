@@ -73,12 +73,10 @@ const Articulos = () => {
             }}>
                 {customBlog.map(({bg, numero, corazon, fecha, texto}, id) => (
                     <Box key={id} sx={{
-                        border: '1px solid red',
                         padding: {xs:'25px', sm:'100px', md:'100px', lg:'100px',},
                     }}>
                         <Box sx={{
                             backgroundImage: `url(${bg})`,
-                            // backgroundImage: 'url(./img/bgUno.jpg)',
                             backgroundPosition: 'center center',
                             backgroundSize: 'cover',
                             backgroundRepeat: 'no-repeat',
@@ -92,21 +90,19 @@ const Articulos = () => {
                                 justifyContent: 'end',
                                 padding: '10px',
                                 gap: 1
-                                // border: '1px solid red'
+                                
                             }}>
                                 <Typography>
                                     {numero}
                                 </Typography>
                                 <Image 
                                     src={corazon}
-                                    // src='./img/corazon.svg'
                                     alt="Blog"
                                     width={15}
                                     height={15}
                                 />
                             </Box>
                             <Box sx={{
-                                // border: '1px solid red',
                                 marginTop: {xs:'200px', sm:'150px', md:'150px', lg:'150px',},
                                 padding: '0px 0px 0px 20px'
                             }}>

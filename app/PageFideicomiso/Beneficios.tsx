@@ -11,7 +11,7 @@ interface CustomBeneficios {
 const customBeneficios: CustomBeneficios[] = [
     {
         id: 1,
-        iconoBeneficios: '../img/Acceso y Gestión en Tiempo Real.svg',
+        iconoBeneficios: '../img/AccesoyGestionenTiempoReal.svg',
         textAlt: 'Acceso y Gestión en Tiempo Real',
         titulo: 'Acceso y Gestión en Tiempo Real:',
         texto: <span>Gestión y monitoreo de activos en <br />línea, desde cualquier lugar.</span>,
@@ -25,14 +25,14 @@ const customBeneficios: CustomBeneficios[] = [
     },
     {
         id: 3,
-        iconoBeneficios: '../img/Reducción de Costos y Eficiencia.svg',
+        iconoBeneficios: '../img/Reduccion de Costos y Eficiencia.svg',
         textAlt: 'Reducción de Costos y Eficiencia',
         titulo: 'Reducción de Costos y Eficiencia:',
         texto: <span>Menos intermediarios, procesos <br />más rápidos y automatizados.</span>,
     },
     {
         id: 4,
-        iconoBeneficios: '../img/Flexibilidad y Personalización.svg',
+        iconoBeneficios: '../img/Flexibilidad y Personalizacion.svg',
         textAlt: 'Flexibilidad y Personalización',
         titulo: 'Flexibilidad y Personalización:',
         texto: <span>Ajustes rápidos y personalizados en <br />la distribución de activos.</span>,
@@ -51,7 +51,7 @@ interface CustomBeneficiosDos {
 const customBeneficiosDos: CustomBeneficiosDos[] = [
     {
         id: 1,
-        iconoBeneficiosDos: '../img/Seguridad y Protección.svg',
+        iconoBeneficiosDos: '../img/Seguridad y Proteccion.svg',
         textAltDos: 'Seguridad y Protección',
         tituloDos: 'Seguridad y Protección:',
         textoDos: <span>Mayor seguridad contra fraudes y <br />alteraciones con tecnología <br />avanzada.</span>,
@@ -65,7 +65,7 @@ const customBeneficiosDos: CustomBeneficiosDos[] = [
     },
     {
         id: 3,
-        iconoBeneficiosDos: '../img/Rapidez en la Implementación.svg',
+        iconoBeneficiosDos: '../img/Rapidez en la Implementacion.svg',
         textAltDos: 'Rapidez en la Implementación',
         tituloDos: 'Rapidez en la Implementación:',
         textoDos: <span>Creación y activación del <br />fideicomiso de manera rápida y <br /> eficiente.</span>,
@@ -87,17 +87,12 @@ const Beneficios = () => {
                 </Typography>
             </Box>
             <Box sx={{
-                display: 'flex',
-                // alignItems: 'start',
+                display: 'flex',                
                 alignItems: {xs: 'center', sm: 'start', md: 'start', lg: 'start',},
-                justifyContent: 'center',
-                // border: '1px solid red'
-                border: {xs: '1px solid black', sm: '1px solid pink', md: '1px solid green', lg: '1px solid red',},
+                justifyContent: 'center',                                
                 flexDirection: {xs: 'column', sm: 'row', md: 'row', lg: 'row',},
             }}>
                 <Box sx={{
-                    border: '1px solid green',
-                    // padding: '50px',
                     padding: {xs: '0px', sm: '15px', md: '50px', lg: '50px',},
                     
                 }}>
@@ -106,13 +101,11 @@ const Beneficios = () => {
                             display: 'flex',
                             alignItems: 'center',
                             justifyContent: 'start',
-                            border: '1px solid red',
                             marginBottom: '50px'
                         }}>
                             <Box sx={{
                                 width: {xs: '100px', sm: '125px', md: '150px', lg: '150px',},
                                 height: {xs: '100px', sm: '125px', md: '150px', lg: '150px',},
-                                border: {xs: '1px solid black', sm: '1px solid pink', md: '1px solid green', lg: '1px solid red',},
                                 display: 'flex',
                                 alignItems: 'center',
                                 justifyContent: 'center'
@@ -132,7 +125,6 @@ const Beneficios = () => {
                                 marginLeft: {xs: '10px', sm: '10px', md: '40px', lg: '40px',},
                                 width: {xs: '270px', sm: 'auto', md: 'auto', lg: 'auto',},
                                 height: {xs: 'auto', sm: 'auto', md: 'auto', lg: 'auto',},
-                                border: {xs: '1px solid black', sm: '1px solid pink', md: '1px solid green', lg: '1px solid red',},
                             }}>
                                 <Typography sx={{
                                     color: '#FFC72C',
@@ -151,8 +143,6 @@ const Beneficios = () => {
                     ))}
                 </Box>
                 <Box sx={{
-                    border: '1px solid green',
-                    // padding: '50px',
                     padding: {xs: '0px', sm: '15px', md: '50px', lg: '50px',},
                     
                 }}>
@@ -161,13 +151,11 @@ const Beneficios = () => {
                             display: 'flex',
                             alignItems: 'center',
                             justifyContent: 'start',
-                            border: '1px solid red',
                             marginBottom: '50px'
                         }}>
                             <Box sx={{
                                 width: {xs: '100px', sm: '125px', md: '150px', lg: '150px',},
                                 height: {xs: '100px', sm: '125px', md: '150px', lg: '150px',},
-                                border: {xs: '1px solid black', sm: '1px solid pink', md: '1px solid green', lg: '1px solid red',},
                                 display: 'flex',
                                 alignItems: 'center',
                                 justifyContent: 'center'
@@ -187,7 +175,6 @@ const Beneficios = () => {
                                 marginLeft: {xs: '10px', sm: '10px', md: '40px', lg: '40px',},
                                 width: {xs: '270px', sm: 'auto', md: 'auto', lg: 'auto',},
                                 height: {xs: 'auto', sm: 'auto', md: 'auto', lg: 'auto',},
-                                border: {xs: '1px solid black', sm: '1px solid pink', md: '1px solid green', lg: '1px solid red',},
                             }}>
                                 <Typography sx={{
                                     color: '#FFC72C',

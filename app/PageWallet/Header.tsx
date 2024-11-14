@@ -8,7 +8,7 @@ const Header = () => {
                 alignItems: 'end',
                 justifyContent: 'center',
                 height: '350px',
-                border: {xs: '1px solid black', sm: '1px solid pink', md: '1px solid green', lg: '1px solid red',},
+                
             }}>
                 <Typography sx={{
                     textAlign: 'center',

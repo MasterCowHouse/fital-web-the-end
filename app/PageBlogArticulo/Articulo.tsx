@@ -43,19 +43,15 @@ const Articulo = () => {
             <Box sx={{
                 marginTop: '100px',
                 marginBottom: '100px',
-                border: {xs: '1px solid black', sm: '1px solid pink', md: '1px solid green', lg: '1px solid red',},
                 width: {xs: '90%', sm: '60%', md: '70%', lg: '70%',},
             }}>
                 <Box>
                     <Box
                         component={'img'} 
-                        // src={bgArticulo}
                         src="../img/bgArticulo.jpg"
                         alt="Articulo Blog"
                         sx={{
                             width: {xs: '100%', sm: '90%', md: '90%', lg: '70%',},
-                            // border: '1px solid red',
-                            // width: {xs: '100%', sm: '100%', md: '70%', lg: '100%',},
                         }}
                     />
                 </Box>
@@ -63,8 +59,6 @@ const Articulo = () => {
                     <Typography sx={{
                         fontSize: '40px',
                         color: '#524092',
-                        // border: '1px solid red',
-                        // width: {xs: '100%', sm: '100%', md: '70%', lg: '100%',},
                     }}>
                         La <span style={{color: '#FFC72C'}}>evolución del Fideicomiso</span> 
                         <br />
@@ -72,15 +66,11 @@ const Articulo = () => {
                     </Typography>
                     <Typography sx={{
                         color: '#FFC72C',
-                        // border: '1px solid red',
-                        // width: {xs: '100%', sm: '100%', md: '70%', lg: '100%',},
                     }}>
                         16 de Octubre 2023
                     </Typography>
                     <Box sx={{
                         display: 'flex',
-                        // border: '1px solid red',
-                        // width: {xs: '100%', sm: '100%', md: '70%', lg: '100%',},
                         borderTop: '1px solid grey',
                         width: '200px'
                     }}>
@@ -98,8 +88,6 @@ const Articulo = () => {
                     </Box>
                 </Box>
                 <Box sx={{
-                    // border: '1px solid red',
-                    // width: {xs: '100%', sm: '100%', md: '70%', lg: '100%',},
                     marginTop: '50px'
                 }}>
                     <Typography sx={{
@@ -188,7 +176,6 @@ const Articulo = () => {
             </Box>
             <Box sx={{
                 marginTop: {xs: '50px', sm: '100px', md: '100px', lg: '100px',},
-                border: '1px solid red',
                 width: {xs: '90%', sm: '35%', md: '25%', lg: '25%',}
             }}>
                 <Box sx={{
@@ -207,19 +194,17 @@ const Articulo = () => {
                             //estilos para el hover del input
                             "&:hover:not(.Mui-focused)": {
                             "& .MuiOutlinedInput-notchedOutline": {
-                                    // borderColor: 'white',
+                                    
                                     borderColor: '#524092',
-                                    // // borderWidth: '2px',
-                                    // borderRadius: '27px'
+                                    
                                 },
                             },
                             //estilos para el input cuando esta en focus entra y sale el cursor del campo
                             " .Mui-focused": {
                                 "& .MuiOutlinedInput-notchedOutline": {
-                                        // borderColor: 'white',
+                                        
                                         borderColor: '#524092',
-                                        // borderWidth: '2px',
-                                        // borderRadius: '27px'
+                                        
                                     },
                             },
                         }}
@@ -233,17 +218,8 @@ const Articulo = () => {
                     }}>
                         <IconButton type="button" sx={{ 
                             p: '15px', 
-                            // border: '1px solid red',
-                            // backgroundColor: '#524092',
                             color: 'white',
-                            // marginLeft: '-50px',
-                            // position: 'absolute'
-                            // "& :hover": {
-                            //     color: 'red',
-                            //     backgroundColor: '#524092',
-                            //     padding: '15px',
-                                
-                            // }
+                            
                         }} 
                         aria-label="search">
                             <SearchIcon />

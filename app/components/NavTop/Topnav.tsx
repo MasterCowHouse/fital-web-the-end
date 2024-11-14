@@ -7,7 +7,7 @@ import Link from "next/link";
 import Image from "next/image";
 import logo from "@/public/img/logo-fital.svg";
 import {Typography} from "@mui/material";
-import { handleClientScriptLoad } from "next/script";
+
 // Dropdown
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
@@ -16,14 +16,10 @@ import React from "react";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 // End Dropdown
 import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
 import Collapse from '@mui/material/Collapse';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
 import ExpandLess from '@mui/icons-material/ExpandLess';
 import ExpandMore from '@mui/icons-material/ExpandMore';
 import List from '@mui/material/List';
-import StarBorder from '@mui/icons-material/StarBorder';
 
 export default function TopNav () {
     // Dropdown

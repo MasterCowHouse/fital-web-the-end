@@ -19,7 +19,6 @@ const Header = () => {
         <Box>
             {customVideo.map(({video}, id) => (
             <Box key={id} sx={{
-                // bgcolor: '#312857',
                 bgcolor: 'black',
                 backgroundImage: `url(${video})`,
                 backgroundRepeat: 'no-repeat',
@@ -31,11 +30,9 @@ const Header = () => {
                 alignItems: {xs: 'center', sm: 'start', md: 'start', lg: 'cetert',},
                 justifyContent: {xs: 'start', sm: 'center', md: 'center', lg: 'center',},
                 flexDirection: 'column',
-                border: {xs: '1px solid black', sm: '1px solid pink', md: '1px solid green', lg: '1px solid red',},
             }}>
                 <Box sx={{
-                    marginLeft: {xs: '0px', sm: '0px', md: '130px', lg: '130px',},
-                    border: {xs: '1px solid black', sm: '1px solid pink', md: '1px solid green', lg: '1px solid red',},
+                    marginLeft: {xs: '0px', sm: '0px', md: '130px', lg: '130px',},                    
                     padding: {xs: '150px 0px 0px 20px', sm: '0px 20px', md: '0px', lg: '0px',},
                 }}>
                     <Typography sx={{
@@ -51,8 +48,6 @@ const Header = () => {
                 <Box sx={{
                     marginLeft: {xs: '0px', sm: '20px', md: '130px', lg: '130px',},
                     marginTop: {xs: '0px', sm: '50px', md: '50px', lg: '50px',},
-                    border: '1px solid red',
-                    // padding: '10px 40px'
                     padding: '10px 40px'
                     
                 }}>

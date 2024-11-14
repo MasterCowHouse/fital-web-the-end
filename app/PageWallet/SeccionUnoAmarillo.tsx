@@ -27,12 +27,6 @@ const SeccionUnoAmarillo = () => {
           alignItems: "center",
           justifyContent: "center",
           flexDirection: "column",
-          border: {
-            xs: "1px solid black",
-            sm: "1px solid pink",
-            md: "1px solid green",
-            lg: "1px solid red",
-          },
           gap: 10,
         }}
       >
@@ -86,12 +80,7 @@ const SeccionUnoAmarillo = () => {
               md: "column-reverse",
               lg: "row",
             },
-            border: {
-              xs: "1px solid black",
-              sm: "1px solid pink",
-              md: "1px solid green",
-              lg: "1px solid red",
-            },
+            
           }}
         >
           <Box component={"img"} src="../img/walletimgUno.png" />
@@ -131,12 +120,7 @@ const SeccionUnoAmarillo = () => {
               md: "column",
               lg: "row",
             },
-            border: {
-              xs: "1px solid black",
-              sm: "1px solid pink",
-              md: "1px solid green",
-              lg: "1px solid red",
-            },
+            
           }}
         >
           <Box>
@@ -168,7 +152,7 @@ const SeccionUnoAmarillo = () => {
           </Box>
           <Box component={"img"} src="../img/walletimgDos.png" />
         </Box>
-        {/* {isIntersecting ? 'Dentro' : 'Fuera'} */}
+        
       </Box>
       <Box
         ref={elemtoRef2}
@@ -179,12 +163,6 @@ const SeccionUnoAmarillo = () => {
           alignItems: "center",
           justifyContent: "center",
           flexDirection: "column",
-          border: {
-            xs: "1px solid black",
-            sm: "1px solid pink",
-            md: "1px solid green",
-            lg: "1px solid red",
-          },
           gap: 10,
         }}
       >
@@ -236,13 +214,7 @@ const SeccionUnoAmarillo = () => {
               sm: "column-reverse",
               md: "column-reverse",
               lg: "row",
-            },
-            border: {
-              xs: "1px solid black",
-              sm: "1px solid pink",
-              md: "1px solid green",
-              lg: "1px solid red",
-            },
+            }, 
           }}
         >
           <Box component={"img"} src="../img/walletimgTres.png" />
@@ -280,12 +252,7 @@ const SeccionUnoAmarillo = () => {
               md: "column",
               lg: "row",
             },
-            border: {
-              xs: "1px solid black",
-              sm: "1px solid pink",
-              md: "1px solid green",
-              lg: "1px solid red",
-            },
+            
           }}
         >
           <Box>
@@ -318,7 +285,7 @@ const SeccionUnoAmarillo = () => {
           </Box>
           <Box component={"img"} src="../img/walletimgCuatro.png" />
         </Box>
-        {/* {isIntersecting ? 'Dentro' : 'Fuera'} */}
+        
       </Box>
       <Box
         ref={elemtoRef3}
@@ -329,12 +296,6 @@ const SeccionUnoAmarillo = () => {
           alignItems: "center",
           justifyContent: "center",
           flexDirection: "column",
-          border: {
-            xs: "1px solid black",
-            sm: "1px solid pink",
-            md: "1px solid green",
-            lg: "1px solid red",
-          },
           gap: 10,
         }}
       >
@@ -388,12 +349,7 @@ const SeccionUnoAmarillo = () => {
               md: "column-reverse",
               lg: "row",
             },
-            border: {
-              xs: "1px solid black",
-              sm: "1px solid pink",
-              md: "1px solid green",
-              lg: "1px solid red",
-            },
+            
           }}
         >
           <Box component={"img"} src="../img/walletimgCinco.png" />
@@ -433,12 +389,7 @@ const SeccionUnoAmarillo = () => {
               md: "column",
               lg: "row",
             },
-            border: {
-              xs: "1px solid black",
-              sm: "1px solid pink",
-              md: "1px solid green",
-              lg: "1px solid red",
-            },
+            
           }}
         >
           <Box>
@@ -471,7 +422,7 @@ const SeccionUnoAmarillo = () => {
           </Box>
           <Box component={"img"} src="../img/walletimgSeis.png" />
         </Box>
-        {/* {isIntersecting ? 'Dentro' : 'Fuera'} */}
+        
       </Box>
     </>
   );

@@ -34,10 +34,7 @@ export default function RootLayout({
           backgroundImage: `linear-gradient(222deg, rgba(82,64,146,1) 0%, rgba(57,47,97,1) 19%, rgba(48,41,80,1) 44%, rgba(47,40,78,1) 62%, rgba(25,21,41,1) 83%, rgba(13,11,21,1) 100%)`,
         }}
       >
-        
-        {/* <NavTop /> */}
         <TopNav />
-        {/* <TopnavDropdown /> */}
         {children}
         <Footer/>
         <Footerlogos/>

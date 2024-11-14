@@ -13,7 +13,7 @@ const customFideicomiso: CustomFideicomiso[] = [
     {
         id: 1,
         textoUno: <span>Tradicional: Requiere papeleo y <br /> trámites legales presenciales.</span>,
-        icono: '../img/Procesodecreación.svg',
+        icono: '../img/Procesodecreacion.svg',
         textIcono: <span>Proceso de <br />creación</span>,
         textAlt: 'Proceso de creación',
         textoDos: <span>Digital: Se gestiona en línea de forma <br />rápida y sencilla.</span>,
@@ -21,7 +21,7 @@ const customFideicomiso: CustomFideicomiso[] = [
     {
         id: 2,
         textoUno: <span>Tradicional: Manual y burocrática.</span>,
-        icono: '../img/Gestióndebienes.svg',
+        icono: '../img/Gestiondebienes.svg',
         textIcono: <span>Gestión de <br />bienes</span>,
         textAlt: 'Gestión de bienes',
         textoDos: <span>Digital: Automatizada y más eficiente, <br />usando contratos inteligentes.</span>,
@@ -59,20 +59,20 @@ const TradicionalDigital = () => {
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                border: {xs: '1px solid black', sm: '1px solid pink', md: '1px solid green', lg: '1px solid red',},
+                
             }}>
                 <Typography sx={{
                     fontSize: {xs: '30px', sm: '40px', md: '40px', lg: '50px',},
                     width: {xs: '100%', sm: '100%', md: '100%', lg: '100%',},
                     textAlign: {xs: 'center', sm: 'center', md: 'center', lg: 'center',},
-                    border: {xs: '1px solid black', sm: '1px solid pink', md: '1px solid green', lg: '1px solid red',},
+                    
                 }}>
                     Fideicomiso Tradicional <span style={{color: '#FFC72C', fontWeight: 900}}>VS</span> Fideicomiso Digital
                 </Typography>
             </Box>
             <Box sx={{
                 marginTop: '50px',
-                border: {xs: '1px solid black', sm: '1px solid pink', md: '1px solid green', lg: '1px solid red',},
+                
             }}>
                 {customFideicomiso.map(({textoUno, icono, textIcono, textAlt, textoDos}, id) => (
                     <Box key={id} sx={{
@@ -83,12 +83,8 @@ const TradicionalDigital = () => {
                     }}>
                         <Box sx={{
                             bgcolor: '#2B214C',
-                            // border: '1px solid red',
-                            // width: '400px',
                             width: {xs: '150px', sm: '400px', md: '400px', lg: '400px',},
-                            // height: '70px',
                             height: '130px',
-                            // padding: '30px 0px',
                             display: 'flex',
                             alignItems: 'center',
                             justifyContent: 'start'
@@ -98,7 +94,7 @@ const TradicionalDigital = () => {
                                 fontSize: {xs: '12px', sm: '14px', md: '16px', lg: '16px',},
                                 width: {xs: '100px', sm: '100%', md: '100%', lg: '100%',},
                                 height: {xs: 'auto', sm: 'auto', md: 'auto', lg: 'auto',},
-                                border: {xs: '1px solid black', sm: '1px solid pink', md: '1px solid green', lg: '1px solid red',},
+                                
                             }}>
                                 {textoUno}
                             </Typography>
@@ -109,7 +105,6 @@ const TradicionalDigital = () => {
                             alignItems: 'center',
                             justifyContent: 'center',
                             flexDirection: 'column',
-                            // padding: '10px 50px',
                             borderRadius: '25px',
                             width: {xs: '30%', sm: 'auto', md: 'auto', lg: '200px',},
                             height: {xs: '200px', sm: '200px', md: '200px', lg: '200px',},
@@ -120,7 +115,7 @@ const TradicionalDigital = () => {
                                 src={icono}
                                 alt={textAlt}
                                 sx={{
-                                    // border: '1px solid red',
+                                    
                                     width: '100px',
                                     height: '100px'
                                 }}
@@ -129,7 +124,7 @@ const TradicionalDigital = () => {
                                 textAlign: 'center',
                                 color: '#524092',
                                 fontWeight: 900,
-                                // border: '1px solid red',
+                                
                                 width: '130px',
                                 wordWrap: {xs: 'normal', sm: 'break-word', md: 'break-word', lg: 'break-word',},
                             }}>
@@ -138,10 +133,7 @@ const TradicionalDigital = () => {
                         </Box>
                         <Box sx={{
                             bgcolor: '#2B214C',
-                            // border: '1px solid red',
-                            // width: '400px',
                             width: {xs: '150px', sm: '400px', md: '400px', lg: '400px',},
-                            // height: '70px',
                             height: '130px',
                             display: 'flex',
                             alignItems: 'center',
@@ -152,7 +144,7 @@ const TradicionalDigital = () => {
                                 fontSize: {xs: '12px', sm: '14px', md: '16px', lg: '16px',},
                                 width: {xs: '100px', sm: '100%', md: '100%', lg: '100%',},
                                 height: {xs: 'auto', sm: 'auto', md: 'auto', lg: 'auto',},
-                                border: {xs: '1px solid black', sm: '1px solid pink', md: '1px solid green', lg: '1px solid red',},
+                                
                             }}>
                                 {textoDos}
                             </Typography>

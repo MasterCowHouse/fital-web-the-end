@@ -1,121 +1,67 @@
 'use client'
 import { Box, Typography} from "@mui/material";
-import Image from "next/image";
 import Link from "next/link";
 // Slider
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-// import './Slider.module.css';
 import styles from "@/app/PageCompraDeTokens/Slider.module.css"
-import { Pagination, Navigation, Controller } from 'swiper/modules';
-import { useState } from "react";
+import { Navigation } from 'swiper/modules';
 
 interface CustomSlider {
     id: number;
-    imgSlider: string;
+
 
 }
 
 const customSlider: CustomSlider[] = [
     {
         id: 1,
-        imgSlider: '/img/bgDos.jpg'
+        
     },
     {
-        id: 1,
-        imgSlider: '/img/bgDos.jpg'
+        id: 2,
+        
     },
     {
-        id: 1,
-        imgSlider: '/img/bgDos.jpg'
+        id: 3,
+        
     },
     {
-        id: 1,
-        imgSlider: '/img/bgDos.jpg'
+        id: 4,
+        
     },
     {
-        id: 1,
-        imgSlider: '/img/bgDos.jpg'
+        id: 5,
+        
     },
     {
-        id: 1,
-        imgSlider: '/img/bgDos.jpg'
+        id: 6,
+        
     },
 ]
 
 const SliderTokens = () => {
-    const [swiperControll, setSwiperControll] = useState<null>(null);
-    const [swiperControllSecond, setSwiperControllSecond] = useState(null);
-    const [activeIndex, setActiveIndex] = useState(0);
-
+    
     return (
-        // <Box sx={{
-        //     display: 'flex',
-        //     alignItems: 'center',
-        //     justifyContent: 'center',
-        //     paddingBottom: '100px',
-        //     border: '1px solid red'
-        // }}>
-        //     <Box sx={{
-        //         width: '300px',
-        //         height: '300px',
-        //         bgcolor: '#524092',
-        //         display: 'flex',
-        //         alignItems: 'center',
-        //         justifyContent: 'center'
-        //     }}>
-        //         <Typography>
-        //             SliderTokens
-        //         </Typography>
-        //     </Box>
-        // </Box>
         <Box sx={{
-            border: '1px solid red',
             marginBottom: '50px'
         }}>
-            {/* <button onClick={() => swiperControll.slidePrev()}>{'<'}</button>
-            <button onClick={() => swiperControll.slideNext()}>{'>'}</button> */}
             <Swiper
                 spaceBetween={50}
                 slidesPerView={3}
                 navigation={true}
-                // pagination={{
-                //     clickable: true,
-                // }}
                 scrollbar={{draggable: true}}
-                // className="w-[80%]"
                 className={styles.swiperContenedor}
                 loop={true}
-                // modules={[Pagination, Navigation]}
                 modules={[Navigation]}
-                // onSwiper={(swiper) => setSwiperControll(swiper)}
-                // onSlideChange={() => setActiveIndex(swiperControll.activeIndex)}
-                
-                
             >
-                {customSlider.map(({imgSlider}, id) => (
+                {customSlider.map(({}, id) => (
                     <SwiperSlide 
                     key={id} 
-                    // style={{
-                    //     display: 'flex',
-                    //     alignItems: 'center',
-                    //     justifyContent: 'center',
-                    //     flexDirection: 'column',
-                    //     border: '1px solid red',
-                    //     backgroundColor: '#524092',
-                    //     width: '100%',
-                    //     height: '300px',
-                    // }}
                     className={styles.swiperSlider}
                     >
-                        {/* <Image 
-                            src={imgSlider}
-                            alt="Invertir Fital"
-                            width={200}
-                            height={200}
-                        /> */}
                         <Box sx={{
                             position: 'absolute',
                             zIndex: 1
@@ -143,7 +89,7 @@ const SliderTokens = () => {
                             <Typography sx={{
                                 color: "black",
                                 textAlign: 'center',
-                                // marginTop: '30px'
+                                
                             }}>
                                 Cancún Q. Roo
                                 <br />

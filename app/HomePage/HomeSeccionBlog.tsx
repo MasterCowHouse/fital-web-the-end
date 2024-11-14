@@ -1,5 +1,4 @@
 import { Box, Typography } from "@mui/material";
-import { url } from "inspector";
 import Link from "next/link";
 
 interface CustomBlog {
@@ -42,7 +41,6 @@ const HomeSeccionBlog = () => {
     return (
         <Box sx={{
             backgroundColor: '#241441',
-            border: {xs: '1px solid black', sm: '1px solid pink', md: '1px solid green', lg: '1px solid red',},
         }}>
             <Box sx={{
                 display: 'flex',
@@ -55,7 +53,6 @@ const HomeSeccionBlog = () => {
                     <Typography sx={{
                         fontSize: {xs: '58px', sm: '68px', md: '68px', lg: '68px',},
                         textAlign: {xs: 'center', sm: 'center', md: 'left', lg: 'left',},
-                        border: {xs: '1px solid black', sm: '1px solid pink', md: '1px solid green', lg: '1px solid red',},
                     }}>
                         Infórmate con FITAL
                     </Typography>
@@ -64,7 +61,6 @@ const HomeSeccionBlog = () => {
                     <Typography sx={{
                         fontSize: '30px',
                         textAlign: {xs: 'center', sm: 'center', md: 'left', lg: 'left',},
-                        border: {xs: '1px solid black', sm: '1px solid pink', md: '1px solid green', lg: '1px solid red',},
                     }}>
                         Descubre las últimas tendencias y consejos en nuestro blog. ¡No te lo pierdas!
                     </Typography>

@@ -28,12 +28,10 @@ const Descripcion = () => {
                 alignItems: 'center',
                 justifyContent: 'center',
                 flexDirection: 'column',
-                // padding: '50px 100px',
                 padding: {xs: '50px 20px', sm: '50px 20px', md: '50px 20px', lg: '50px 100px'},
             }}>
                 <Box>
                     <Typography sx={{
-                        // fontSize: '60px'
                         fontSize: {xs: '60px', sm: '60px', md: '60px', lg: '60px'},
                     }}>
                         ¿Qué es?
@@ -41,11 +39,9 @@ const Descripcion = () => {
                 </Box>
                 <Box sx={{
                     marginBottom: '50px',
-                    border: {xs: '1px solid black', sm: '1px solid pink', md: '1px solid green', lg: '1px solid red',},
                     
                 }}>
                     <Typography sx={{
-                        // fontSize: '30px',
                         fontSize: {xs: '20px', sm: '20px', md: '30px', lg: '30px'},
                     }}>
                         Es el proceso de convertir activos inmobiliarios en tokens digitales. Esto permite que las 

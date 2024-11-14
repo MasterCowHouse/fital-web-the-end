@@ -1,6 +1,4 @@
 import { Box, Typography } from "@mui/material";
-import Image from "next/image";
-import icono from "../../public/img/icono1.svg"
 import Link from "next/link";
 
 interface CustomCards {
@@ -50,24 +48,21 @@ const customCards: CustomCards[] = [
 const HomeCards = () => {
     return (
         <Box sx={{
-            // border: '5px solid black',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
             gap: 10,
             flexWrap: 'wrap',
             padding: '100px 0px',
-            border: {xs: '1px solid black', sm: '1px solid pink', md: '1px solid green', lg: '1px solid red',},
+            
         }}>
             {customCards.map(({icono, titulo, hrefBtn, btnText, bgCirculo}, id) => (
                 <Box key={id} sx={{
-                    // border: '1px solid red',
                     backgroundColor: '#210044',
                     padding: '70px 55px',
                     marginTop: {xs: '50px', sm: '50px', md: '50px', lg: '0px',},
                 }}>
                     <Box sx={{
-                        // border: '1px solid pink',
                         backgroundColor: `${bgCirculo}`,
                         borderRadius: '200px',
                         padding: '50px',
@@ -88,7 +83,6 @@ const HomeCards = () => {
                         />
                     </Box>
                     <Box sx={{
-                        // border: '1px solid green',
                         marginTop: '50px',
                         marginBottom: '50px',
                     }}>
@@ -99,9 +93,7 @@ const HomeCards = () => {
                             {titulo}
                         </Typography>
                     </Box>
-                    <Box sx={{
-                        // border: '1px solid blue'
-                    }}>
+                    <Box>
                         <Link href={hrefBtn} style={{
                             textAlign: 'center',
                             fontSize: '20px'

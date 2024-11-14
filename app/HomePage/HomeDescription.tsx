@@ -43,7 +43,6 @@ const HomeDescription = () => {
                 </Box>
                 <Box sx={{
                     marginBottom: '50px',
-                    border: {xs: '1px solid black', sm: '1px solid pink', md: '1px solid green', lg: '1px solid red',},
                 }}>
                     <Typography sx={{
                         fontSize: {xs: '20px', sm: '20px', md: '30px', lg: '30px',},

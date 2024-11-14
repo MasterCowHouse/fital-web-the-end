@@ -1,6 +1,5 @@
 'use client'
-import { Box, InputLabel, TextField, Typography } from "@mui/material";
-import Link from "next/link";
+import { Box, TextField, Typography } from "@mui/material";
 import Image from "next/image";
 import styles from "@/app/PageCompraDeTokens/component.module.css";
 import imgIconoUno from "@/public/img/Registrate.png";
@@ -25,9 +24,7 @@ const style = {
     left: '50%',
     transform: 'translate(-50%, -50%)',
     width: 400,
-    // bgcolor: 'background.paper',
     bgcolor: '#210044',
-    // border: '2px solid #000',
     boxShadow: 24,
     p: 4,
   };
@@ -41,10 +38,7 @@ const customTheme = (outerTheme: Theme) =>
     components: {
       MuiTextField: {
         styleOverrides: {
-          root: {
-            // '--TextField-brandBorderColor': '#E0E3E7',
-            // '--TextField-brandBorderHoverColor': '#B2BAC2',
-            // '--TextField-brandBorderFocusedColor': '#6F7E8C',
+          root: {            
             '--TextField-brandBorderColor': '#FFC72C',
             '--TextField-brandBorderHoverColor': '#FFC72C',
             '--TextField-brandBorderFocusedColor': '#FFC72C',
@@ -122,8 +116,6 @@ const InvertirTokens = () => {
                 <Typography sx={{
                     fontSize: {xs: '30px', sm: '40px', md: '40px', lg: '50px',},
                     marginBottom: '25px',
-                    // width: '100%',
-                    border: {xs: '1px solid black', sm: '1px solid pink', md: '1px solid green', lg: '1px solid red',},
                     textAlign: {xs: 'center', sm: 'center', md: 'left', lg: 'left',},
                 }}>
                     Invertir en nuestros tokens inmobiliarios es 
@@ -230,9 +222,6 @@ const InvertirTokens = () => {
                             padding: '20px 0px 0px 0px'
                         }}>
                             <Button sx={{
-                                // border: '2px solid #FFC72C',
-                                // padding: '10px 50px',
-                                // borderRadius: '100px',
                                 color: '#FFC72C',
                             }}>
                                 Regístrate
@@ -242,34 +231,22 @@ const InvertirTokens = () => {
                     </Fade>
                 </Modal>
                 {/* End Modal */}
-                {/* <Link href={'/'}>
-                    <Typography sx={{
-                        border: '2px solid #FFC72C',
-                        padding: '10px 50px',
-                        borderRadius: '100px'
-                    }}>
-                        
-                        Regístrate
-                    </Typography>
-                </Link> */}
             </Box>
             {/* //Container Responsive*/}
             <Box sx={{
                 display: {xs: 'flex', sm: 'flex', md: 'none', lg: 'none', },
                 alignItems: 'center',
                 justifyContent: 'center',
-                border: {xs: '1px solid black', sm: '1px solid pink', md: '1px solid green', lg: '1px solid red',},
+                
             }}>
                 <ComoEmpiezoResponsive />
             </Box>
             {/* //Container */}
             <Box className={styles.container} sx={{
-                border: '1px solid red',
                 padding: '50px 100px',
                 display: {xs: 'none !important', sm: 'none !important', md: 'grid !important', lg: 'grid !important', }
             }}>
-                <Box className={styles.textoUno} sx={{
-                    border: '1px solid red',
+                <Box className={styles.textoUno} sx={{                    
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
@@ -304,7 +281,6 @@ const InvertirTokens = () => {
                     />
                 </Box>
                 <Box className={styles.textoDos} sx={{
-                    border: '1px solid red',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
@@ -335,7 +311,6 @@ const InvertirTokens = () => {
                     />
                 </Box>
                 <Box className={styles.textoTres} sx={{
-                    border: '1px solid red',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
@@ -371,7 +346,6 @@ const InvertirTokens = () => {
                     </Typography>
                 </Box>
                 <Box className={styles.textoCuatro} sx={{
-                    border: '1px solid red',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
@@ -413,7 +387,6 @@ const InvertirTokens = () => {
                     </Typography>
                 </Box>
                 <Box className={styles.textoCinco} sx={{
-                    border: '1px solid red',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center'

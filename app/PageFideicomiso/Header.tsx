@@ -18,7 +18,6 @@ const Header = () => {
         <Box>
             {customVideo.map(({video}, id) => (
                 <Box key={id} sx={{
-                    // bgcolor: '#7366A0',
                     bgcolor: 'black',
                     backgroundImage: `url(${video})`,
                     backgroundRepeat: 'no-repeat',
@@ -30,11 +29,10 @@ const Header = () => {
                     alignItems: {xs: 'center', sm: 'start', md: 'start', lg: 'cetert',},
                     justifyContent: {xs: 'start', sm: 'center', md: 'center', lg: 'center',},
                     flexDirection: 'column',
-                    border: {xs: '1px solid black', sm: '1px solid pink', md: '1px solid green', lg: '1px solid red',},
+                    
                 }}>
                     <Box sx={{
                         marginLeft: {xs: '0px', sm: '0px', md: '130px', lg: '130px',},
-                        border: {xs: '1px solid black', sm: '1px solid pink', md: '1px solid green', lg: '1px solid red',},
                         padding: {xs: '150px 0px 0px 20px', sm: '0px 20px', md: '0px', lg: '0px',},
                     }}>
                         <Typography sx={{

@@ -43,7 +43,6 @@ const Footerlogos = () => {
                 alignItems: 'center',
                 justifyContent: 'center',
                 gap: {xs: 2, sm: 5, md: 10, lg: 10,},
-                // padding: '100px 0px 50px 0px',
                 padding: {xs: '0px', sm: '50px 0px', md: '50px 0px', lg: '50px 0px',},
                 flexDirection: {xs: 'column', sm: 'row', md: 'row', lg: 'row',},
             }}>
@@ -62,14 +61,11 @@ const Footerlogos = () => {
                 alignItems: 'center',
                 justifyContent: 'center',
                 gap: {xs: 2, sm: 2, md: 11, lg: 11,},
-                border: {xs: '1px solid black', sm: '1px solid pink', md: '1px solid green', lg: '1px solid red',},
                 padding: {xs: '20px', sm: '20px', md: '20px', lg: '0px 50px',},
 
             }}>
                 {customLogosFooter.map(({logosFooter, linksImgs}, id) => (
-                    <Box key={id} sx={{
-                        border: '1px solid red',
-                    }}>
+                    <Box key={id}>
                         <Link href={`${linksImgs}`} target="_blank">
                             <Box 
                                 component={'img'}

@@ -15,11 +15,10 @@ const HeaderBtn = () => {
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
-                    // border: {xs: '1px solid black', sm: '1px solid pink', md: '1px solid green', lg: '1px solid red',},
+                    
                 }}>
                     <Box sx={{
                         position: 'absolute',
-                        // marginRight: '300px',
                         marginRight: {xs: '200px', sm: '200px', md: '200px', lg: '200px',},
                     }}>
                         <Link href={'/'}>
