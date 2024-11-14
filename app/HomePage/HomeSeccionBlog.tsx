@@ -81,7 +81,7 @@ const HomeSeccionBlog = () => {
                                 backgroundPosition: 'center center',
                                 backgroundSize: 'cover',
                                 backgroundRepeat: 'no-repeat',  
-                                width: '400px',
+                                width: {xs: '350px', sm: '400px', md: '400px', lg: '400px',},
                                 height: '400px',
                                 display: 'flex',
                                 alignItems: 'flex-start',

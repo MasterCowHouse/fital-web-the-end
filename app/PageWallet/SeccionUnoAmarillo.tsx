@@ -34,7 +34,8 @@ const SeccionUnoAmarillo = () => {
           sx={{
             backgroundColor: "#FFC72C",
             padding: {
-              xs: "50px 35px",
+              // xs: "50px 35px",
+              xs: "50px 5px",
               sm: "50px 35px",
               md: "50px 100px",
               lg: "50px 330px",
@@ -170,7 +171,7 @@ const SeccionUnoAmarillo = () => {
           sx={{
             backgroundColor: "#A6024F",
             padding: {
-              xs: "50px 35px",
+              xs: "50px 5px",
               sm: "50px 35px",
               md: "50px 100px",
               lg: "50px 330px",
