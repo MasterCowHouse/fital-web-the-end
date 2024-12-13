@@ -62,7 +62,7 @@ const Suscripciones = () => {
                             alignItems: 'start',
                             flexDirection: 'column',
                             width: '100%',
-                            border: {xs: '1px solid black', sm: '1px solid pink', md: '1px solid green', lg: '1px solid red',},
+                            // border: {xs: '1px solid black', sm: '1px solid pink', md: '1px solid green', lg: '1px solid red',},
                         }}>
                             <Typography sx={{
                                 border: '2px solid #FFC72C',

@@ -52,7 +52,8 @@ export default function TopNav() {
 //   const [seconds, setSeconds] = useState<number>(0);
 
   useEffect(() => {
-    const target = new Date("12/13/2024 23:59:59");
+    // const target = new Date("12/13/2024 23:59:59");
+    const target = new Date("01/12/2025 23:59:59");
 
     const interval = setInterval(() => {
       const now = new Date();
@@ -234,9 +235,12 @@ export default function TopNav() {
                       className="time"
                       sx={{
                         marginLeft: "10px",
+                        color: 'white',
+                        
                       }}
                     >
-                      {days} días
+                      {/* {days} días */}
+                      próximamente
                     </Typography>
                     {/* <Typography
                       className="time"
@@ -268,6 +272,7 @@ export default function TopNav() {
                       sx={{
                         fontWeight: 900,
                         color: "#FFC72C",
+                        
                       }}
                     >
                       Tu Wallet

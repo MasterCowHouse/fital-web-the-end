@@ -7,8 +7,9 @@ interface CustomBlog {
     bg: string;
     numero: string;
     corazon: string;
-    fecha: string;
+    // fecha: string;
     texto: JSX.Element;
+    hrefLink: string;
 }
 
 const customBlog: CustomBlog[] = [
@@ -17,48 +18,54 @@ const customBlog: CustomBlog[] = [
         bg: '../img/bgUno.jpg',
         numero: '5',
         corazon: '../img/corazon.svg',
-        fecha: '09/09/2024',
-        texto: <span>La evolución del Fideicomiso <br />tradicional al digital.</span>
+        // fecha: '09/09/2024',
+        texto: <span>La evolución del Fideicomiso <br />tradicional al digital.</span>,
+        hrefLink: '/PageBlogArticulo'
     },
     {
         id: 2,
-        bg: '../img/bgDos.jpg',
+        bg: '../img/Que-es-el-blockchain.png',
         numero: '5',
         corazon: '../img/corazon.svg',
-        fecha: '16/09/2024',
-        texto: <span>¿Qué diferencias hay entre la <br />venta tradicional de inmuebles y <br />la tokenización?</span>
+        // fecha: '16/09/2024',
+        texto: <span>¿Qué es el blockchain?<br />¿Qué ventajas tiene adentrarse <br />al mundo del blockchain?</span>,
+        hrefLink: '/¿Que-es-el-blockchain?'
     },
     {
         id: 3,
-        bg: '../img/bgTres.jpg',
+        bg: '../img/que-es-la-tokenizacion-inmobiliaria-3.png',
         numero: '5',
         corazon: '../img/corazon.svg',
-        fecha: '14/08/2024',
-        texto: <span>Seguridad y Transparencia: <br />Claves para Invertir en Bienes <br />Raíces con Criptomonedas.</span>
+        // fecha: '14/08/2024',
+        texto: <span>¿Qué es la Tokenización <br />Inmobiliaria? <br />Guía Completa para Principiantes</span>,
+        hrefLink: '/que-es-la-tokenizacion-inmobiliaria'
     },
     {
         id: 4,
-        bg: '../img/bgUno.jpg',
+        bg: '../img/claves-invertir-bienes-raices-criptomonedas.png',
         numero: '5',
         corazon: '../img/corazon.svg',
-        fecha: '14/08/2024',
-        texto: <span>Seguridad y Transparencia: <br />Claves para Invertir en Bienes <br />Raíces con Criptomonedas.</span>
+        // fecha: '14/08/2024',
+        texto: <span>Claves para Invertir <br />en Bienes Raíces con Criptomonedas</span>,
+        hrefLink: '/claves-invertir-bienes-raices-criptomonedas'
     },
     {
         id: 5,
-        bg: '../img/bgDos.jpg',
+        bg: '../img/diferencia-entre-venta-tradicional-de-inmuebles-y-tokenizacion-de-inmuebles.png',
         numero: '5',
         corazon: '../img/corazon.svg',
-        fecha: '14/08/2024',
-        texto: <span>Seguridad y Transparencia: <br />Claves para Invertir en Bienes <br />Raíces con Criptomonedas.</span>
+        // fecha: '14/08/2024',
+        texto: <span>¿Qué Diferencias hay entre la Venta Tradicional de Inmuebles y la Tokenización?</span>,
+        hrefLink: '/diferencia-entre-venta-tradicional-de-inmuebles-y-tokenizacion-de-inmuebles'
     },
     {
         id: 6,
-        bg: '../img/bgTres.jpg',
+        bg: '../img/diferencia-wallet-app-bancaria.png',
         numero: '5',
         corazon: '../img/corazon.svg',
-        fecha: '14/08/2024',
-        texto: <span>Seguridad y Transparencia: <br />Claves para Invertir en Bienes <br />Raíces con Criptomonedas.</span>
+        // fecha: '14/08/2024',
+        texto: <span>Wallet vs. App Bancaria: <br />¿Cuál es la diferencia?</span>,
+        hrefLink: '/diferencia-wallet-app-bancaria'
     },
 ]
 
@@ -71,7 +78,7 @@ const Articulos = () => {
                 justifyContent: 'center',
                 flexWrap: 'wrap',
             }}>
-                {customBlog.map(({bg, numero, corazon, fecha, texto}, id) => (
+                {customBlog.map(({bg, numero, corazon, texto, hrefLink}, id) => (
                     <Box key={id} sx={{
                         padding: {xs:'25px', sm:'100px', md:'100px', lg:'100px',},
                     }}>
@@ -107,9 +114,9 @@ const Articulos = () => {
                                 padding: '0px 0px 0px 20px'
                             }}>
                                 <Box>
-                                    <Typography>
+                                    {/* <Typography>
                                         {fecha}
-                                    </Typography>
+                                    </Typography> */}
                                     <Typography>
                                         {texto}
                                     </Typography>
@@ -122,7 +129,8 @@ const Articulos = () => {
                             justifyContent: 'center',
                             marginTop: '25px'
                         }}>
-                            <Link href={'/'}>
+                            {/* <Link href={'/'}> */}
+                            <Link href={hrefLink}>
                                 <Typography sx={{
                                     border: '2px solid #FFC72C',
                                     borderRadius: '50px',
