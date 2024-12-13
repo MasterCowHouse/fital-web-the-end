@@ -50,7 +50,7 @@ const Video = () => {
                         height: {xs: 'auto', sm: '220px', md: '300px', lg: '450px',},
                         wordWrap: {xs: 'normal', sm: 'break-word', md: 'break-word', lg: 'break-word',},
                     }}>
-                        <span style={{fontWeight: 900, color: '#FFC72C'}}>¿Te quedaste con dudas?</span> <span style={{fontSize: '25px'}}>¿Te quedaste con dudas? Comunícate con nosotros y conéctate a la era digital</span> <span style={{fontWeight: 900, color: '#FFC72C',fontSize: '25px'}}>de FITAL</span>
+                        <span style={{fontWeight: 900, color: '#FFC72C'}}>¿Te quedaste con dudas?</span> <span style={{fontSize: '25px'}}>Comunícate con nosotros y conéctate a la era digital</span> <span style={{fontWeight: 900, color: '#FFC72C',fontSize: '25px'}}>de FITAL</span>
                         
                     </Typography>
                 </Box>
