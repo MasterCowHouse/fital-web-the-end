@@ -275,7 +275,7 @@ export default function TopNav() {
                         
                       }}
                     >
-                      Tu Wallet
+                      Tu Wallet 
                     </Typography>
                   </Box>
                 </Box>
