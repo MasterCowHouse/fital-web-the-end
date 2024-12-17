@@ -8,7 +8,7 @@ import imgIconoTres from "@/public/img/Diversifica.png";
 import imgIconoCuatro from "@/public/img/Adquiere tus tokens.png";
 import ComoEmpiezoResponsive from "./ComoEmpiezoResponsive";
 // Modal
-import React from "react";
+import React, { FormEvent, useState } from "react";
 import Backdrop from "@mui/material/Backdrop";
 import Modal from "@mui/material/Modal";
 import Fade from "@mui/material/Fade";
@@ -21,6 +21,7 @@ import {
   Theme,
   useTheme,
 } from "@mui/material/styles";
+import { createContact } from "../services/contact";
 
 // Modal
 const style = {
@@ -104,6 +105,42 @@ const customTheme = (outerTheme: Theme) =>
   });
 
 const InvertirTokens = () => {
+  const [formData, setFormData] = useState({
+    owner_id: "",
+    campaign_id: "",
+    name: "",
+    telephone: "",
+    email: "",
+  });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = (e: FormEvent) => {
+    e.preventDefault();
+
+    const payload = {
+      createLeadDto: {
+        owner_id: "7c1e8371-047e-44d5-b123-1b40775346fc",
+        campaign_id: "6bd12de8-d67f-438a-a4c2-58dac330cd3a",
+      },
+      createContactDto: {
+        name: formData.name,
+        telephone: formData.telephone,
+        email: formData.email,
+      },
+    };
+
+    (async () => {
+      const response = await createContact(payload);
+      console.log(response?.data, response);
+    })();
+  };
   // modal
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
@@ -169,6 +206,7 @@ const InvertirTokens = () => {
                 sx={{
                   color: "#FFFFFF",
                   textAlign: "center",
+                  mb: 3,
                 }}
               >
                 ¡Regístrate ahora y comienza a comprar tokens inmobiliarios!
@@ -176,19 +214,16 @@ const InvertirTokens = () => {
               {/* <Typography id="transition-modal-description" sx={{ mt: 2 }}>
                         Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
                         </Typography> */}
-              <Box
-                sx={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  flexDirection: "column",
-                  gap: 2,
-                }}
-              >
-                <ThemeProvider theme={customTheme(outerTheme)}>
+              <ThemeProvider theme={customTheme(outerTheme)}>
+                <form onSubmit={handleSubmit}>
                   <TextField
-                    label="Nombre"
-                    variant="standard"
+                    fullWidth
+                    label="Nombre del Contacto"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    required
+                    sx={{ mb: 4 }}
                     InputLabelProps={{
                       sx: {
                         color: "white",
@@ -201,8 +236,14 @@ const InvertirTokens = () => {
                     }}
                   />
                   <TextField
+                    fullWidth
                     label="Teléfono"
-                    variant="standard"
+                    name="telephone"
+                    value={formData.telephone}
+                    onChange={handleChange}
+                    required
+                    type="tel"
+                    sx={{ mb: 4 }}
                     InputLabelProps={{
                       sx: {
                         color: "white",
@@ -215,8 +256,14 @@ const InvertirTokens = () => {
                     }}
                   />
                   <TextField
-                    label="Correo"
-                    variant="standard"
+                    fullWidth
+                    label="Email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                    type="email"
+                    sx={{ mb: 4 }}
                     InputLabelProps={{
                       sx: {
                         color: "white",
@@ -228,24 +275,17 @@ const InvertirTokens = () => {
                       },
                     }}
                   />
-                </ThemeProvider>
-              </Box>
-              <Box
-                sx={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  padding: "20px 0px 0px 0px",
-                }}
-              >
-                <Button
-                  sx={{
-                    color: "#FFC72C",
-                  }}
-                >
-                  Regístrate
-                </Button>
-              </Box>
+                  <Button
+                    variant="contained"
+                    color="primary"
+                    type="submit"
+                    fullWidth
+                    sx={{ marginTop: 2 }}
+                  >
+                    Enviar
+                  </Button>
+                </form>
+              </ThemeProvider>
             </Box>
           </Fade>
         </Modal>
