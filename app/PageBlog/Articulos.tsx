@@ -29,7 +29,7 @@ const customBlog: CustomBlog[] = [
         corazon: '../img/corazon.svg',
         // fecha: '16/09/2024',
         texto: <span>¿Qué es el blockchain?<br />¿Qué ventajas tiene adentrarse <br />al mundo del blockchain?</span>,
-        hrefLink: '/¿Que-es-el-blockchain?'
+        hrefLink: '/Que-es-el-blockchain'
     },
     {
         id: 3,
