@@ -61,6 +61,7 @@ export default function TopNav() {
 
       const d = Math.floor(difference / (1000 * 60 * 60 * 24));
       setDays(d);
+      console.log(days);
       //   const h = Math.floor(
       //     (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
       //   );

@@ -183,7 +183,7 @@ const SliderTokens = () => {
                 loop={true}
                 modules={[Navigation]}
             >
-                {customSlider.map(({precio, texto, estilos, linkNFTS, bgColor, textoBtn}, id) => (
+                {customSlider.map(({precio, texto, linkNFTS, bgColor, textoBtn}, id) => (
                     <SwiperSlide 
                     key={id} 
                     className={styles.swiperSlider}

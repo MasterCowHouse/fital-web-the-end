@@ -9,7 +9,7 @@ import {
 } from "@mui/material/styles";
 import Button from "@mui/material/Button";
 import { FormEvent, useState } from "react";
-import { createContact, DataContact } from "../services/contact";
+import { createContact } from "../services/contact";
 
 export const customTheme = (outerTheme: Theme) =>
   createTheme({

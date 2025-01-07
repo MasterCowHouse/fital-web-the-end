@@ -98,7 +98,7 @@ const Articulo = () => {
                         color: 'black'
                     }}>
                         
-                        En los últimos años, el término "blockchain" ha estado en boca de todos, y no es para menos. 
+                        En los últimos años, el término blockchain ha estado en boca de todos, y no es para menos. 
                         <br />
                         Aunque muchos lo asocian únicamente con las criptomonedas como Bitcoin, esta tecnología es mucho más que eso. 
                         <br />
