@@ -26,12 +26,14 @@ export interface CreateContactDto {
 export interface CreateLeadDto {
   owner_id: string;
   campaign_id: string;
+  name: string;
+  description: string;
 }
 
 export const createContact = async (data: DataContact) => {
   try {
     const response = await axiosInstance.post<BaseResponseTypes<DataContact>>(
-      `api/lead/create-with-contact`,
+      `api/lead/create-with-contact-and-send-template-email`,
       data
     );
     return response.data;

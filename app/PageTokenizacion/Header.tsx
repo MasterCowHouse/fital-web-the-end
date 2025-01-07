@@ -13,6 +13,7 @@ import {
 import { customTheme } from "../PageContacto/Header";
 import { FormEvent, useState } from "react";
 import { createContact } from "../services/contact";
+import Swal from "sweetalert2";
 
 interface CustomVideo {
   id: number;
@@ -57,6 +58,8 @@ const Header = () => {
       createLeadDto: {
         owner_id: "7c1e8371-047e-44d5-b123-1b40775346fc",
         campaign_id: "ae520039-58be-4851-9dfc-882dce2755e1",
+        name: formData.name,
+        description: "",
       },
       createContactDto: {
         name: formData.name,
@@ -67,6 +70,26 @@ const Header = () => {
 
     (async () => {
       const response = await createContact(payload);
+      if (response?.success) {
+        handleClose();
+        Swal.fire({
+          title: "¡Registro exitoso!",
+          icon: "success",
+        });
+        setFormData({
+          owner_id: "",
+          campaign_id: "",
+          name: "",
+          telephone: "",
+          email: "",
+        });
+      } else {
+        Swal.fire({
+          title: "Error",
+          text: "No se pudo completar el registro.",
+          icon: "error",
+        });
+      }
       console.log(response?.data, response);
     })();
   };

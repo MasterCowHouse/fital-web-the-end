@@ -10,6 +10,7 @@ import {
 import Button from "@mui/material/Button";
 import { FormEvent, useState } from "react";
 import { createContact } from "../services/contact";
+import Swal from "sweetalert2";
 
 export const customTheme = (outerTheme: Theme) =>
   createTheme({
@@ -103,7 +104,9 @@ const Header = () => {
     const payload = {
       createLeadDto: {
         owner_id: "7c1e8371-047e-44d5-b123-1b40775346fc",
-        campaign_id: "b31b9c1e-d80d-4307-9960-b948fac4ed94",
+        campaign_id: "a29b67cb-452e-498f-945f-ecd787b5468e",
+        name: formData.name,
+        description: "",
       },
       createContactDto: {
         name: formData.name,
@@ -114,6 +117,25 @@ const Header = () => {
 
     (async () => {
       const response = await createContact(payload);
+      if (response?.success) {
+        Swal.fire({
+          title: "¡Registro exitoso!",
+          icon: "success",
+        });
+        setFormData({
+          owner_id: "",
+          campaign_id: "",
+          name: "",
+          telephone: "",
+          email: "",
+        });
+      } else {
+        Swal.fire({
+          title: "Error",
+          text: "No se pudo completar el registro.",
+          icon: "error",
+        });
+      }
       console.log(response?.data, response);
     })();
   };

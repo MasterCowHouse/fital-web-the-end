@@ -22,6 +22,7 @@ import {
   useTheme,
 } from "@mui/material/styles";
 import { createContact } from "../services/contact";
+import Swal from "sweetalert2";
 
 // Modal
 const style = {
@@ -128,6 +129,8 @@ const InvertirTokens = () => {
       createLeadDto: {
         owner_id: "7c1e8371-047e-44d5-b123-1b40775346fc",
         campaign_id: "6bd12de8-d67f-438a-a4c2-58dac330cd3a",
+        name: formData.name,
+        description: "",
       },
       createContactDto: {
         name: formData.name,
@@ -138,6 +141,26 @@ const InvertirTokens = () => {
 
     (async () => {
       const response = await createContact(payload);
+      if (response?.success) {
+        handleClose();
+        Swal.fire({
+          title: "¡Registro exitoso!",
+          icon: "success",
+        });
+        setFormData({
+          owner_id: "",
+          campaign_id: "",
+          name: "",
+          telephone: "",
+          email: "",
+        });
+      } else {
+        Swal.fire({
+          title: "Error",
+          text: "No se pudo completar el registro.",
+          icon: "error",
+        });
+      }
       console.log(response?.data, response);
     })();
   };
