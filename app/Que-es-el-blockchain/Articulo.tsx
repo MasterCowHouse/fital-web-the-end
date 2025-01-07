@@ -12,7 +12,7 @@ interface CustomLinks {
     links: string;
 }
 
-const customLinks: CustomLinks[] = [
+const customLinks: CustomLinks[] = [ 
     {
         id: 1,
         ruta: '/',
