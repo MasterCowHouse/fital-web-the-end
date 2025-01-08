@@ -45,7 +45,7 @@ const Video = () => {
     const payload = {
       createLeadDto: {
         owner_id: "7c1e8371-047e-44d5-b123-1b40775346fc",
-        campaign_id: "a58cb2ac-edf4-465c-9678-4d3b474f31e2",
+        campaign_id: "b9102b79-1765-4587-8d43-8b9653a204cc",
         name: formData.name,
         description: "",
       },

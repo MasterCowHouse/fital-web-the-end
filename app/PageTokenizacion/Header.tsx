@@ -57,7 +57,7 @@ const Header = () => {
     const payload = {
       createLeadDto: {
         owner_id: "7c1e8371-047e-44d5-b123-1b40775346fc",
-        campaign_id: "ae520039-58be-4851-9dfc-882dce2755e1",
+        campaign_id: "08362ada-7550-4f87-961a-42ffb789b1bb",
         name: formData.name,
         description: "",
       },
