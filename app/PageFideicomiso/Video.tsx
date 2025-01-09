@@ -61,7 +61,7 @@ const Video = () => {
       if (response?.success) {
         handleClose();
         Swal.fire({
-          title: "¡Registro exitoso!",
+          title: "Nos pondremos en contacto contigo a la brevedad.",
           icon: "success",
         });
         setFormData({
@@ -208,7 +208,9 @@ const Video = () => {
                 mb: 3,
               }}
             >
-              ¡Regístrate ahora y comienza a comprar tokens inmobiliarios!
+              ¿Te interesa proteger tu patrimonio?
+              <br />
+              Pon tus datos y nos pondremos en contacto contigo.
             </Typography>
             {/* <Typography id="transition-modal-description" sx={{ mt: 2 }}>
                         Duis mollis, est non commodo luctus, nisi erat porttitor ligula.

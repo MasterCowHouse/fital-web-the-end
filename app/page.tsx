@@ -10,13 +10,15 @@ import HomeSeccionBlog from "./HomePage/HomeSeccionBlog";
 
 export default function Home() {
   return (
-    <Box sx={{
-      color: 'white'
-    }}>
-      <HomeHeader/>
+    <Box
+      sx={{
+        color: "white",
+      }}
+    >
+      <HomeHeader />
       <HomeDescription />
-      < HomeCards />
-      <HomeVideo/>
+      <HomeCards />
+      <HomeVideo />
       <HomeComoTokenizar />
       <HomeNumeros />
       <HomeFitalOfrece />

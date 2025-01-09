@@ -73,7 +73,7 @@ const Header = () => {
       if (response?.success) {
         handleClose();
         Swal.fire({
-          title: "¡Registro exitoso!",
+          title: "Nos pondremos en contacto contigo a la brevedad.",
           icon: "success",
         });
         setFormData({

@@ -119,7 +119,7 @@ const Header = () => {
       const response = await createContact(payload);
       if (response?.success) {
         Swal.fire({
-          title: "¡Registro exitoso!",
+          title: "Nos pondremos en contacto contigo a la brevedad.",
           icon: "success",
         });
         setFormData({
@@ -154,10 +154,21 @@ const Header = () => {
         <Typography
           sx={{
             fontSize: "50px",
-            padding: "0px 0px 50px 0px",
+            padding: "0px 0px 20px 0px",
+            textAlign: "center",
           }}
         >
           Regístrate
+        </Typography>
+        <Typography
+          sx={{
+            fontSize: "30px",
+            padding: "0px 0px 30px 0px",
+          }}
+        >
+          Contacta con nosotros
+          <br />
+          Estamos aquí para escucharte y responder a tus preguntas.
         </Typography>
       </Box>
       <ThemeProvider theme={customTheme(outerTheme)}>

@@ -388,7 +388,8 @@ const Articulo = () => {
             >
               <Box
                 sx={{
-                  backgroundImage: "url(../img/bgUno.jpg)",
+                  backgroundImage:
+                    "url(../img/claves-invertir-bienes-raices-criptomonedas.png)",
                   backgroundPosition: "center center",
                   backgroundSize: "cover",
                   backgroundRepeat: "no-repeat",
@@ -434,7 +435,7 @@ const Articulo = () => {
                   justifyContent: "center",
                 }}
               >
-                <Link href={"/"}>
+                <Link href={"/claves-invertir-bienes-raices-criptomonedas"}>
                   <Typography
                     sx={{
                       border: "2px solid #FFC72C",
@@ -458,7 +459,8 @@ const Articulo = () => {
             >
               <Box
                 sx={{
-                  backgroundImage: "url(../img/bgUno.jpg)",
+                  backgroundImage:
+                    "url(../img/que-es-la-tokenizacion-inmobiliaria-3.png)",
                   backgroundPosition: "center center",
                   backgroundSize: "cover",
                   backgroundRepeat: "no-repeat",
@@ -502,7 +504,7 @@ const Articulo = () => {
                   justifyContent: "center",
                 }}
               >
-                <Link href={"/"}>
+                <Link href={"/que-es-la-tokenizacion-inmobiliaria"}>
                   <Typography
                     sx={{
                       border: "2px solid #FFC72C",
@@ -526,7 +528,7 @@ const Articulo = () => {
             >
               <Box
                 sx={{
-                  backgroundImage: "url(../img/bgUno.jpg)",
+                  backgroundImage: "url(../img/Que-es-el-blockchain.png)",
                   backgroundPosition: "center center",
                   backgroundSize: "cover",
                   backgroundRepeat: "no-repeat",
