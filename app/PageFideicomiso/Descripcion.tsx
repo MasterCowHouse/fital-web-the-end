@@ -42,7 +42,6 @@ const Descripcion = () => {
         <Box>
           <Typography
             sx={{
-              
               fontSize: { xs: "60px", sm: "60px", md: "60px", lg: "60px" },
             }}
           >
@@ -56,20 +55,14 @@ const Descripcion = () => {
         >
           <Typography
             sx={{
-              
               fontSize: { xs: "20px", sm: "20px", md: "30px", lg: "30px" },
             }}
           >
-            Es el proceso de convertir activos inmobiliarios en tokens
-            digitales. Esto permite que las
-            <br />
-            propiedades sean divididas en fracciones más pequeñas, facilitando
-            la entrada en el mercado
-            <br />
-            inmobiliario con menos complicaciones. Además, al alojarse en una
-            wallet el blockchain
-            <br />
-            garantiza transparencia y seguridad en todas las transacciones.
+            Un fideicomiso digital es una herramienta legal que usa tecnología
+            blockchain para administrar y proteger bienes, como dinero o
+            propiedades, de forma segura y transparente. Todo se gestiona en
+            plataformas digitales, lo que lo hace más rápido, accesible y
+            confiable.
           </Typography>
         </Box>
       </Box>

@@ -188,7 +188,7 @@ const InvertirTokens = () => {
             textAlign: { xs: "center", sm: "center", md: "left", lg: "left" },
           }}
         >
-          Invertir en nuestros tokens inmobiliarios es
+          Invertir en nuestros tokens inmobiliarios (activos virtuales) es
           <br />
           <span style={{ color: "#26D3CA" }}>
             asegurar tu patrimonio con rendimientos.
@@ -232,7 +232,8 @@ const InvertirTokens = () => {
                   mb: 3,
                 }}
               >
-                ¡Regístrate ahora y comienza a comprar tokens inmobiliarios!
+                ¡Regístrate ahora y comienza a comprar tokens inmobiliarios
+                (activos virtuales)!
               </Typography>
               {/* <Typography id="transition-modal-description" sx={{ mt: 2 }}>
                         Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
@@ -451,7 +452,8 @@ const InvertirTokens = () => {
             <br />
             uno o varios inmuebles.
             <br />
-            La oferta de tokens varía.
+            La oferta de tokens
+            <br /> (activos virtuales) varía.
             <br />
             <br />
             <span style={{ fontWeight: 900 }}>
@@ -499,9 +501,9 @@ const InvertirTokens = () => {
             <br />
             pesos o cripto, guarda
             <br />
-            tus tokens e irás
+            tus tokens (activos virtuales)
             <br />
-            recibiendo tus
+            e irás recibiendo tus
             <br />
             rendimientos todos
             <br />

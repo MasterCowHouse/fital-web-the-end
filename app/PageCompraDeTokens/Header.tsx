@@ -70,10 +70,11 @@ const Header = () => {
               <span style={{ color: "#FFC72C", fontWeight: 900 }}>
                 comprar Tokens
               </span>
-              <br />
               <span style={{ color: "#FFC72C", fontWeight: 900 }}>
-                inmobiliarios
-              </span>{" "}
+                {" "}
+                inmobiliarios (Activos Virtuales)
+              </span>
+              <br />
               con Fital?
             </Typography>
           </Box>
@@ -90,7 +91,7 @@ const Header = () => {
               }}
             >
               Es una{" "}
-              <span style={{ fontWeight: 900 }}>representación digital</span> de
+              <span style={{ fontWeight: 900 }}>representación virtual</span> de
               una fracción
               <br />
               <span style={{ fontWeight: 900 }}>del inmueble</span> o la
@@ -116,7 +117,7 @@ const Header = () => {
                   padding: "10px 30px",
                 }}
               >
-                Compra tus tokens
+                Compra tus tokens (activos virtuales)
               </Typography>
             </Link>
           </Box>

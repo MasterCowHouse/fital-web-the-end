@@ -81,7 +81,6 @@ const SeccionUnoAmarillo = () => {
               md: "column-reverse",
               lg: "row",
             },
-            
           }}
         >
           <Box component={"img"} src="../img/walletimgUno.png" />
@@ -121,7 +120,6 @@ const SeccionUnoAmarillo = () => {
               md: "column",
               lg: "row",
             },
-            
           }}
         >
           <Box>
@@ -146,14 +144,13 @@ const SeccionUnoAmarillo = () => {
               <br />
               catálogo de Tokens
               <br />
-              disponibles para compra,
-              <br />
-              transferencia y colección.
+              (Activos Virtuales)
+              <br /> disponibles para <br /> compra, transferencia <br />y
+              colección.
             </Typography>
           </Box>
           <Box component={"img"} src="../img/walletimgDos.png" />
         </Box>
-        
       </Box>
       <Box
         ref={elemtoRef2}
@@ -215,7 +212,7 @@ const SeccionUnoAmarillo = () => {
               sm: "column-reverse",
               md: "column-reverse",
               lg: "row",
-            }, 
+            },
           }}
         >
           <Box component={"img"} src="../img/walletimgTres.png" />
@@ -253,7 +250,6 @@ const SeccionUnoAmarillo = () => {
               md: "column",
               lg: "row",
             },
-            
           }}
         >
           <Box>
@@ -286,7 +282,6 @@ const SeccionUnoAmarillo = () => {
           </Box>
           <Box component={"img"} src="../img/walletimgCuatro.png" />
         </Box>
-        
       </Box>
       <Box
         ref={elemtoRef3}
@@ -350,7 +345,6 @@ const SeccionUnoAmarillo = () => {
               md: "column-reverse",
               lg: "row",
             },
-            
           }}
         >
           <Box component={"img"} src="../img/walletimgCinco.png" />
@@ -390,7 +384,6 @@ const SeccionUnoAmarillo = () => {
               md: "column",
               lg: "row",
             },
-            
           }}
         >
           <Box>
@@ -423,7 +416,6 @@ const SeccionUnoAmarillo = () => {
           </Box>
           <Box component={"img"} src="../img/walletimgSeis.png" />
         </Box>
-        
       </Box>
     </>
   );

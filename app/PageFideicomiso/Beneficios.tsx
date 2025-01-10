@@ -16,8 +16,9 @@ const customBeneficios: CustomBeneficios[] = [
     titulo: "Acceso y Gestión en Tiempo Real:",
     texto: (
       <span>
-        Gestión y monitoreo de activos en <br />
-        línea, desde cualquier lugar.
+        Gestión y monitoreo de activos virtuales
+        <br />
+        desde cualquier lugar.
       </span>
     ),
   },
