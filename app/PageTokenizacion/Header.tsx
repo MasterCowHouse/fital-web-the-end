@@ -195,7 +195,8 @@ const Header = () => {
                 mb: 3,
               }}
             >
-              ¡Regístrate ahora y comienza a comprar tokens inmobiliarios!
+              ¡Regístrate ahora y comienza a comprar tokens inmobiliarios
+              (activos virtuales)!
             </Typography>
             {/* <Typography id="transition-modal-description" sx={{ mt: 2 }}>
                         Duis mollis, est non commodo luctus, nisi erat porttitor ligula.

@@ -32,7 +32,6 @@ const Header = () => {
             backgroundSize: "cover",
             width: "100%",
             height: { xs: "none", sm: "100vh", md: "100vh" },
-            // height: "100vh",
             display: "flex",
             alignItems: {
               xs: "center",
@@ -71,8 +70,8 @@ const Header = () => {
                 comprar Tokens
               </span>
               <span style={{ color: "#FFC72C", fontWeight: 900 }}>
-                {" "}
-                inmobiliarios (Activos Virtuales)
+                inmobiliarios <br />
+                (Activos Virtuales)
               </span>
               <br />
               con Fital?
