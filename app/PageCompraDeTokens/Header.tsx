@@ -67,7 +67,7 @@ const Header = () => {
               ¿Sabías que puedes
               <br />
               <span style={{ color: "#FFC72C", fontWeight: 900 }}>
-                comprar Tokens
+                comprar Tokens{" "}
               </span>
               <span style={{ color: "#FFC72C", fontWeight: 900 }}>
                 inmobiliarios <br />
