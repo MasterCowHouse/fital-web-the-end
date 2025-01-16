@@ -26,7 +26,7 @@ const customBlog: CustomBlog[] = [
         tradicional al digital.
       </span>
     ),
-    hrefLink: "/PageBlogArticulo",
+    hrefLink: "/fideicomiso-digital-beneficios",
   },
   {
     id: 2,

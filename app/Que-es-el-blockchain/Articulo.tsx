@@ -452,7 +452,7 @@ const Articulo = () => {
                   justifyContent: "center",
                 }}
               >
-                <Link href={"/PageBlogArticulo"}>
+                <Link href={"/fideicomiso-digital-beneficios"}>
                   <Typography
                     sx={{
                       border: "2px solid #FFC72C",

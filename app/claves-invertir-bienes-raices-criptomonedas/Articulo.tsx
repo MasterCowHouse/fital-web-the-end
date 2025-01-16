@@ -57,7 +57,7 @@ const Articulo = () => {
           <Box
             component={"img"}
             src="../img/claves-invertir-bienes-raices-criptomonedas.png"
-            alt="¿Qué es el blockchain?"
+            alt="invertir en bienes raíces con criptomonedas"
             sx={{
               width: { xs: "100%", sm: "90%", md: "90%", lg: "70%" },
             }}
@@ -500,7 +500,7 @@ const Articulo = () => {
                   justifyContent: "center",
                 }}
               >
-                <Link href={"/PageBlogArticulo"}>
+                <Link href={"/fideicomiso-digital-beneficios"}>
                   <Typography
                     sx={{
                       border: "2px solid #FFC72C",

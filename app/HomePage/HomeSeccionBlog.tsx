@@ -22,7 +22,7 @@ const customBlog: CustomBlog[] = [
         tradicional al digital.
       </span>
     ),
-    hrefBtnBlog: "/PageBlogArticulo",
+    hrefBtnBlog: "/fideicomiso-digital-beneficios",
     btnText: "Leer más",
   },
   {

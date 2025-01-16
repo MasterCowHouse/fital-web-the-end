@@ -57,7 +57,7 @@ const Articulo = () => {
           <Box
             component={"img"}
             src="../img/que-es-la-tokenizacion-inmobiliaria-3.png"
-            alt="¿Qué es el blockchain?"
+            alt="Tokenización Inmobiliaria"
             sx={{
               width: { xs: "100%", sm: "90%", md: "90%", lg: "70%" },
             }}
