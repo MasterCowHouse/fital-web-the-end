@@ -188,8 +188,9 @@ const InvertirTokens = () => {
             textAlign: { xs: "center", sm: "center", md: "left", lg: "left" },
           }}
         >
-          Invertir en nuestros tokens inmobiliarios (activos virtuales) es
+          Invertir en nuestros tokens inmobiliarios (activos virtuales)
           <br />
+          es{" "}
           <span style={{ color: "#26D3CA" }}>
             asegurar tu patrimonio con rendimientos.
           </span>
@@ -230,6 +231,7 @@ const InvertirTokens = () => {
                   color: "#FFFFFF",
                   textAlign: "center",
                   mb: 3,
+                  wordWrap: "normal",
                 }}
               >
                 ¡Regístrate ahora y comienza a comprar tokens inmobiliarios

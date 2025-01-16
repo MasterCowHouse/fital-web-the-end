@@ -22,17 +22,17 @@ interface CustomBtnFooter {
 const customBtnFooter: CustomBtnFooter[] = [
   {
     id: 1,
-    hrefFooterUno: "/",
+    hrefFooterUno: "/PageTokenizacion",
     texto: "Tokenización de inmuebles",
   },
   {
     id: 2,
-    hrefFooterUno: "/",
+    hrefFooterUno: "/PageFideicomiso",
     texto: "Fideicomiso digital",
   },
   {
     id: 3,
-    hrefFooterUno: "/",
+    hrefFooterUno: "/PageWallet",
     texto: "Fital Wallet",
   },
 ];
