@@ -30,21 +30,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        {/* Google Analytics */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-RJ92NGTRWX"
-          strategy="afterInteractive" // Carga después de que la página esté interactiva
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
+      <head></head>
+      {/* Google Analytics */}
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-RJ92NGTRWX"
+        strategy="afterInteractive" // Carga después de que la página esté interactiva
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'G-RJ92NGTRWX');
           `}
-        </Script>
-      </head>
+      </Script>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         style={{
