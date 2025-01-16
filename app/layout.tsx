@@ -5,6 +5,7 @@ import Footerlogos from "./components/Footer/Footerlogos";
 import Footer from "./components/Footer/Footer";
 import TopNav from "./components/NavTop/Topnav";
 import WhatsappButton from "./components/whatsappButton";
+import Script from "next/script";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -29,6 +30,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-RJ92NGTRWX"
+          strategy="afterInteractive" // Carga después de que la página esté interactiva
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-RJ92NGTRWX');
+          `}
+        </Script>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         style={{
