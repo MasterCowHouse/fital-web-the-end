@@ -5,16 +5,18 @@ import TradicionalDigital from "./TradicionalDigital";
 import Video from "./Video";
 import Beneficios from "./Beneficios";
 
-export default function PageTokenizacion () {
-    return (
-        <Box sx={{
-            color: 'white'
-        }}>
-            <Header />
-            <Descripcion />
-            <TradicionalDigital />
-            <Video />
-            <Beneficios />
-        </Box>
-    )
+export default function PageTokenizacion() {
+  return (
+    <Box
+      sx={{
+        color: "white",
+      }}
+    >
+      <Header />
+      <Descripcion />
+      <TradicionalDigital />
+      <Video />
+      <Beneficios />
+    </Box>
+  );
 }
