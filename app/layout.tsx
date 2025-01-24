@@ -40,6 +40,14 @@ export default function RootLayout({
           })(window,document,'script','dataLayer','GTM-KMWMNCDC');`}
         </script>
         {/* End Google Tag Manager */}
+        {/* Cookiebot */}
+        <script
+          id="Cookiebot"
+          src="https://consent.cookiebot.com/uc.js"
+          data-cbid="b68b3417-dd25-455d-b010-38ef2fcd08a6"
+          type="text/javascript"
+        ></script>
+        {/* End Cookiebot */}
       </head>
       {/* Google Analytics */}
       <Script
