@@ -107,7 +107,7 @@ const customDatosContacto: CustomDatosContacto[] = [
         <br />
         55 2310 5517
         <br />
-        55 7684 3626
+        56 6585 6742
       </span>
     ),
   },
