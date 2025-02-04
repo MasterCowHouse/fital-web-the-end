@@ -1,0 +1,265 @@
+{
+  "Menu": {
+    "items": ["Home", "Services", "Blog", "Contact"],
+    "services": [
+      "Real Estate Tokenization",
+      "Digital Trust",
+      "Fital Wallet",
+      "Purchase Tokens"
+    ],
+    "wallet": { "title": "Soon", "description": "Your Wallet" }
+  },
+  "Footer": {
+    "description": "Pioneers in the most secure real estate tokenization model on Web 3",
+    "buttons": ["Real Estate Tokenization", "Digital Trust", "Fital Wallet"],
+    "subscribe": {
+      "title": "Subscribe",
+      "description": "Subscribe to our Newsletter.",
+      "button": "Subscribe",
+      "inputLabel": "example@gmail.com"
+    },
+    "contact": "Contact Information",
+    "legal": {
+      "options": [
+        "Terms and Conditions",
+        "Privacy Policy",
+        "Frequently Asked Questions"
+      ],
+      "rights": "2024 © All rights reserved"
+    }
+  },
+  "Home": {
+    "description": "FITAL is revolutionizing the real estate market through tokenization, transforming physical properties into real estate tokens (virtual assets) to simplify their commercialization. Additionally, it offers digital trust services, ensuring assets are protected, and with our wallet, we connect you to the future of the digital economy.",
+    "cards": {
+      "services": [
+        "Real Estate Tokenization",
+        "Digital Trust",
+        "Fital Wallet",
+        "Purchase Tokens (Virtual Asset)"
+      ],
+      "button": "Learn More"
+    },
+    "video": {
+      "descriptionYellow": "Tokenize your properties ",
+      "description": "and take the first step into the digital real estate revolution.",
+      "button": "I want to tokenize"
+    },
+    "tokenize": {
+      "title": ["How to", "tokenize", "your property", "with FITAL?"],
+      "description": "Start by transferring the property to a trust, turning physical properties into virtual assets that can be easily bought, sold, and managed. This simplifies access to the real estate market, enhances liquidity, and reduces the costs associated with traditional real estate transactions."
+    },
+    "advantages": {
+      "title": "Advantages over traditional property sales.",
+      "cards": [
+        "Buyers can acquire fractions of multiple properties instead of concentrating all their capital on a single property, reducing risk.",
+        "By using blockchain and trusts, many traditional intermediaries are eliminated, significantly reducing transaction costs.",
+        "Tokens (virtual assets) can be easily transferred between buyers and sellers without lengthy and complicated procedures."
+      ],
+      "button": "Learn more"
+    },
+    "offers": {
+      "title": ["FITAL", "offers"],
+      "offers": [
+        "Help attract buyers from all segments",
+        "Streamlining commercialization processes",
+        "Blockchain development experts",
+        "Smart contract development",
+        "Protection and security through digital trusts",
+        "Legal support and regulatory compliance",
+        "Customized marketing and sales campaigns"
+      ]
+    },
+    "blog": {
+      "title": "Stay informed with FITAL",
+      "description": "Discover the latest trends and tips on our blog. Don’t miss out!",
+      "blogs": [
+        "The Evolution from Traditional to Digital Trusts",
+        "What are the differences between traditional property sales and tokenization?",
+        "Security and Transparency: Keys to Investing in Real Estate with Cryptocurrencies"
+      ],
+      "button": "Read More"
+    }
+  },
+  "Tokenize": {
+    "header": {
+      "title": "Tokenize Your Properties:",
+      "description": "The Future of Real Estate with FITAL",
+      "button": "Get Started Now"
+    },
+    "description": {
+      "title": "What is it?",
+      "description": "It’s the process of transforming physical properties into real estate tokens (virtual assets). This allows properties to be divided into smaller fractions, making entry into the real estate market easier and less complicated. Along with the digital trust that holds the properties, hosting them in a blockchain-enabled wallet ensures transparency and security in all transactions."
+    },
+    "services": {
+      "title": [
+        "Turn your assets into",
+        "virtual assets",
+        "and increase their liquidity with",
+        "FITAL"
+      ]
+    },
+    "advantages": {
+      "title": "Advantages of Tokenization",
+      "liquidity": {
+        "title": "Liquidez:",
+        "description": "Tokenization allows physical properties to be divided into tokens (virtual assets) that can be easily bought and sold in secondary markets, enhancing liquidity and making it easier to convert profits into cash."
+      },
+      "security": {
+        "title": "Blockchain Security:",
+        "description": "Blockchain technology protects ownership data and transactions through encryption, preventing tampering and ensuring the integrity and security of investments."
+      },
+      "transparency": {
+        "title": "Transparency:",
+        "description": "All transactions and property records are stored on a blockchain, creating a clear and immutable history that reduces the risk of fraud and errors."
+      }
+    },
+    "standards": {
+      "title": [
+        "Estándar ERC-3643:",
+        "Potenciando la",
+        "Tokenización de",
+        "Activos",
+        "del Mundo Real (RWA)"
+      ],
+      "list": [
+        "Provides a flexible and secure framework for digitally representing properties and other physical assets.",
+        "Enables their transfer and management in a decentralized environment.",
+        "ERC-3643 ensures legal compliance and enhances interoperability across different platforms."
+      ],
+      "benefits": {
+        "title": "Beneficios:",
+        "security": {
+          "title": "Security:",
+          "description": "Strengthens trust in transactions with tokenized assets."
+        },
+        "flexibility": {
+          "title": "Flexibility:",
+          "description": "Adaptable to various types of physical assets."
+        },
+        "compliance": {
+          "title": "Legal Compliance:",
+          "description": "Ensures adherence to current regulations."
+        }
+      }
+    },
+    "services2": {
+      "title": "Looking to tokenize your project?",
+      "description": "Discover our platform tailored just for you."
+    },
+    "stages": {
+      "title": "Stages of Tokenization",
+      "description": ["Physical World", "in Parallel with", "Virtual World"],
+      "contract": "SERVICE CONTRACT SIGNING",
+      "dataCollection": {
+        "title": "DATA COLLECTION",
+        "description": [
+          "Requirements for the trust",
+          "creation, general client",
+          "information form, and ",
+          "beneficial owner form."
+        ]
+      },
+      "asset": "ASSET BALANCE",
+      "trustService": "TRUST SERVICE REQUEST",
+      "trustCreation": "TRUST CREATION",
+      "propertyContribution": "PROPERTY CONTRIBUTION",
+      "dataCollection2": {
+        "title": "DATA COLLECTION",
+        "description": ["Property information is", "gathered."]
+      },
+      "smartContract": {
+        "title": "SMART CONTRACT",
+        "description": [
+          "A smart contract is",
+          "developed on blockchain to",
+          "back the token (virtual asset)."
+        ]
+      },
+      "tokenization": {
+        "title": "TOKENIZATION",
+        "description": [
+          "A project collection is",
+          "created, i.e., the",
+          "tokens (virtual assets)",
+          "of the property."
+        ]
+      },
+      "pti": {
+        "title": "RTI DEVELOPMENT",
+        "description": [
+          "A real estate tokenization",
+          "platform is created for",
+          "commercialization."
+        ]
+      },
+      "management": {
+        "title": "MANAGEMENT AND DISTRIBUTION",
+        "description": [
+          "Revenue generated from",
+          "token (virtual asset) sales",
+          "is distributed directly",
+          "to your project."
+        ]
+      }
+    },
+    "partOf": {
+      "title": "Do you want to be part of FITAL?",
+      "buy": "I want to buy tokens",
+      "sell": "I want to sell tokens"
+    }
+  },
+  "DigitalTrust": {
+    "header": {
+      "title": "Digital Trust:",
+      "description": ["Advanced protection and", "management of your assets."],
+      "button": "Create Your Trust"
+    },
+    "description": {
+      "title": "What is it?",
+      "description": "A digital trust is a legal tool that uses blockchain technology to securely and transparently manage and protect assets, such as money or properties. Everything is managed on digital platforms, making it faster, more accessible, and reliable."
+    },
+    "traditional": {
+      "title": ["Fideicomiso Tradicional", "VS", "Fideicomiso Digital"],
+      "creation": {
+        "title": "Creation Process",
+        "traditional": "Traditional: Requires paperwork and in-person legal procedures.",
+        "digital": "Digital: Managed online quickly and easily."
+      },
+      "management": {
+        "title": "Asset Management",
+        "traditional": "Traditional: Manual and bureaucratic.",
+        "digital": "Digital: Automated and more efficient, using smart contracts."
+      },
+      "transparency": {
+        "title": "Transparency and Security",
+        "traditional": "Traditional: Relies on reports, and information is not accessible in real time.",
+        "digital": "Digital: Transparent and secure thanks to blockchain, with real-time access."
+      },
+      "flexibilty": {
+        "title": "Flexibility",
+        "traditional": "Traditional: Complicated changes requiring new procedures.",
+        "digital": "Digital: More flexible, with instant modifications."
+      },
+      "cost": {
+        "title": "Costs",
+        "traditional": "Traditional: More expensive due to intermediaries and procedures.",
+        "digital": "Digital: Less expensive, eliminating intermediaries."
+      }
+    }
+  },
+  "Video": {
+    "title": ["Manage", "Your Digital", "Trust", "with", "FITAL’s Empire"],
+    "button": "Get Started Now",
+    "form": {
+      "title": "Are you interested in protecting your assets?",
+      "description": "Enter your details, and we will contact you.",
+      "button": "Send",
+      "name": "Name",
+      "telephone": "Phone",
+      "email": "Email",
+      "success": "We will contact you shortly.",
+      "error": "Registration could not be completed."
+    }
+  },
+  "Benefits": { "title": "Benefits" }
+}

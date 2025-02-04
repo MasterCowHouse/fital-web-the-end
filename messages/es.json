@@ -1,0 +1,274 @@
+{
+  "Menu": {
+    "items": ["Inicio", "Servicios", "Blog", "Contacto"],
+    "services": [
+      "Tokenización de Inmuebles",
+      "Fideicomiso Digital",
+      "Fital Wallet",
+      "Compra de Tokens"
+    ],
+    "wallet": { "title": "Próximamente", "description": "Tu Wallet" }
+  },
+  "Footer": {
+    "description": "Pioneros en el modelo de tokenización de inmuebles más seguro de la web 3",
+    "buttons": [
+      "Tokenización de Inmuebles",
+      "Fideicomiso Digital",
+      "Fital Wallet"
+    ],
+    "subscribe": {
+      "title": "Suscríbete",
+      "description": "Suscríbete a nuestro News letter.",
+      "button": "Suscríbirme",
+      "inputLabel": "porejemplo@gmail.com"
+    },
+    "legal": {
+      "options": [
+        "Términos y condiciones",
+        "Política de privacidad",
+        "Preguntas frecuentes"
+      ],
+      "rights": "2024 © Todos los derechos reservados"
+    }
+  },
+  "Home": {
+    "description": "FITAL está revolucionando el mercado inmobiliario a través de la tokenización, convirtiendo propiedades físicas en tokens inmobiliarios (activos virtuales) para facilitar su comercialización. Además, ofrece servicios de fideicomisos digitales, asegurando que los activos estén protegidos y con nuestra wallet te conectamos con el futuro de la economía digital.",
+    "cards": {
+      "services": [
+        "Tokenización de Inmuebles",
+        "Fideicomiso Digital",
+        "Fital Wallet",
+        "Compra de Tokens (Activo Virtual)"
+      ],
+      "button": "Descubre más"
+    },
+    "video": {
+      "descriptionYellow": "Tokeniza tus propiedades ",
+      "description": "y da el primer paso hacia la revolución digital inmobiliaria.",
+      "button": "Tokeniza tus inmuebles"
+    },
+    "tokenize": {
+      "title": ["¿Cómo", "tokenizar", "tu inmueble", "con FITAL?"],
+      "description": "Comienza con la transferencia del inmueble a un fideicomiso, convierte propiedades físicas en activos virtuales que pueden ser fácilmente comprados, vendidos y gestionados. Esto facilita el acceso al mercado inmobiliario, mejora la liquidez y reduce los costos asociados con la comercialización tradicional en bienes  raíces."
+    },
+    "advantages": {
+      "title": "Ventajas frente a la venta tradicional de inmuebles.",
+      "cards": [
+        "Los compradores pueden adquirir fracciones de múltiples propiedades en lugar de concentrar todo su capital en un solo inmueble, reduciendo el riesgo.",
+        "Al usar blockchain y fideicomisos, se eliminan muchos intermediarios  tradicionales, lo que reduce los  costos de transacción.",
+        "Los tokens (activos virtuales) se pueden transferir fácilmente entre compradores y vendedores sin la necesidad de trámites largos y complicados."
+      ],
+      "button": "Más información"
+    },
+    "offers": {
+      "title": ["FITAL", "ofrece"],
+      "offers": [
+        "Ayudar a atraer compradores de todos los segmentos",
+        "Agilizar los procesos de comercialización",
+        "Expertos en desarrollo Blockchain",
+        "Desarrollo de Smart Contracts",
+        "Protección y Seguridad a Través de Fideicomisos Digitales",
+        "Soporte Legal y Cumplimiento Normativo",
+        "Campañas de Marketing y Venta Personalizadas"
+      ]
+    },
+    "blog": {
+      "title": "Infórmate con FITAL",
+      "description": "Descubre las últimas tendencias y consejos en nuestro blog. ¡No te lo pierdas!",
+      "blogs": [
+        "La evolución del Fideicomiso tradicional al digital.",
+        "¿Qué diferencias hay entre la venta tradicional de inmuebles y la tokenización?",
+        "Seguridad y Transparencia: Claves para Invertir en Bienes Raíces con Criptomonedas."
+      ],
+      "button": "Leer más"
+    }
+  },
+  "Tokenize": {
+    "header": {
+      "title": "Tokeniza tus Inmuebles:",
+      "description": "El futuro del mercado inmobiliario con FITAL",
+      "button": "Empieza ahora"
+    },
+    "description": {
+      "title": "¿Qué es?",
+      "description": "Es el proceso de convertir inmuebles físicos en tokens inmobiliarios (activos virtuales). Esto permite que las propiedades sean divididas en fracciones más pequeñas, facilitando la entrada al mercado inmobiliario con menos complicaciones. Además del fideicomiso digital en el que se encuentran los inmuebles, al alojarse en una wallet el blockchain garantiza transparencia y seguridad en todas las transacciones."
+    },
+    "services": {
+      "title": [
+        "Convierte tus bienes en",
+        "activos virtuales",
+        "y aumenta su liquidez con",
+        "FITAL"
+      ]
+    },
+    "advantages": {
+      "title": "Ventajas de la tokenización",
+      "liquidity": {
+        "title": "Liquidez:",
+        "description": "La tokenización permite dividir los inmuebles físicos en tokens (activos virtuales) que pueden comprarse y venderse fácilmente en mercados secundarios, lo que mejora la liquidez y facilita convertir las ganancias en efectivo."
+      },
+      "security": {
+        "title": "Seguridad Blockchain:",
+        "description": "La tecnología blockchain protege los datos de propiedad y las transacciones mediante encriptación, evitando manipulaciones y garantizando la integridad y seguridad de las inversiones."
+      },
+      "transparency": {
+        "title": "Transparencia:",
+        "description": "Todas las transacciones y registros de propiedad se guardan en una blockchain, creando un historial claro e inmutable que reduce el riesgo de fraudes y errores."
+      }
+    },
+    "standards": {
+      "title": [
+        "Estándar ERC-3643:",
+        "Potenciando la",
+        "Tokenización de",
+        "Activos",
+        "del Mundo Real (RWA)"
+      ],
+      "list": [
+        "Proporciona un marco flexible y seguro que permite representar digitalmente propiedades y otros activos físicos.",
+        "Facilita su transferencia y gestión en un entorno descentralizado.",
+        "El ERC-3643 asegura la conformidad legal y mejora la interoperabilidad entre diferentes plataformas."
+      ],
+      "benefits": {
+        "title": "Beneficios:",
+        "security": {
+          "title": "Seguridad:",
+          "description": "Refuerza la confianza en transacciones con activos tokenizados."
+        },
+        "flexibility": {
+          "title": "Flexibilidad:",
+          "description": "Adaptable a diferentes tipos de activos físicos."
+        },
+        "compliance": {
+          "title": "Cumplimiento Legal:",
+          "description": "Garantiza conformidad con regulaciones actuales."
+        }
+      }
+    },
+    "services2": {
+      "title": "¿Buscas tokenizar tu proyecto?",
+      "description": "Conoce nuestra plataforma hecha a medida para ti."
+    },
+    "stages": {
+      "title": "Etapas de la Tokenización",
+      "description": ["Mundo físico", "en paralelo con", "Mundo virtual"],
+      "contract": "FIRMA DE CONTRATO DE SERVICIOS",
+      "dataCollection": {
+        "title": "RECOLECCIÓN DE DATOS",
+        "description": [
+          "Requisitos para la constitució del",
+          "fideicomiso, formato de datos",
+          "generales del cliente y formato",
+          "beneficiario controlador."
+        ]
+      },
+      "asset": "BALANCE DEL PATRIMONIO",
+      "trustService": "SOLICITUD DE SERVICIO FIDUCIARIO",
+      "trustCreation": "CREACIÓN DEL FIDEICOMISO",
+      "propertyContribution": "APORTACIÓN DEL INMUEBLE",
+      "dataCollection2": {
+        "title": "RECOLECCIÓN DE DATOS",
+        "description": ["Recabación de datos de la", "propiedad."]
+      },
+      "smartContract": {
+        "title": "SMART CONTRACT",
+        "description": [
+          "Se desarrolla un contrato",
+          "inteligente en blockchain para",
+          "respaldar el token (activo virtual)."
+        ]
+      },
+      "tokenization": {
+        "title": "TOKENIZACIÓN",
+        "description": [
+          "Se crea una colección del",
+          "proyecto, es decir, los",
+          "tokens (activos virtuales)",
+          "de la propiedad."
+        ]
+      },
+      "pti": {
+        "title": "DESARROLLO PTI",
+        "description": [
+          "Se crea una plataforma de",
+          "tokenización inmobiliaria para la",
+          "comercialización."
+        ]
+      },
+      "management": {
+        "title": "GESTIÓN Y DISTRIBUCIÓN",
+        "description": [
+          "Los ingresos generados por la",
+          "venta de los tokens (activos virtuales) se",
+          "distribuyen directamente",
+          "en su proyecto."
+        ]
+      }
+    },
+    "partOf": {
+      "title": "¿Quieres ser parte de FITAL?",
+      "buy": "Quiero comprar tokens",
+      "sell": "Quiero vender tokens"
+    }
+  },
+  "DigitalTrust": {
+    "header": {
+      "title": "Fideicomiso Digital:",
+      "description": ["Protección y gestión", "avanzada de tus bienes."],
+      "button": "Crea tu Fideicomiso"
+    },
+    "description": {
+      "title": "¿Qué es?",
+      "description": "Un fideicomiso digital es una herramienta legal que usa tecnología blockchain para administrar y proteger bienes, como dinero o propiedades, de forma segura y transparente. Todo se gestiona en plataformas digitales, lo que lo hace más rápido, accesible y confiable."
+    },
+    "traditional": {
+      "title": ["Fideicomiso Tradicional", "VS", "Fideicomiso Digital"],
+      "creation": {
+        "title": "Proceso de creación",
+        "traditional": "Tradicional: Requiere papeleo y trámites legales presenciales.",
+        "digital": "Digital: Se gestiona en línea de forma rápida y sencilla."
+      },
+      "management": {
+        "title": "Gestión de bienes",
+        "traditional": "Tradicional: Manual y burocrática.",
+        "digital": "Digital: Automatizada y más eficiente, usando contratos inteligentes."
+      },
+      "transparency": {
+        "title": "Transparencia y Seguridad",
+        "traditional": "Tradicional: Depende de reportes y la información no es accesible en tiempo real.",
+        "digital": "Digital: Transparente y seguro gracias a Blockchain, con acceso en tiempo real."
+      },
+      "flexibilty": {
+        "title": "Flexibilidad",
+        "traditional": "Tradicional: Cambios complicados y requieren nuevos trámites.",
+        "digital": "Digital: Más flexible y modificaciones al instante."
+      },
+      "cost": {
+        "title": "Costos",
+        "traditional": "Tradicional: Más caro por los intermediarios y trámites.",
+        "digital": "Digital: Menos costoso, al eliminar intermediarios."
+      }
+    }
+  },
+  "Video": {
+    "title": [
+      "Gestiona tu",
+      "Fideicomiso Digital",
+      "con",
+      "Imperio",
+      "de FITAL"
+    ],
+    "button": "Empieza ahora",
+    "form": {
+      "title": "¿Te interesa proteger tu patrimonio?",
+      "description": "Pon tus datos y nos pondremos en contacto contigo.",
+      "button": "Enviar",
+      "name": "Nombre del Contacto",
+      "telephone": "Teléfono",
+      "email": "Email",
+      "success": "Nos pondremos en contacto contigo a la brevedad.",
+      "error": "No se pudo completar el registro."
+    }
+  },
+  "Benefits": { "title": "Beneficios" }
+}
