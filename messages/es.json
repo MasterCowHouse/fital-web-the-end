@@ -24,8 +24,8 @@
     },
     "legal": {
       "options": [
-        "Términos y condiciones",
         "Política de privacidad",
+        "Términos y condiciones",
         "Preguntas frecuentes"
       ],
       "rights": "2024 © Todos los derechos reservados"
