@@ -1,7 +1,7 @@
 "use client";
 import { Box, TextField, Typography } from "@mui/material";
 import Image from "next/image";
-import styles from "@/app/PageCompraDeTokens/component.module.css";
+import styles from "./component.module.css";
 import imgIconoUno from "@/public/img/Registrate.png";
 import imgIconoDos from "@/public/img/Selecciona el inmueble.png";
 import imgIconoTres from "@/public/img/Diversifica.png";
