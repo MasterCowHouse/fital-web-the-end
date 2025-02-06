@@ -211,7 +211,7 @@ export default function TopNav() {
             {t.raw("items")[3]}
           </Link>
         </Box>
-        <Box className="hidden md:flex">
+        <Box display={"flex"}>
           <Box className="flex">
             <Box
               className="timer-wrapper"
@@ -263,28 +263,36 @@ export default function TopNav() {
                 </Box>
               </Box>
             </Box>
-
-            <Button
-              onClick={() => {
-                if (lang === "es") {
-                  setLang("en");
-                } else setLang("es");
-              }}
-              sx={{
-                bgcolor: "#524092",
-                border: 1,
-                borderColor: "#707070",
-                borderRadius: 40,
-                width: 55,
-                height: 55,
-                color: "#FFFFFF",
-                minWidth: 0,
-                ml: 5,
-              }}
-            >
-              {lang}
-            </Button>
           </Box>
+
+          <Button
+            onClick={() => {
+              if (lang === "es") {
+                setLang("en");
+              } else setLang("es");
+            }}
+            sx={{
+              bgcolor: "#524092",
+              border: 1,
+              borderColor: "#707070",
+              borderRadius: 40,
+              width: 55,
+              height: 55,
+              color: "#FFFFFF",
+              minWidth: 0,
+              ml: 5,
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <Image
+              src={lang === "es" ? "/img/mexico.png" : "/img/usa.png"}
+              alt={lang === "es" ? "Mexico Flag" : "USA Flag"}
+              width={30}
+              height={30}
+            />
+          </Button>
         </Box>
         {/* Icono de menu */}
         <Box
