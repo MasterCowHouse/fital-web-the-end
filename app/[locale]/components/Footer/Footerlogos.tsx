@@ -4,6 +4,7 @@ import Link from "@mui/material/Link";
 import { useState } from "react";
 import Backdrop from "@mui/material/Backdrop";
 import { useTranslations } from "next-intl";
+import { useRouter } from "next/router";
 interface CustomLogosFooter {
   id: number;
   logosFooter: string;
@@ -43,7 +44,7 @@ const customLogosFooter: CustomLogosFooter[] = [
 const Footerlogos = () => {
   const [openTerms, setOpenTerms] = useState<boolean | null>(null);
   const [openPrivacy, setOpenPrivacy] = useState<boolean | null>(null);
-
+  // const router = useRouter();
   const t = useTranslations("Footer");
 
   return (
@@ -319,7 +320,9 @@ const Footerlogos = () => {
             </Box>
           </Fade>
         </Modal>
-        <Typography>{t.raw("legal.options")[2]}</Typography>
+        <Link href={"/es/Questions"}>
+          <Typography>{t.raw("legal.options")[2]}</Typography>
+        </Link>
       </Box>
       <Box
         sx={{
