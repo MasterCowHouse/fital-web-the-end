@@ -75,7 +75,7 @@ const Header = () => {
       if (response?.success) {
         handleClose();
         Swal.fire({
-          title: "Nos pondremos en contacto contigo a la brevedad.",
+          title: t("form.success"),
           icon: "success",
         });
         setFormData({
@@ -88,7 +88,7 @@ const Header = () => {
       } else {
         Swal.fire({
           title: "Error",
-          text: "No se pudo completar el registro.",
+          text: t("form.error"),
           icon: "error",
         });
       }
@@ -195,8 +195,7 @@ const Header = () => {
                 mb: 3,
               }}
             >
-              ¡Regístrate ahora y comienza a comprar tokens inmobiliarios
-              (activos virtuales)!
+              {t("form.title")}
             </Typography>
             {/* <Typography id="transition-modal-description" sx={{ mt: 2 }}>
                         Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
@@ -205,7 +204,7 @@ const Header = () => {
               <form onSubmit={handleSubmit}>
                 <TextField
                   fullWidth
-                  label="Nombre del Contacto"
+                  label={t("form.name")}
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
@@ -224,7 +223,7 @@ const Header = () => {
                 />
                 <TextField
                   fullWidth
-                  label="Teléfono"
+                  label={t("form.telephone")}
                   name="telephone"
                   value={formData.telephone}
                   onChange={handleChange}
@@ -244,7 +243,7 @@ const Header = () => {
                 />
                 <TextField
                   fullWidth
-                  label="Email"
+                  label={t("form.email")}
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
@@ -269,7 +268,7 @@ const Header = () => {
                   fullWidth
                   sx={{ marginTop: 2 }}
                 >
-                  Enviar
+                  {t("form.button")}
                 </Button>
               </form>
             </ThemeProvider>

@@ -9,59 +9,6 @@ interface CustomBeneficios {
   texto: JSX.Element;
 }
 
-const customBeneficios: CustomBeneficios[] = [
-  {
-    id: 1,
-    iconoBeneficios: "../img/AccesoyGestionenTiempoReal.svg",
-    textAlt: "Acceso y Gestión en Tiempo Real",
-    titulo: "Acceso y Gestión en Tiempo Real:",
-    texto: (
-      <span>
-        Gestión y monitoreo de activos virtuales
-        <br />
-        desde cualquier lugar.
-      </span>
-    ),
-  },
-  {
-    id: 2,
-    iconoBeneficios: "../img/Mayor Transparencia.svg",
-    textAlt: "Mayor Transparencia",
-    titulo: "Mayor Transparencia:",
-    texto: (
-      <span>
-        Registro inmutable de <br />
-        transacciones con tecnología <br />
-        blockchain.
-      </span>
-    ),
-  },
-  {
-    id: 3,
-    iconoBeneficios: "../img/Reduccion de Costos y Eficiencia.svg",
-    textAlt: "Reducción de Costos y Eficiencia",
-    titulo: "Reducción de Costos y Eficiencia:",
-    texto: (
-      <span>
-        Menos intermediarios, procesos <br />
-        más rápidos y automatizados.
-      </span>
-    ),
-  },
-  {
-    id: 4,
-    iconoBeneficios: "../img/Flexibilidad y Personalizacion.svg",
-    textAlt: "Flexibilidad y Personalización",
-    titulo: "Flexibilidad y Personalización:",
-    texto: (
-      <span>
-        Ajustes rápidos y personalizados en <br />
-        la distribución de activos.
-      </span>
-    ),
-  },
-];
-
 interface CustomBeneficiosDos {
   id: number;
   iconoBeneficiosDos: string;
@@ -70,48 +17,105 @@ interface CustomBeneficiosDos {
   textoDos: JSX.Element;
 }
 
-const customBeneficiosDos: CustomBeneficiosDos[] = [
-  {
-    id: 1,
-    iconoBeneficiosDos: "../img/Seguridad y Proteccion.svg",
-    textAltDos: "Seguridad y Protección",
-    tituloDos: "Seguridad y Protección:",
-    textoDos: (
-      <span>
-        Mayor seguridad contra fraudes y <br />
-        alteraciones con tecnología <br />
-        avanzada.
-      </span>
-    ),
-  },
-  {
-    id: 2,
-    iconoBeneficiosDos: "../img/Acceso Global.svg",
-    textAltDos: "Acceso Global",
-    tituloDos: "Acceso Global:",
-    textoDos: (
-      <span>
-        Administración y distribución de <br />
-        activos sin barreras geográficas.
-      </span>
-    ),
-  },
-  {
-    id: 3,
-    iconoBeneficiosDos: "../img/Rapidez en la Implementacion.svg",
-    textAltDos: "Rapidez en la Implementación",
-    tituloDos: "Rapidez en la Implementación:",
-    textoDos: (
-      <span>
-        Creación y activación del <br />
-        fideicomiso de manera rápida y <br /> eficiente.
-      </span>
-    ),
-  },
-];
-
 const Beneficios = () => {
   const t = useTranslations("Benefits");
+
+  const customBeneficios: CustomBeneficios[] = [
+    {
+      id: 1,
+      iconoBeneficios: "../img/AccesoyGestionenTiempoReal.svg",
+      textAlt: "Acceso y Gestión en Tiempo Real",
+      titulo: t("management.title"),
+      texto: (
+        <span>
+          {t.raw("management.description")[0]}
+          <br />
+          {t.raw("management.description")[1]}
+        </span>
+      ),
+    },
+    {
+      id: 2,
+      iconoBeneficios: "../img/Mayor Transparencia.svg",
+      textAlt: "Mayor Transparencia",
+      titulo: t("transparency.title"),
+      texto: (
+        <span>
+          {t.raw("transparency.description")[0]}
+          <br />
+          {t.raw("transparency.description")[1]}
+          <br />
+          {t.raw("transparency.description")[2]}
+        </span>
+      ),
+    },
+    {
+      id: 3,
+      iconoBeneficios: "../img/Reduccion de Costos y Eficiencia.svg",
+      textAlt: "Reducción de Costos y Eficiencia",
+      titulo: t("cost.title"),
+      texto: (
+        <span>
+          {t.raw("cost.description")[0]}
+          <br />
+          {t.raw("cost.description")[1]}
+        </span>
+      ),
+    },
+    {
+      id: 4,
+      iconoBeneficios: "../img/Flexibilidad y Personalizacion.svg",
+      textAlt: "Flexibilidad y Personalización",
+      titulo: t("cost.title"),
+      texto: (
+        <span>
+          {t.raw("flexibilty.description")[0]}
+          <br />
+          {t.raw("flexibilty.description")[1]}
+        </span>
+      ),
+    },
+  ];
+  const customBeneficiosDos: CustomBeneficiosDos[] = [
+    {
+      id: 1,
+      iconoBeneficiosDos: "../img/Seguridad y Proteccion.svg",
+      textAltDos: "Seguridad y Protección",
+      tituloDos: t("security.title"),
+      textoDos: (
+        <span>
+          {t.raw("security.description")[0]} <br />
+          {t.raw("security.description")[1]} <br />
+          {t.raw("security.description")[2]}
+        </span>
+      ),
+    },
+    {
+      id: 2,
+      iconoBeneficiosDos: "../img/Acceso Global.svg",
+      textAltDos: "Acceso Global",
+      tituloDos: t("access.title"),
+      textoDos: (
+        <span>
+          {t.raw("access.description")[0]} <br />
+          {t.raw("access.description")[1]}
+        </span>
+      ),
+    },
+    {
+      id: 3,
+      iconoBeneficiosDos: "../img/Rapidez en la Implementacion.svg",
+      textAltDos: "Rapidez en la Implementación",
+      tituloDos: t("implementation.title"),
+      textoDos: (
+        <span>
+          {t.raw("implementation.description")[0]} <br />
+          {t.raw("implementation.description")[1]} <br />
+          {t.raw("implementation.description")[2]}
+        </span>
+      ),
+    },
+  ];
 
   return (
     <Box>

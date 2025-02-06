@@ -1,7 +1,10 @@
 import { Link } from "@/navigation";
 import { Box, Typography } from "@mui/material";
+import { useTranslations } from "next-intl";
 
 const HeaderLaEvolucion = () => {
+  const t = useTranslations("Blog.evolution");
+
   return (
     <Box
       sx={{
@@ -31,11 +34,13 @@ const HeaderLaEvolucion = () => {
               },
             }}
           >
-            La <span style={{ color: "#FFC72C" }}>evolución del </span>
+            {t.raw("title")[0]}{" "}
+            <span style={{ color: "#FFC72C" }}>{t.raw("title")[1]} </span>
             <br />
-            <span style={{ color: "#FFC72C" }}>Fideicomiso</span> tradicional
+            <span style={{ color: "#FFC72C" }}>{t.raw("title")[2]}</span>{" "}
+            {t.raw("title")[3]}
             <br />
-            al digital.
+            {t.raw("title")[4]}
             <br />
             <span style={{ color: "#FFC72C", fontSize: "30px" }}>
               16/10/2024
@@ -62,7 +67,7 @@ const HeaderLaEvolucion = () => {
                 padding: "15px 0px",
               }}
             >
-              Leer más
+              {t("button")}
             </Typography>
           </Link>
         </Box>
@@ -74,11 +79,12 @@ const HeaderLaEvolucion = () => {
       >
         <Box
           component={"img"}
-          src="./img/fideicomiso.png"
+          src="../img/fideicomiso.png"
           alt="Fideicomiso"
           sx={{
             width: { xs: "490px", sm: "560px", md: "760px", lg: "760px" },
             height: { xs: "320px", sm: "400px", md: "500px", lg: "500px" },
+            mt: 10,
           }}
         />
       </Box>

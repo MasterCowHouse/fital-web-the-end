@@ -2,6 +2,7 @@ import { Box, Typography } from "@mui/material";
 import Image from "next/image";
 import { alpha } from "@mui/material";
 import { Link } from "@/navigation";
+import { useTranslations } from "next-intl";
 
 interface CustomBlog {
   id: number;
@@ -16,7 +17,7 @@ interface CustomBlog {
 const customBlog: CustomBlog[] = [
   {
     id: 1,
-    bg: "./img/fideicomiso.png",
+    bg: "../img/fideicomiso.png",
     numero: "5",
     corazon: "../img/corazon.svg",
     // fecha: '09/09/2024',
@@ -105,6 +106,94 @@ const customBlog: CustomBlog[] = [
 ];
 
 const Articulos = () => {
+  const t = useTranslations("Blog.body");
+
+  const customBlog: CustomBlog[] = [
+    {
+      id: 1,
+      bg: "../img/fideicomiso.png",
+      numero: "5",
+      corazon: "../img/corazon.svg",
+      // fecha: '09/09/2024',
+      texto: (
+        <span>
+          {t.raw("traditional")[0]} <br />
+          {t.raw("traditional")[1]}
+        </span>
+      ),
+      hrefLink: "/fideicomiso-digital-beneficios",
+    },
+    {
+      id: 2,
+      bg: "../img/Que-es-el-blockchain.png",
+      numero: "5",
+      corazon: "../img/corazon.svg",
+      // fecha: '16/09/2024',
+      texto: (
+        <span>
+          {t.raw("blockchain")[0]}
+          <br />
+          {t.raw("blockchain")[1]} <br />
+          {t.raw("blockchain")[2]}
+        </span>
+      ),
+      hrefLink: "/Que-es-el-blockchain",
+    },
+    {
+      id: 3,
+      bg: "../img/que-es-la-tokenizacion-inmobiliaria-3.png",
+      numero: "5",
+      corazon: "../img/corazon.svg",
+      // fecha: '14/08/2024',
+      texto: (
+        <span>
+          {t.raw("tokenization")[0]} <br />
+          {t.raw("tokenization")[1]} <br />
+          {t.raw("tokenization")[2]}
+        </span>
+      ),
+      hrefLink: "/que-es-la-tokenizacion-inmobiliaria",
+    },
+    {
+      id: 4,
+      bg: "../img/claves-invertir-bienes-raices-criptomonedas.png",
+      numero: "5",
+      corazon: "../img/corazon.svg",
+      // fecha: '14/08/2024',
+      texto: (
+        <span>
+          {t.raw("investing")[0]} <br />
+          {t.raw("investing")[1]}
+        </span>
+      ),
+      hrefLink: "/claves-invertir-bienes-raices-criptomonedas",
+    },
+    {
+      id: 5,
+      bg: "../img/diferencia-entre-venta-tradicional-de-inmuebles-y-tokenizacion-de-inmuebles.png",
+      numero: "5",
+      corazon: "../img/corazon.svg",
+      // fecha: '14/08/2024',
+      texto: <span>{t("differences")}</span>,
+      hrefLink:
+        "/diferencia-entre-venta-tradicional-de-inmuebles-y-tokenizacion-de-inmuebles",
+    },
+    {
+      id: 6,
+      bg: "../img/diferencia-wallet-app-bancaria.png",
+      numero: "5",
+      corazon: "../img/corazon.svg",
+      // fecha: '14/08/2024',
+      texto: (
+        <span>
+          {t.raw("vs")[0]} <br />
+          {t.raw("vs")[1]}
+        </span>
+      ),
+      hrefLink: "/diferencia-wallet-app-bancaria",
+    },
+  ];
+
   return (
     <Box>
       <Box
@@ -198,7 +287,7 @@ const Articulos = () => {
                     padding: "10px 0px",
                   }}
                 >
-                  Leer más
+                  {t("button")}
                 </Typography>
               </Link>
             </Box>

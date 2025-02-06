@@ -1,7 +1,10 @@
 import { Box, Typography } from "@mui/material";
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 
 const Dudas = () => {
+  const t = useTranslations("BuyToken.doubts");
+
   return (
     <Box>
       <Box
@@ -18,7 +21,7 @@ const Dudas = () => {
               textAlign: "center",
             }}
           >
-            ¿Dudas?
+            {t("title")}
           </Typography>
         </Box>
         <Box>
@@ -28,11 +31,12 @@ const Dudas = () => {
               textAlign: "center",
             }}
           >
-            Habla con{" "}
-            <span style={{ fontWeight: 900 }}>nuestros expertos.</span>
+            {t.raw("description")[0]}{" "}
+            <span style={{ fontWeight: 900 }}>{t.raw("description")[1]}</span>
             <br />
-            Estamos para <span style={{ fontWeight: 900 }}>apoyarte</span> en el
-            camino.
+            {t.raw("description")[2]}{" "}
+            <span style={{ fontWeight: 900 }}>{t.raw("description")[3]}</span>{" "}
+            {t.raw("description")[4]}
           </Typography>
         </Box>
       </Box>
@@ -57,7 +61,7 @@ const Dudas = () => {
               padding: "10px 0px",
             }}
           >
-            Contacta a un experto
+            {t("button")}
           </Typography>
         </Link>
       </Box>
