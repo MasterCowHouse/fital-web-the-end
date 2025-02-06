@@ -1,8 +1,7 @@
-// @ts-nocheck
 "use client";
 
 import { Box } from "@mui/material";
-import { useEffect, useState, useTransition } from "react";
+import { useEffect, useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai"; //libreria instalado
 import Image from "next/image";
 import logo from "@/public/img/logo-fital.svg";
@@ -21,10 +20,8 @@ import ExpandLess from "@mui/icons-material/ExpandLess";
 import ExpandMore from "@mui/icons-material/ExpandMore";
 import List from "@mui/material/List";
 import { useTranslations } from "next-intl";
-import { Link } from "@/navigation";
-import { useTranslation } from "react-i18next";
-import { useRouter } from "next/router";
-import { useParams, usePathname } from "next/navigation";
+import { Link, usePathname, useRouter } from "@/navigation";
+import { useParams } from "next/navigation";
 
 export default function TopNav() {
   // Dropdown
@@ -75,21 +72,14 @@ export default function TopNav() {
   }, []);
 
   const t = useTranslations("Menu");
-  // const [lang, setLang] = useState<string>("es");
-  // const [isPending, startTransition] = useTransition();
-  // const pathname = usePathname();
-  // const params = useParams();
-  // const onClick = (lang: string) => {
-  //   startTransition(() => {
-  //     router.replace(
-  //       {
-  //         pathname,
-  //         params,
-  //       },
-  //       { locale: lang }
-  //     );
-  //   });
-  // };
+  const { locale } = useParams<{ locale: string }>();
+  const [lang, setLang] = useState<string>(locale);
+  const router = useRouter();
+  const pathname = usePathname();
+
+  useEffect(() => {
+    router.push(pathname, { locale: lang });
+  }, [lang]);
 
   return (
     <Box className="bg-[#352B5E] w-full ease-in duration-300 fixed top-0 left-0 z-10">
@@ -273,24 +263,27 @@ export default function TopNav() {
                 </Box>
               </Box>
             </Box>
-            {/* <Button
+
+            <Button
               onClick={() => {
                 if (lang === "es") {
                   setLang("en");
-                  onClick("en");
-                }
+                } else setLang("es");
               }}
               sx={{
                 bgcolor: "#524092",
                 border: 1,
                 borderColor: "#707070",
-                borderRadius: 30,
-                width: 75,
-                height: 75,
+                borderRadius: 40,
+                width: 55,
+                height: 55,
+                color: "#FFFFFF",
+                minWidth: 0,
+                ml: 5,
               }}
             >
               {lang}
-            </Button> */}
+            </Button>
           </Box>
         </Box>
         {/* Icono de menu */}
