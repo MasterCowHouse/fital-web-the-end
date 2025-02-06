@@ -11,6 +11,7 @@ import Button from "@mui/material/Button";
 import { FormEvent, useState } from "react";
 import { createContact } from "../../services/contact";
 import Swal from "sweetalert2";
+import { useTranslations } from "next-intl";
 
 export const customTheme = (outerTheme: Theme) =>
   createTheme({
@@ -81,6 +82,8 @@ export const customTheme = (outerTheme: Theme) =>
   });
 
 const Header = () => {
+  const t = useTranslations("Contact");
+
   const outerTheme = useTheme();
   const [formData, setFormData] = useState({
     owner_id: "",
@@ -119,7 +122,7 @@ const Header = () => {
       const response = await createContact(payload);
       if (response?.success) {
         Swal.fire({
-          title: "Nos pondremos en contacto contigo a la brevedad.",
+          title: t("form.success"),
           icon: "success",
         });
         setFormData({
@@ -132,7 +135,7 @@ const Header = () => {
       } else {
         Swal.fire({
           title: "Error",
-          text: "No se pudo completar el registro.",
+          text: t("form.error"),
           icon: "error",
         });
       }
@@ -158,7 +161,7 @@ const Header = () => {
             textAlign: "center",
           }}
         >
-          Regístrate
+          {t("title")}
         </Typography>
         <Typography
           sx={{
@@ -166,16 +169,16 @@ const Header = () => {
             padding: "0px 0px 30px 0px",
           }}
         >
-          Contacta con nosotros
+          {t.raw("description")[0]}
           <br />
-          Estamos aquí para escucharte y responder a tus preguntas.
+          {t.raw("description")[1]}
         </Typography>
       </Box>
       <ThemeProvider theme={customTheme(outerTheme)}>
         <form onSubmit={handleSubmit}>
           <TextField
             fullWidth
-            label="Nombre del Contacto"
+            label={t("form.name")}
             name="name"
             value={formData.name}
             onChange={handleChange}
@@ -194,7 +197,7 @@ const Header = () => {
           />
           <TextField
             fullWidth
-            label="Teléfono"
+            label={t("form.telephone")}
             name="telephone"
             value={formData.telephone}
             onChange={handleChange}
@@ -214,7 +217,7 @@ const Header = () => {
           />
           <TextField
             fullWidth
-            label="Email"
+            label={t("form.email")}
             name="email"
             value={formData.email}
             onChange={handleChange}
@@ -239,7 +242,7 @@ const Header = () => {
             fullWidth
             sx={{ marginTop: 2 }}
           >
-            Enviar
+            {t("button")}
           </Button>
         </form>
       </ThemeProvider>

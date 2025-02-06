@@ -1,7 +1,8 @@
+// @ts-nocheck
 "use client";
 
 import { Box } from "@mui/material";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useTransition } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai"; //libreria instalado
 import Image from "next/image";
 import logo from "@/public/img/logo-fital.svg";
@@ -21,6 +22,9 @@ import ExpandMore from "@mui/icons-material/ExpandMore";
 import List from "@mui/material/List";
 import { useTranslations } from "next-intl";
 import { Link } from "@/navigation";
+import { useTranslation } from "react-i18next";
+import { useRouter } from "next/router";
+import { useParams, usePathname } from "next/navigation";
 
 export default function TopNav() {
   // Dropdown
@@ -32,9 +36,7 @@ export default function TopNav() {
   const handleClose = () => {
     setAnchorEl(null);
   };
-  // End Dropdown
-  // nuevo
-  // const [openAbrir, setOpenAbrir] = React.useState<boolean>(true);
+
   const [openAbrir, setOpenAbrir] = React.useState<boolean>(false);
 
   const handleClickDos = () => {
@@ -48,9 +50,6 @@ export default function TopNav() {
   };
   // Contador
   const [days, setDays] = useState<number>(0);
-  //   const [hours, setHours] = useState<number>(0);
-  //   const [minutes, setMinutes] = useState<number>(0);
-  //   const [seconds, setSeconds] = useState<number>(0);
 
   useEffect(() => {
     // const target = new Date("12/13/2024 23:59:59");
@@ -76,6 +75,22 @@ export default function TopNav() {
   }, []);
 
   const t = useTranslations("Menu");
+  // const [lang, setLang] = useState<string>("es");
+  // const [isPending, startTransition] = useTransition();
+  // const pathname = usePathname();
+  // const params = useParams();
+  // const onClick = (lang: string) => {
+  //   startTransition(() => {
+  //     router.replace(
+  //       {
+  //         pathname,
+  //         params,
+  //       },
+  //       { locale: lang }
+  //     );
+  //   });
+  // };
+
   return (
     <Box className="bg-[#352B5E] w-full ease-in duration-300 fixed top-0 left-0 z-10">
       <Box className="max-w-[1366px] mx-auto h-[100px] flex justify-between items-center p-4">
@@ -244,30 +259,6 @@ export default function TopNav() {
                       {/* {days} días */}
                       {t("wallet.title")}
                     </Typography>
-                    {/* <Typography
-                      className="time"
-                      sx={{
-                        marginLeft: "10px",
-                      }}
-                    >
-                      {hours}-horas /
-                    </Typography> */}
-                    {/* <Typography
-                      className="time"
-                      sx={{
-                        marginLeft: "10px",
-                      }}
-                    >
-                      {minutes}-minutos /
-                    </Typography>
-                    <Typography
-                      className="time"
-                      sx={{
-                        marginLeft: "10px",
-                      }}
-                    >
-                      {seconds}-segundos
-                    </Typography> */}
                   </Box>
                   <Box>
                     <Typography
@@ -282,6 +273,24 @@ export default function TopNav() {
                 </Box>
               </Box>
             </Box>
+            {/* <Button
+              onClick={() => {
+                if (lang === "es") {
+                  setLang("en");
+                  onClick("en");
+                }
+              }}
+              sx={{
+                bgcolor: "#524092",
+                border: 1,
+                borderColor: "#707070",
+                borderRadius: 30,
+                width: 75,
+                height: 75,
+              }}
+            >
+              {lang}
+            </Button> */}
           </Box>
         </Box>
         {/* Icono de menu */}

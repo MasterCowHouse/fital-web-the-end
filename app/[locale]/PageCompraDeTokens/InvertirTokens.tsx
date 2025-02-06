@@ -23,6 +23,7 @@ import {
 } from "@mui/material/styles";
 import { createContact } from "../../services/contact";
 import Swal from "sweetalert2";
+import { useTranslations } from "next-intl";
 
 // Modal
 const style = {
@@ -106,6 +107,7 @@ const customTheme = (outerTheme: Theme) =>
   });
 
 const InvertirTokens = () => {
+  const t = useTranslations("BuyToken.invest");
   const [formData, setFormData] = useState({
     owner_id: "",
     campaign_id: "",
@@ -144,7 +146,7 @@ const InvertirTokens = () => {
       if (response?.success) {
         handleClose();
         Swal.fire({
-          title: "¡Registro exitoso!",
+          title: t("form.success"),
           icon: "success",
         });
         setFormData({
@@ -157,7 +159,7 @@ const InvertirTokens = () => {
       } else {
         Swal.fire({
           title: "Error",
-          text: "No se pudo completar el registro.",
+          text: t("form.error"),
           icon: "error",
         });
       }
@@ -188,12 +190,10 @@ const InvertirTokens = () => {
             textAlign: { xs: "center", sm: "center", md: "left", lg: "left" },
           }}
         >
-          Invertir en nuestros tokens inmobiliarios (activos virtuales)
+          {t.raw("title")[0]}
           <br />
-          es{" "}
-          <span style={{ color: "#26D3CA" }}>
-            asegurar tu patrimonio con rendimientos.
-          </span>
+          {t.raw("title")[1]}{" "}
+          <span style={{ color: "#26D3CA" }}>{t.raw("title")[2]}</span>
         </Typography>
         {/* //Modal */}
         <Button
@@ -206,7 +206,7 @@ const InvertirTokens = () => {
             color: "#FFFFFF",
           }}
         >
-          Regístrate
+          {t("button")}
         </Button>
         <Modal
           aria-labelledby="transition-modal-title"
@@ -234,8 +234,7 @@ const InvertirTokens = () => {
                   wordWrap: "normal",
                 }}
               >
-                ¡Regístrate ahora y comienza a comprar tokens inmobiliarios
-                (activos virtuales)!
+                {t("form.title")}
               </Typography>
               {/* <Typography id="transition-modal-description" sx={{ mt: 2 }}>
                         Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
@@ -244,7 +243,7 @@ const InvertirTokens = () => {
                 <form onSubmit={handleSubmit}>
                   <TextField
                     fullWidth
-                    label="Nombre del Contacto"
+                    label={t("form.name")}
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
@@ -263,7 +262,7 @@ const InvertirTokens = () => {
                   />
                   <TextField
                     fullWidth
-                    label="Teléfono"
+                    label={t("form.telephone")}
                     name="telephone"
                     value={formData.telephone}
                     onChange={handleChange}
@@ -283,7 +282,7 @@ const InvertirTokens = () => {
                   />
                   <TextField
                     fullWidth
-                    label="Email"
+                    label={t("form.email")}
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
@@ -308,7 +307,7 @@ const InvertirTokens = () => {
                     fullWidth
                     sx={{ marginTop: 2 }}
                   >
-                    Enviar
+                    {t("form.button")}
                   </Button>
                 </form>
               </ThemeProvider>
@@ -364,15 +363,15 @@ const InvertirTokens = () => {
               fontSize: "25px",
             }}
           >
-            Regístrate para entrar
+            {t.raw("steps.first")[0]}
             <br />
-            a la revolución
+            {t.raw("steps.first")[1]}
             <br />
-            inmobiliaria. A partir
+            {t.raw("steps.first")[2]}
             <br />
-            de ahí te apoyaremos
+            {t.raw("steps.first")[3]}
             <br />
-            en cada paso.
+            {t.raw("steps.first")[4]}
           </Typography>
           <Image
             src={imgIconoUno}
@@ -407,9 +406,9 @@ const InvertirTokens = () => {
               fontSize: "25px",
             }}
           >
-            Selecciona el
+            {t.raw("steps.second")[0]}
             <br />
-            inmueble
+            {t.raw("steps.second")[1]}
           </Typography>
           <Image
             src={imgIconoDos}
@@ -448,19 +447,19 @@ const InvertirTokens = () => {
               fontSize: "25px",
             }}
           >
-            Diversifica tu
+            {t.raw("steps.third")[0]}
             <br />
-            portfolio comprando
+            {t.raw("steps.third")[1]}
             <br />
-            uno o varios inmuebles.
+            {t.raw("steps.third")[2]}
             <br />
-            La oferta de tokens
-            <br /> (activos virtuales) varía.
+            {t.raw("steps.third")[3]}
+            <br /> {t.raw("steps.third")[4]}
             <br />
             <br />
             <span style={{ fontWeight: 900 }}>
-              ¡Algunos inmuebles <br />
-              duran pocos minutos!
+              {t.raw("steps.third")[5]} <br />
+              {t.raw("steps.third")[6]}
             </span>
           </Typography>
         </Box>
@@ -497,19 +496,19 @@ const InvertirTokens = () => {
               marginBottom: "25px",
             }}
           >
-            Adquiere tus tokens.
+            {t.raw("steps.fourth")[0]}
             <br />
-            Puedes comprar con
+            {t.raw("steps.fourth")[1]}
             <br />
-            pesos o cripto, guarda
+            {t.raw("steps.fourth")[2]}
             <br />
-            tus tokens (activos virtuales)
+            {t.raw("steps.fourth")[3]}
             <br />
-            e irás recibiendo tus
+            {t.raw("steps.fourth")[4]}
             <br />
-            rendimientos todos
+            {t.raw("steps.fourth")[5]}
             <br />
-            los meses.
+            {t.raw("steps.fourth")[6]}
           </Typography>
         </Box>
         <Box
@@ -527,9 +526,9 @@ const InvertirTokens = () => {
               textAlign: "center",
             }}
           >
-            ¿Cómo
+            {t.raw("steps.title")[0]}
             <br />
-            empiezo?
+            {t.raw("steps.title")[1]}
           </Typography>
         </Box>
       </Box>

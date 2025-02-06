@@ -1,6 +1,7 @@
 "use client";
 import { Box, Typography } from "@mui/material";
 import { ComponentAnimationScroll } from "./ComponentAnimationScroll";
+import { useTranslations } from "next-intl";
 
 const SeccionUnoAmarillo = () => {
   const { elemtoRef: elemtoRef1, isIntersecting: isIntersecting1 } =
@@ -15,6 +16,8 @@ const SeccionUnoAmarillo = () => {
     ComponentAnimationScroll({
       threshold: 0.3,
     });
+
+  const t = useTranslations("Wallet.body");
 
   return (
     <>
@@ -50,14 +53,14 @@ const SeccionUnoAmarillo = () => {
               letterSpacing: "20px",
             }}
           >
-            TOKENIZA
+            {t.raw("yellow.title")[0]}
             <br />
             <span style={{ color: "#C69417" }}>
-              COMPRA
+              {t.raw("yellow.title")[1]}
               <br />
-              VENDE
+              {t.raw("yellow.title")[2]}
               <br />
-              TRANSFIERE
+              {t.raw("yellow.title")[3]}
             </span>
           </Typography>
         </Box>
@@ -89,14 +92,14 @@ const SeccionUnoAmarillo = () => {
               fontSize: { xs: "35px", sm: "35px", md: "45px", lg: "70px" },
             }}
           >
-            Revolucionando
+            {t.raw("yellow.card1")[0]}
             <br />
-            el acceso a
+            {t.raw("yellow.card1")[1]}
             <br />
             <span style={{ color: "#FFC72C" }}>
-              oportunidades
+              {t.raw("yellow.card1")[2]}
               <br />
-              financieras.
+              {t.raw("yellow.card1")[3]}
             </span>
           </Typography>
         </Box>
@@ -129,9 +132,9 @@ const SeccionUnoAmarillo = () => {
                 color: "#FFC72C",
               }}
             >
-              MERCADO
+              {t.raw("yellow.card2.title")[0]}
               <br />
-              TOKEN
+              {t.raw("yellow.card2.title")[1]}
               <br />
             </Typography>
             <Typography
@@ -140,13 +143,14 @@ const SeccionUnoAmarillo = () => {
                 fontSize: { xs: "25px", sm: "25px", md: "35px", lg: "35px" },
               }}
             >
-              Navega por un amplio
+              {t.raw("yellow.card2.description")[0]}
               <br />
-              catálogo de Tokens
+              {t.raw("yellow.card2.description")[1]}
               <br />
-              (Activos Virtuales)
-              <br /> disponibles para <br /> compra, transferencia <br />y
-              colección.
+              {t.raw("yellow.card2.description")[2]}
+              <br /> {t.raw("yellow.card2.description")[3]} <br />{" "}
+              {t.raw("yellow.card2.description")[4]} <br />
+              {t.raw("yellow.card2.description")[5]}
             </Typography>
           </Box>
           <Box component={"img"} src="../img/walletimgDos.png" />
@@ -183,13 +187,14 @@ const SeccionUnoAmarillo = () => {
               letterSpacing: "20px",
             }}
           >
-            CRYPTO
+            {t.raw("magenta.title")[0]}
             <br />
             <span style={{ color: "#680C3A" }}>
-              INTERCAMBIA
+              {t.raw("magenta.title")[1]}
               <br />
-              RÁPIDO
-              <br />Y SEGURO
+              {t.raw("magenta.title")[2]}
+              <br />
+              {t.raw("magenta.title")[3]}
             </span>
           </Typography>
         </Box>
@@ -221,12 +226,12 @@ const SeccionUnoAmarillo = () => {
               fontSize: { xs: "35px", sm: "35px", md: "45px", lg: "70px" },
             }}
           >
-            Gestiona tus
+            {t.raw("magenta.card1")[0]}
             <span style={{ color: "#A6024F" }}>
               <br />
-              criptomonedas
+              {t.raw("magenta.card1")[1]}
               <br />
-              al instante
+              {t.raw("magenta.card1")[2]}
             </span>
           </Typography>
         </Box>
@@ -259,9 +264,9 @@ const SeccionUnoAmarillo = () => {
                 color: "#A6024F",
               }}
             >
-              MERCADO
+              {t.raw("magenta.card2.title")[0]}
               <br />
-              CRYPTO
+              {t.raw("magenta.card2.title")[1]}
             </Typography>
             <Typography
               sx={{
@@ -269,15 +274,15 @@ const SeccionUnoAmarillo = () => {
                 fontSize: { xs: "25px", sm: "25px", md: "35px", lg: "35px" },
               }}
             >
-              Accede a las cotizaciones
+              {t.raw("magenta.card2.description")[0]}
               <br />
-              en tiempo real de
+              {t.raw("magenta.card2.description")[1]}
               <br />
-              diversas criptomonedas
+              {t.raw("magenta.card2.description")[2]}
               <br />
-              intercambia, compra y
+              {t.raw("magenta.card2.description")[3]}
               <br />
-              vende.
+              {t.raw("magenta.card2.description")[4]}
             </Typography>
           </Box>
           <Box component={"img"} src="../img/walletimgCuatro.png" />
@@ -314,14 +319,14 @@ const SeccionUnoAmarillo = () => {
               letterSpacing: "20px",
             }}
           >
-            BILLETERA
+            {t.raw("aqua.title")[0]}
             <br />
             <span style={{ color: "#146862" }}>
-              ENVÍA
+              {t.raw("aqua.title")[1]}
               <br />
-              RECIBE
+              {t.raw("aqua.title")[2]}
               <br />
-              GESTIONA
+              {t.raw("aqua.title")[3]}
             </span>
           </Typography>
         </Box>
@@ -353,14 +358,14 @@ const SeccionUnoAmarillo = () => {
               fontSize: { xs: "35px", sm: "35px", md: "45px", lg: "70px" },
             }}
           >
-            ¡Control
+            {t.raw("aqua.card1")[0]}
             <br />
-            absoluto,
+            {t.raw("aqua.card1")[1]}
             <br />
             <span style={{ color: "#26D3CA" }}>
-              justo cuando
+              {t.raw("aqua.card1")[2]}
               <br />
-              lo necesitas!
+              {t.raw("aqua.card1")[3]}
             </span>
           </Typography>
         </Box>
@@ -393,7 +398,7 @@ const SeccionUnoAmarillo = () => {
                 color: "#26D3CA",
               }}
             >
-              BILLETERA
+              {t("aqua.card2.title")}
             </Typography>
             <Typography
               sx={{
@@ -401,17 +406,17 @@ const SeccionUnoAmarillo = () => {
                 fontSize: { xs: "25px", sm: "25px", md: "35px", lg: "35px" },
               }}
             >
-              Aquí obtendrás todas tus
+              {t.raw("aqua.card2.description")[0]}
               <br />
-              billeteras, incluida la
+              {t.raw("aqua.card2.description")[1]}
               <br />
-              predeterminada.
+              {t.raw("aqua.card2.description")[2]}
               <br />
-              También puedes realizar
+              {t.raw("aqua.card2.description")[3]}
               <br />
-              envíos y recepción de
+              {t.raw("aqua.card2.description")[4]}
               <br />
-              criptomonedas.
+              {t.raw("aqua.card2.description")[5]}
             </Typography>
           </Box>
           <Box component={"img"} src="../img/walletimgSeis.png" />

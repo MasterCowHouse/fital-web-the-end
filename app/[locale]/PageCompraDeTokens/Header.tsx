@@ -1,4 +1,5 @@
 import { Box, Typography } from "@mui/material";
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 
 interface CustomVideo {
@@ -14,6 +15,8 @@ const customVideo: CustomVideo[] = [
 ];
 
 const Header = () => {
+  const t = useTranslations("BuyToken.header");
+
   return (
     <Box>
       {customVideo.map(({ video }, id) => (
@@ -64,17 +67,17 @@ const Header = () => {
                 fontSize: { xs: "33px", sm: "40px", md: "63px", lg: "63px" },
               }}
             >
-              ¿Sabías que puedes
+              {t.raw("title")[0]}
               <br />
               <span style={{ color: "#FFC72C", fontWeight: 900 }}>
-                comprar Tokens{" "}
+                {t.raw("title")[1]}{" "}
               </span>
               <span style={{ color: "#FFC72C", fontWeight: 900 }}>
-                inmobiliarios <br />
-                (Activos Virtuales)
+                {t.raw("title")[2]} <br />
+                {t.raw("title")[3]}
               </span>
               <br />
-              con Fital?
+              {t.raw("title")[4]}
             </Typography>
           </Box>
           <Box
@@ -89,15 +92,18 @@ const Header = () => {
                 fontSize: "25px",
               }}
             >
-              Es una{" "}
-              <span style={{ fontWeight: 900 }}>representación virtual</span> de
-              una fracción
+              {t.raw("description")[0]}{" "}
+              <span style={{ fontWeight: 900 }}>{t.raw("description")[1]}</span>
+              {t.raw("description")[2]}
               <br />
-              <span style={{ fontWeight: 900 }}>del inmueble</span> o la
-              propiedad completa,
+              <span style={{ fontWeight: 900 }}>
+                {t.raw("description")[3]}
+              </span>{" "}
+              {t.raw("description")[4]}
               <br />
-              creada mediante tecnología{" "}
-              <span style={{ fontWeight: 900 }}>blockchain</span>.
+              {t.raw("description")[5]}{" "}
+              <span style={{ fontWeight: 900 }}>{t.raw("description")[6]}</span>
+              .
             </Typography>
           </Box>
           <Box
@@ -116,7 +122,7 @@ const Header = () => {
                   padding: "10px 30px",
                 }}
               >
-                Compra tus tokens (activos virtuales)
+                {t("button")}
               </Typography>
             </Link>
           </Box>

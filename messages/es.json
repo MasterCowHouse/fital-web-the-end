@@ -28,6 +28,29 @@
         "Términos y condiciones",
         "Preguntas frecuentes"
       ],
+      "privacy": [
+        "POLÍTICA Y AVISO DE PRIVACIDAD.",
+        "Reconoce que nos han proporcionado los datos de contacto, como datos personales, nuestro compromiso es óptimo para tratar estos datos para los fines de promoción o publicidad, para propios y terceros que pueden ser de interés, en nuestra plataforma o sitio web tanto como ofrecer promociones comerciales de bienes o servicios o cualquier otra información, manifestando su consentimiento al aceptar el mismo.",
+        "DATOS PERSONALES SENSIBLES.",
+        "Nuestro aviso de privacidad FINGANAS S.A.P.I DE CV SOFOM ENR denominado por el (responsable) será encargado de llevar los ciertos datos personales que serán proporcionados a través de usted denominado el (Titular), para efectos del presente aviso señala. Datos Personales que están sometidos a resguardo. Los datos proporcionados por parte del el Titular y revisión de los mismos en el sitio web son: Datos de identificación (Nombre (s), Apellido (s), Correo Electrónico y Número Telefónico, RFC). El Titular no deberá añadir, otorgar otros datos no requeridos o diferentes a los ya solicitados por el responsable.",
+        "FINGANAS S.A.P.I DE CV SOFOM ENR informa que los datos personales quedan bajo resguardo y se compromete a manejarlos con confidencialidad, seguridad, mientras tanto en ningún momento se solicitaran datos personales sensibles o de carácter intimo condenando la utilización indebida que pueda dar origen a discriminación por su origen racial, étnico, creencia religiosa, preferencia sexual entre otras.",
+        "USO DE LOS DATOS REMOTOS.",
+        "Al visitar nuestro sitio web, así como los sitios, aplicaciones y herramientas relacionadas con los servicios, FINGANAS S.A.P.I DE CV SOFOM ENR podrá recabar información que nos haya sido enviada por su dispositivo de acceso, ya sea computadora, teléfono móvil u otros conocidos o por conocerse, entre la que se encuentra: datos sobre las páginas a las que obtiene acceso, la dirección IP y/o identificadores de su dispositivo, sistema operativo en uso, ubicación, la información de la red móvil, los datos de registro web estándar, navegador que está utilizando y el tráfico hacia y desde nuestro sitio e información adicional, como su uso e interacción con nuestro sitio web en relación con los servicios.",
+        "Cuando hace uso de los servicios, FINGANAS S.A.P.I DE CV SOFOM ENR recopila información acerca de las interacciones que consulta a través del sitio web, En caso de requerimiento, puede ponerlas a disposición de las autoridades competentes en México y de aquellas con competencia en virtud de los Tratados Internacionales de los que México sea parte.",
+        "Así mismo, al acceder a nuestro sitio web o utilizar los servicios, FINGANAS S.A.P.I DE CV SOFOM ENR podrá colocar archivos de datos codificados (cookies, etiquetas de píxel, 'Flash cookies' u otros medios de almacenamiento local proporcionados por el navegador o las aplicaciones asociadas, denominados 'cookies'). El uso de estas tecnologías por FINGANAS S.A.P.I DE CV SOFOM ENR tiene como finalidad su reconocimiento y personalización como usuario de los servicios, haciendo más segura su cuenta y más eficaces los mismos. Usted puede optar por bloquear, eliminar o deshabilitar las “cookies” directamente en su navegador.",
+        "EJERCICIO DE LOS DERECHOS DEL ARCO",
+        "Con apego a lo previsto por la Ley, FINGANAS S.A.P.I DE CV SOFOM ENR cuenta con procedimientos sencillos y eficaces para atender a las solicitudes de derechos de Acceso, Rectificación, Cancelación y Oposición que llegase a presentar, los cuales podrán ser ejercidos mediante formulario que podrá obtenerse mediante previa solicitud mediante correo electrónico. El correo electrónico para recibir sus dudas o manifestaciones respecto de sus derechos ARCO es el siguiente: contacto@fitalmx.com, en donde en caso de solicitarlo le haremos conocer el procedimiento para ello.",
+        "Todos los derechos reservados, FINGANAS S.A.P.I DE CV SOFOM ENR."
+      ],
+      "terms": [
+        "TERMINOS Y CONDICIONES.",
+        "ACEPTACION DE TERMINOS",
+        "Acepta y otorga los permisos adecuados de la utilización y acceso a nuestra página web donde FINGANAS S.A.P.I DE CV SOFOM ENR. le hace saber a usted que expresamente acepta dicha autorización para que la información que se recabe al ingresar a nuestro portal, siendo así de vital importancia la atención a sus datos sin que estos sean vulnerados brindara un manejo adecuado de los mismos, proporcionando seguridad y protección cumpliendo la finalidad para la cual fueron recabados, sin promover la discriminación, racismo, o alguna otra distinción malintencionada que ponga en peligro la integridad de los involucrados, haciendo valer sus derechos únicos e inviolables de cada uno.",
+        "FINGANAS S.A.P.I DE CV SOFOM ENR ,se reserva el derecho de actualizar la presente Política de privacidad en cualquier momento mediante la publicación de una versión revisada en LOS SITIOS. La versión revisada entrará en vigor en el momento de su publicación. Además, si la versión revisada incluye un cambio sustancial, se lo notificaremos con razonable anticipación publicando una notificación en LOS SITIOS. Después de este período de notificación, se considerará que ha aceptado expresamente todas las modificaciones a esta política.",
+        "En caso de que ocurra una vulneración de seguridad en cualquier fase del tratamiento de datos personales, FINGANAS S.A.P.I DE CV SOFOM ENR. lo hará del conocimiento general, de manera inmediata en nuestro sitio web o mediante notificación personal para que las personas involucradas en la vulneración de sus datos personales tomen las medidas correspondientes a fin de resguardar sus derechos.",
+        "Este aviso se apega a los lineamientos emitidos por el Instituto Federal de Acceso a la Información y Protección de Datos Personales (IFAI) así como a los preceptos de la Ley Federal de Protección de Datos Personales en Posesión de los Particulares.",
+        "Todos los derechos reservados, FINGANAS S.A.P.I DE CV SOFOM ENR."
+      ],
       "rights": "2024 © Todos los derechos reservados"
     }
   },
@@ -87,7 +110,17 @@
     "header": {
       "title": "Tokeniza tus Inmuebles:",
       "description": "El futuro del mercado inmobiliario con FITAL",
-      "button": "Empieza ahora"
+      "button": "Empieza ahora",
+      "form": {
+        "title": "¿Te interesa proteger tu patrimonio?",
+        "description": "Pon tus datos y nos pondremos en contacto contigo.",
+        "button": "Enviar",
+        "name": "Nombre del Contacto",
+        "telephone": "Teléfono",
+        "email": "Email",
+        "success": "Nos pondremos en contacto contigo a la brevedad.",
+        "error": "No se pudo completar el registro."
+      }
     },
     "description": {
       "title": "¿Qué es?",
@@ -270,5 +303,320 @@
       "error": "No se pudo completar el registro."
     }
   },
-  "Benefits": { "title": "Beneficios" }
+  "Benefits": {
+    "title": "Beneficios",
+    "management": {
+      "title": "Acceso y Gestión en Tiempo Real:",
+      "description": [
+        "Gestión y monitoreo de activos virtuales",
+        "desde cualquier lugar."
+      ]
+    },
+    "transparency": {
+      "title": "Mayor Transparencia:",
+      "description": [
+        "Registro inmutable de",
+        "transacciones con tecnología",
+        "blockchain."
+      ]
+    },
+    "cost": {
+      "title": "Reducción de Costos y Eficiencia:",
+      "description": [
+        "Menos intermediarios, procesos",
+        "más rápidos y automatizados."
+      ]
+    },
+    "flexibilty": {
+      "title": "Flexibilidad y Personalización:",
+      "description": [
+        "Ajustes rápidos y personalizados en",
+        "la distribución de activos."
+      ]
+    },
+    "security": {
+      "title": "Seguridad y Protección:",
+      "description": [
+        "Mayor seguridad contra fraudes y",
+        "alteraciones con tecnología",
+        "avanzada."
+      ]
+    },
+    "access": {
+      "title": "Acceso Global:",
+      "description": [
+        "Administración y distribución de",
+        "activos sin barreras geográficas."
+      ]
+    },
+    "implementation": {
+      "title": "Rapidez en la Implementación:",
+      "description": [
+        "Creación y activación del",
+        "fideicomiso de manera rápida y",
+        "eficiente."
+      ]
+    }
+  },
+  "Wallet": {
+    "header": ["Fital Wallet,", "la wallet del futuro"],
+    "body": {
+      "yellow": {
+        "title": ["TOKENIZA", "COMPRA", "VENDE", "TRANSFIERE"],
+        "card1": [
+          "Revolucionando",
+          "el acceso a",
+          "oportunidades",
+          "financieras."
+        ],
+        "card2": {
+          "title": ["MERCADO", "TOKEN"],
+          "description": [
+            "Navega por un amplio",
+            "catálogo de Tokens",
+            "(Activos Virtuales)",
+            "disponibles para",
+            "compra, transferencia",
+            "y  colección."
+          ]
+        }
+      },
+      "magenta": {
+        "title": ["CRYPTO", "INTERCAMBIA", "RÁPIDO", "Y SEGURO"],
+        "card1": ["Gestiona tus", "criptomonedas", "al instante"],
+        "card2": {
+          "title": ["MERCADO", "CRYPTO"],
+          "description": [
+            "Accede a las cotizaciones",
+            "en tiempo real de",
+            "diversas criptomonedas",
+            "intercambia, compra y",
+            "vende."
+          ]
+        }
+      },
+      "aqua": {
+        "title": ["BILLETERA", "ENVÍA", "RECIBE", "GESTIONA"],
+        "card1": ["¡Control", "absoluto,", "justo cuando", "lo necesitas!"],
+        "card2": {
+          "title": "BILLETERA",
+          "description": [
+            "Aquí obtendrás todas tus",
+            "billeteras, incluida la",
+            "predeterminada.",
+            "También puedes realizar",
+            "envíos y recepción de",
+            "criptomonedas."
+          ]
+        }
+      }
+    },
+    "video": [
+      "¿Te quedaste con dudas?",
+      "Comunícate con nosotros y conéctate a la era digital",
+      "de FITAL"
+    ]
+  },
+  "BuyToken": {
+    "header": {
+      "title": [
+        "¿Sabías que puedes",
+        "comprar Tokens",
+        "inmobiliarios",
+        "(Activos Virtuales)",
+        "con Fital?"
+      ],
+      "description": [
+        "Es una",
+        "representación virtual ",
+        "de una fracción",
+        "del inmueble",
+        "o la propiedad completa,",
+        "creada mediante tecnología",
+        "blockchain"
+      ],
+      "button": "Compra tus tokens (activos virtuales)"
+    },
+    "invest": {
+      "title": [
+        "Invertir en nuestros tokens inmobiliarios (activos virtuales)",
+        "es",
+        "asegurar tu patrimonio con rendimientos."
+      ],
+      "button": "Regístrate",
+      "form": {
+        "title": "¡Regístrate ahora y comienza a comprar tokens inmobiliarios (activos virtuales)!",
+        "button": "Enviar",
+        "name": "Nombre del Contacto",
+        "telephone": "Teléfono",
+        "email": "Email",
+        "success": "Nos pondremos en contacto contigo a la brevedad.",
+        "error": "No se pudo completar el registro."
+      },
+      "steps": {
+        "title": ["¿Cómo", "empiezo?"],
+        "first": [
+          "Regístrate para entrar",
+          "a la revolución",
+          "inmobiliaria. A partir",
+          "de ahí te apoyaremos",
+          "en cada paso."
+        ],
+        "second": ["Selecciona el", "inmueble"],
+        "third": [
+          "Diversifica tu",
+          "portfolio comprando",
+          "uno o varios inmuebles.",
+          "La oferta de tokens",
+          "(activos virtuales) varía.",
+          "¡Algunos inmuebles",
+          "duran pocos minutos!"
+        ],
+        "fourth": [
+          "Adquiere tus tokens.",
+          "Puedes comprar con",
+          "pesos o cripto, guarda",
+          "tus tokens (activos virtuales)",
+          "e irás recibiendo tus",
+          "rendimientos todos",
+          "los meses."
+        ]
+      }
+    },
+    "atFital": {
+      "title": [
+        "En FITAL, nuestra comisión es ",
+        "clara y justa ",
+        "no se cobra hasta que la ",
+        "operación ",
+        "se completa con éxito",
+        ", garantizando que nuestros intereses estén ",
+        "siempre alineados",
+        " con los de nuestros compradores."
+      ],
+      "description": [
+        "Conoce",
+        " nuestros proyectos ",
+        "y elige ",
+        "el que más ",
+        "se acomode a ti."
+      ]
+    },
+    "tokens": {
+      "price": "Desde",
+      "status": "Proximamente...",
+      "button": "Ver más"
+    },
+    "why": {
+      "title": "¿Por qué FITAL?",
+      "table": {
+        "columns": [
+          "Comparativa",
+          "FITAL",
+          "Inmobiliario",
+          "Acciones",
+          ["Activos", "digitales"],
+          "Oro",
+          "Bonos",
+          ["Cuentas", "remuneradas"]
+        ],
+        "rows": {
+          "returns": { "title": ["Rendimiento", "atractivo"] },
+          "volatility": {
+            "title": "Volatilidad",
+            "values": [
+              "Baja",
+              "Baja",
+              "Alta",
+              "Extrema",
+              "Baja",
+              "Baja",
+              "Baja"
+            ]
+          },
+          "risk": {
+            "title": ["Nivel de", "riesgo"],
+            "values": [
+              "Baja",
+              "Baja",
+              "Alta",
+              "Extrema",
+              "Baja",
+              "Baja",
+              "Baja"
+            ]
+          },
+          "accessibility": "Accesibilidad",
+          "liquidity": ["Liquidez", "24/7"],
+          "asset": ["Activo", "tangible"],
+          "hedge": ["Cobertura de", "la inflación"],
+          "profitability": {
+            "title": ["Rentabilidad", "anual"],
+            "value": ["Altamente", "variable"]
+          }
+        }
+      }
+    },
+    "doubts": {
+      "title": "¿Dudas?",
+      "description": [
+        "Habla con",
+        "nuestros expertos.",
+        "Estamos para",
+        "apoyarte",
+        "en el camino."
+      ],
+      "button": "Contacta a un experto"
+    }
+  },
+  "Contact": {
+    "title": "Regístrate",
+    "description": [
+      "Contacta con nosotros",
+      "Estamos aquí para escucharte y responder a tus preguntas."
+    ],
+    "button": "Enviar",
+    "form": {
+      "name": "Nombre del Contacto",
+      "telephone": "Teléfono",
+      "email": "Email",
+      "success": "Nos pondremos en contacto contigo a la brevedad.",
+      "error": "No se pudo completar el registro."
+    }
+  },
+  "Blog": {
+    "evolution": {
+      "title": [
+        "La",
+        "evolución del",
+        "Fideicomiso",
+        "tradicional",
+        "al digital."
+      ],
+      "button": "Leer más"
+    },
+    "body": {
+      "traditional": [
+        "La evolución del Fideicomiso",
+        "tradicional al digital."
+      ],
+      "blockchain": [
+        "¿Qué es el blockchain?",
+        "¿Qué ventajas tiene adentrarse",
+        "al mundo del blockchain?"
+      ],
+      "tokenization": [
+        "¿Qué es la Tokenización",
+        "Inmobiliaria?",
+        "Guía Completa para Principiantes"
+      ],
+      "investing": [
+        "Claves para Invertir",
+        "en Bienes Raíces con Criptomonedas"
+      ],
+      "differences": "¿Qué Diferencias hay entre la Venta Tradicional de Inmuebles y la Tokenización?",
+      "vs": ["Wallet vs. App Bancaria:", "¿Cuál es la diferencia?"],
+      "button": "Leer más"
+    }
+  }
 }

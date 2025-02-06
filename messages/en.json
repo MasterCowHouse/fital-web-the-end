@@ -21,9 +21,32 @@
     "contact": "Contact Information",
     "legal": {
       "options": [
-        "Terms and Conditions",
         "Privacy Policy",
+        "Terms and Conditions",
         "Frequently Asked Questions"
+      ],
+      "privacy": [
+        "PRIVACY POLICY AND NOTICE.",
+        "By providing your contact information, which is considered personal data, you acknowledge and consent to our commitment to handle this data for the purposes of promotion or advertising, either for our own use or for third parties that may be of interest. This applies to our platform or website, and may include offering commercial promotions related to goods or services or any other information. By accepting these terms, you grant your consent.",
+        "SENSITIVE PERSONAL DATA",
+        "Nuestro aviso de privacidad FINGANAS S.A.P.I DE CV SOFOM ENR denominado por el (responsable) será encargado de llevar los ciertos datos personales que serán proporcionados a través de usted denominado el (Titular), para efectos del presente aviso señala. Datos Personales que están sometidos a resguardo. Los datos proporcionados por parte del el Titular y revisión de los mismos en el sitio web son: Datos de identificación (Nombre (s), Apellido (s), Correo Electrónico y Número Telefónico, RFC). El Titular no deberá añadir, otorgar otros datos no requeridos o diferentes a los ya solicitados por el responsable.",
+        "FINGANAS S.A.P.I DE CV SOFOM ENR ensures that personal data will be protected and handled confidentially and securely. At no point will sensitive or intimate personal data be requested, and we condemn any improper use that could lead to discrimination based on racial or ethnic origin, religious beliefs, sexual preference, or other factors.",
+        "USE OF REMOTE DATA.",
+        "When visiting our website or related sites, applications, and services, FINGANAS S.A.P.I DE CV SOFOM ENR may collect information sent from your access device, whether it’s a computer, mobile phone, or other devices, including: data on the pages accessed, IP address and/or device identifiers, operating system in use, location, mobile network information, standard web registration data, browser being used, and traffic to and from our site.",
+        "Additionally, FINGANAS S.A.P.I DE CV SOFOM ENR may collect information regarding your interactions with our website in relation to the services provided. In case of a request, this information may be made available to competent authorities in Mexico or those with jurisdiction under international treaties to which Mexico is a party.",
+        "Furthermore, by accessing our website or using our services, FINGANAS S.A.P.I DE CV SOFOM ENR may place encoded data files (cookies, pixel tags, \"Flash cookies,\" or other local storage means provided by your browser or associated applications, collectively referred to as \"cookies\"). The purpose of using these technologies is to recognize and personalize your experience as a user of our services, making your account more secure and more efficient. You can choose to block, delete, or disable cookies directly through your browser settings.",
+        "EXERCISE OF ARCO RIGHTS",
+        "In accordance with the law, FITAL MX has simple and effective procedures for addressing requests related to Access, Rectification, Cancellation, and Opposition (\"ARCO Rights\"). These requests can be made through a form that can be obtained upon prior request via email. For any questions or to exercise your ARCO rights, please contact us at: contacto@fitalmx.com. If requested, we will provide you with the procedure to follow.",
+        "All rights reserved, FINGANAS S.A.P.I DE CV SOFOM ENR."
+      ],
+      "terms": [
+        "TERMS AND CONDITIONS.",
+        "ACCEPTANCE OF TERMS",
+        "By accessing and using our website, you accept and grant the appropriate permissions for the use and access to the site. FINGANAS S.A.P.I DE CV SOFOM ENR informs you that you explicitly agree to this authorization so that the information collected when entering our portal is handled with great care. The protection of your data is crucial, ensuring that it is not compromised. We will manage your data properly, providing security and protection to fulfill the purpose for which it was collected, without promoting discrimination, racism, or any other malicious distinctions that could harm the integrity of those involved, upholding the unique and inviolable rights of each individual.",
+        "FINGANAS S.A.P.I DE CV SOFOM ENR reserves the right to update this Privacy Policy at any time by posting a revised version on the SITES. The revised version will take effect upon its publication. Additionally, if the revised version includes a significant change, we will notify you in advance by posting a notice on the SITES. After this notification period, you will be considered to have expressly accepted all modifications to this policy.",
+        "In the event of a security breach at any stage of personal data processing, FINGANAS S.A.P.I DE CV SOFOM ENR. will notify the public immediately on our website or through personal notification so that the individuals affected by the breach can take the appropriate measures to protect their rights.",
+        "This notice complies with the guidelines issued by the Federal Institute for Access to Information and Data Protection (IFAI) as well as the provisions of the Federal Law on the Protection of Personal Data Held by Private Parties.",
+        "All rights reserved, FINGANAS S.A.P.I DE CV SOFOM ENR."
       ],
       "rights": "2024 © All rights reserved"
     }
@@ -84,7 +107,17 @@
     "header": {
       "title": "Tokenize Your Properties:",
       "description": "The Future of Real Estate with FITAL",
-      "button": "Get Started Now"
+      "button": "Get Started Now",
+      "form": {
+        "title": "Are you interested in protecting your assets?",
+        "description": "Enter your details, and we will contact you.",
+        "button": "Send",
+        "name": "Name",
+        "telephone": "Phone",
+        "email": "Email",
+        "success": "We will contact you shortly.",
+        "error": "Registration could not be completed."
+      }
     },
     "description": {
       "title": "What is it?",
@@ -261,5 +294,298 @@
       "error": "Registration could not be completed."
     }
   },
-  "Benefits": { "title": "Benefits" }
+  "Benefits": {
+    "title": "Benefits",
+    "management": {
+      "title": "Real-Time Access and Management:",
+      "description": ["Manage and monitor virtual", "assets from anywhere."]
+    },
+    "transparency": {
+      "title": "Enhanced Transparency:",
+      "description": [
+        "Immutable transaction",
+        "records with blockchain",
+        "technology."
+      ]
+    },
+    "cost": {
+      "title": "Cost Reduction and Efficiency:",
+      "description": [
+        "Fewer intermediaries,",
+        "faster and automated processes."
+      ]
+    },
+    "flexibilty": {
+      "title": "Flexibility and Customization:",
+      "description": [
+        "Quick and tailored adjustments",
+        "in asset distribution."
+      ]
+    },
+    "security": {
+      "title": "Security and Protection:",
+      "description": [
+        "Advanced technology for",
+        "greater fraud and tampering",
+        "protection."
+      ]
+    },
+    "access": {
+      "title": "Global Access:",
+      "description": [
+        "Manage and distribute assets",
+        "without geographical barriers."
+      ]
+    },
+    "implementation": {
+      "title": "Speedy Implementation:",
+      "description": [
+        "Quick and efficient",
+        "trust creation and",
+        "activation."
+      ]
+    }
+  },
+  "Wallet": {
+    "header": ["Fital Wallet,", "the wallet of the future"],
+    "body": {
+      "yellow": {
+        "title": ["TOKENIZE", "BUY", "SELL", "TRANSFER"],
+        "card1": [
+          "Revolutionizing",
+          "access to",
+          "financial",
+          "opportunities."
+        ],
+        "card2": {
+          "title": ["TOKEN", "MARKET"],
+          "description": [
+            "Browse a wide",
+            "Token catalog",
+            "(Virtual Assets)",
+            "available for",
+            "purchase, transfer",
+            "and collection."
+          ]
+        }
+      },
+      "magenta": {
+        "title": ["CRYPTO", "EXCHANGE", "FAST", "AND SECURE"],
+        "card1": ["Manage your", "cryptocurrencies", "instantly"],
+        "card2": {
+          "title": ["CRYPTO", "MARKET"],
+          "description": [
+            "Access real-time",
+            "quotes for various",
+            "cryptocurrencies",
+            "Exchange, buy, and",
+            "sell."
+          ]
+        }
+      },
+      "aqua": {
+        "title": ["WALLET", "SEND", "RECEIVE", "MANAGE"],
+        "card1": ["Complete", "control,", "just when", "you need it!"],
+        "card2": {
+          "title": "WALLET",
+          "description": [
+            "Here you'll find all",
+            "your wallets, including",
+            "the default one.",
+            "You can also",
+            "send and receive",
+            "cryptocurrencies."
+          ]
+        }
+      }
+    },
+    "video": [
+      "Still have questions?",
+      "Contact us and connect to",
+      "FITAL's digital era"
+    ]
+  },
+  "BuyToken": {
+    "header": {
+      "title": [
+        "Did you know",
+        "you can buy real",
+        "estate tokens",
+        "(virtual assets)",
+        "with Fital?"
+      ],
+      "description": [
+        "They are a",
+        "virtual representation of ",
+        "fraction of",
+        "a property",
+        "or the entire property,",
+        "created using blockchain",
+        "technology"
+      ],
+      "button": "Buy your tokens (virtual assets)"
+    },
+    "invest": {
+      "title": [
+        "Buying our real estate tokens (virtual assets)",
+        "secures",
+        "your assets with returns."
+      ],
+      "button": "Register",
+      "form": {
+        "title": "Register now and start buying real estate tokens (virtual assets)!",
+        "button": "Send",
+        "name": "Name",
+        "telephone": "Phone",
+        "email": "Email",
+        "success": "We will contact you shortly.",
+        "error": "Registration could not be completed."
+      },
+      "steps": {
+        "title": ["How to", "Get Started?"],
+        "first": [
+          "Register to join the",
+          "real estate revolution.",
+          "From there, we’ll",
+          "support you every step",
+          "of the way."
+        ],
+        "second": ["Select the", "property"],
+        "third": [
+          "Diversify your portfolio",
+          "by purchasing one",
+          "or multiple properties.",
+          "The availability of tokens",
+          "(virtual assets) varies.",
+          "Some properties",
+          "sell out in minutes!"
+        ],
+        "fourth": [
+          "Acquire your tokens.",
+          "You can buy with",
+          "pesos or crypto. Store",
+          "your tokens (virtual assets)",
+          "and start receiving",
+          "your returns",
+          "every month."
+        ]
+      }
+    },
+    "atFital": {
+      "title": [
+        "At FITAL, our commission is ",
+        "clear and fair ",
+        "it is only charged once the ",
+        "transaction ",
+        "is successfully completed",
+        ", ensuring our interests are ",
+        "always aligned",
+        " with those of our buyers."
+      ],
+      "description": [
+        "Discover",
+        " our projects ",
+        "and choose ",
+        "the one that ",
+        "suits you best."
+      ]
+    },
+    "tokens": {
+      "price": "Starting at",
+      "status": "Coming Soon...",
+      "button": " See More"
+    },
+    "why": {
+      "title": "Why FITAL?",
+      "table": {
+        "columns": [
+          "Comparison",
+          "FITAL",
+          "Real Estate",
+          "Stocks",
+          ["Digital", "Assets"],
+          "Gold",
+          "Bonds",
+          ["High-Yield", "Accounts"]
+        ],
+        "rows": {
+          "returns": { "title": ["Attractive", "Returns"] },
+          "volatility": {
+            "title": "Volatility",
+            "values": ["Low", "Low", "High", "Extreme", "Low", "Low", "Low"]
+          },
+          "risk": {
+            "title": ["Nivel de", "riesgo"],
+            "values": ["Low", "Low", "High", "Extreme", "Low", "Low", "Low"]
+          },
+          "accessibility": "Accessibility",
+          "liquidity": ["24/7", "Liquidity"],
+          "asset": ["Tangible", "Asset"],
+          "hedge": ["Inflation", "Hedge"],
+          "profitability": {
+            "title": ["Annual", "Profitability"],
+            "value": ["Highly", "Variable"]
+          }
+        }
+      }
+    },
+    "doubts": {
+      "title": "Questions?",
+      "description": [
+        "Talk to",
+        "our experts.",
+        "We are here",
+        "to support you every",
+        "step of the way."
+      ],
+      "button": "Contact an Expert"
+    }
+  },
+  "Contact": {
+    "title": "Register",
+    "description": [
+      "Contact Us",
+      "We’re here to listen and answer your questions."
+    ],
+    "button": "Send",
+    "form": {
+      "name": "Name",
+      "telephone": "Phone",
+      "email": "Email",
+      "success": "We will contact you shortly.",
+      "error": "Registration could not be completed."
+    }
+  },
+  "Blog": {
+    "evolution": {
+      "title": [
+        "The",
+        "Evolution from",
+        "Traditional",
+        "to",
+        "Digital Trusts."
+      ],
+      "button": "Read More"
+    },
+    "body": {
+      "traditional": ["The Evolution from Traditional", "to Digital Trusts"],
+      "blockchain": [
+        "What is Blockchain?",
+        "What are the advantages of",
+        "entering the blockchain world?"
+      ],
+      "tokenization": [
+        "What is Real Estate?",
+        "Tokenization?",
+        "A Complete Guide for Beginners"
+      ],
+      "investing": [
+        "Keys to Investing in",
+        "Real Estate with Cryptocurrencies"
+      ],
+      "differences": "What are the Differences Between Traditional Property Sales and Tokenization?",
+      "vs": ["Wallet vs. Banking App:", "What’s the Difference?"],
+      "button": "Read More"
+    }
+  }
 }

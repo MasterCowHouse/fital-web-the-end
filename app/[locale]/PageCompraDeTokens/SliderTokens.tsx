@@ -9,6 +9,7 @@ import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 import styles from "./SliderTokens.styles";
 import { alpha } from "@mui/material";
+import { useTranslations } from "next-intl";
 
 interface CustomSlider {
   id: number;
@@ -23,33 +24,33 @@ interface CustomSlider {
   disabled?: boolean;
 }
 
-const customSlider: CustomSlider[] = [
-  {
-    id: 0,
-    precio: "Desde 16,150 MXN",
-    texto: <span>LOFTS BAWA</span>,
-    imgSrc: "./img/bawa.png",
-    linkNFTS: "https://bawa.fitalmx.com/",
-    bgColor: {
-      backgroundColor: "#FFC72C",
-    },
-    textoBtn: "Ver más",
-  },
-  {
-    id: 1,
-    precio: "Proximamente...",
-    texto: <span>CowCoin</span>,
-    imgSrc: "./img/cowhouse-pti.png",
-    linkNFTS: "/",
-    bgColor: {
-      backgroundColor: "#505050",
-    },
-    textoBtn: "",
-    disabled: true,
-  },
-];
-
 const SliderTokens = () => {
+  const t = useTranslations("BuyToken.tokens");
+  const customSlider: CustomSlider[] = [
+    {
+      id: 0,
+      precio: `${t("price")} $16,150 MXN`,
+      texto: <span>LOFTS BAWA</span>,
+      imgSrc: "../img/bawa.png",
+      linkNFTS: "https://bawa.fitalmx.com/",
+      bgColor: {
+        backgroundColor: "#FFC72C",
+      },
+      textoBtn: t("button"),
+    },
+    {
+      id: 1,
+      precio: t("status"),
+      texto: <span>CowCoin</span>,
+      imgSrc: "../img/cowhouse-pti.png",
+      linkNFTS: "/",
+      bgColor: {
+        backgroundColor: "#505050",
+      },
+      textoBtn: "",
+      disabled: true,
+    },
+  ];
   return (
     <Box sx={styles.rootContainer}>
       <Swiper
