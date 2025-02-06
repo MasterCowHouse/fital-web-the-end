@@ -1,4 +1,5 @@
 import { Box, Typography } from "@mui/material";
+import { useTranslations } from "next-intl";
 
 interface CustomComoEmpiezo {
   id: number;
@@ -8,62 +9,64 @@ interface CustomComoEmpiezo {
   textAlt: string;
 }
 
-const customComoEmpiezo: CustomComoEmpiezo[] = [
-  {
-    id: 1,
-    numero: "1",
-    texto: (
-      <span>
-        Regístrate para entrar a la <br />
-        revolución inmobiliaria. <br />A partir de ahí te apoyaremos <br />
-        en cada paso.
-      </span>
-    ),
-    imgIcono: "../img/Registrate.png",
-    textAlt: "Regístrate",
-  },
-  {
-    id: 2,
-    numero: "2",
-    texto: <span>Selecciona el inmueble</span>,
-    imgIcono: "../img/Selecciona el inmueble.png",
-    textAlt: "Selecciona el inmueble",
-  },
-  {
-    id: 3,
-    numero: "3",
-    texto: (
-      <span>
-        Diversifica tu portfolio <br />
-        comprando uno o varios <br />
-        inmuebles. La oferta de <br />
-        tokens varía. <br />
-        <br />
-        ¡Algunos inmuebles duran <br />
-        pocos minutos!
-      </span>
-    ),
-    imgIcono: "../img/Diversifica.png",
-    textAlt: "Diversifica",
-  },
-  {
-    id: 4,
-    numero: "4",
-    texto: (
-      <span>
-        Adquiere tus tokens. <br />
-        Puedes comprar con pesos <br />o cripto, guarda tus tokens <br />e irás
-        recibiendo tus <br />
-        rendimientos todos los <br />
-        meses.
-      </span>
-    ),
-    imgIcono: "../img/Adquiere tus tokens.png",
-    textAlt: "Adquiere tus tokens",
-  },
-];
-
 const ComoEmpiezoResponsive = () => {
+  const t = useTranslations("BuyToken.invest");
+
+  const customComoEmpiezo: CustomComoEmpiezo[] = [
+    {
+      id: 1,
+      numero: "1",
+      texto: (
+        <span>
+          {t.raw("steps.first")[0]} {t.raw("steps.first")[1]}{" "}
+          {t.raw("steps.first")[2]} {t.raw("steps.first")[3]}{" "}
+          {t.raw("steps.first")[4]}
+        </span>
+      ),
+      imgIcono: "../img/Registrate.png",
+      textAlt: "Regístrate",
+    },
+    {
+      id: 2,
+      numero: "2",
+      texto: (
+        <span>
+          {t.raw("steps.second")[0]} {t.raw("steps.second")[1]}
+        </span>
+      ),
+      imgIcono: "../img/Selecciona el inmueble.png",
+      textAlt: "Selecciona el inmueble",
+    },
+    {
+      id: 3,
+      numero: "3",
+      texto: (
+        <span>
+          {t.raw("steps.third")[0]} {t.raw("steps.third")[1]}{" "}
+          {t.raw("steps.third")[2]} {t.raw("steps.third")[3]}{" "}
+          {t.raw("steps.third")[4]}
+          <br />
+          {t.raw("steps.third")[5]} {t.raw("steps.third")[6]}
+        </span>
+      ),
+      imgIcono: "../img/Diversifica.png",
+      textAlt: "Diversifica",
+    },
+    {
+      id: 4,
+      numero: "4",
+      texto: (
+        <span>
+          {t.raw("steps.fourth")[0]} {t.raw("steps.fourth")[1]}{" "}
+          {t.raw("steps.fourth")[2]} {t.raw("steps.fourth")[3]}{" "}
+          {t.raw("steps.fourth")[4]} {t.raw("steps.fourth")[5]}{" "}
+          {t.raw("steps.fourth")[6]}
+        </span>
+      ),
+      imgIcono: "../img/Adquiere tus tokens.png",
+      textAlt: "Adquiere tus tokens",
+    },
+  ];
   return (
     <Box>
       <Box
@@ -78,7 +81,7 @@ const ComoEmpiezoResponsive = () => {
             textAlign: "center",
           }}
         >
-          ¿Cómo empiezo?
+          {t.raw("steps.title")[0]} {t.raw("steps.title")[1]}
         </Typography>
       </Box>
       <Box

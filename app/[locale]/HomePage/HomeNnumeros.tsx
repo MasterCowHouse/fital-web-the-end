@@ -56,7 +56,7 @@ const HomeNumeros = () => {
             textAlign: { xs: "center", sm: "center", md: "left", lg: "left" },
           }}
         >
-          Ventajas frente a la venta tradicional de inmuebles.
+          {t("title")}
         </Typography>
       </Box>
       <Box

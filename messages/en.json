@@ -134,7 +134,7 @@
     "advantages": {
       "title": "Advantages of Tokenization",
       "liquidity": {
-        "title": "Liquidez:",
+        "title": "Liquidity:",
         "description": "Tokenization allows physical properties to be divided into tokens (virtual assets) that can be easily bought and sold in secondary markets, enhancing liquidity and making it easier to convert profits into cash."
       },
       "security": {
@@ -148,11 +148,11 @@
     },
     "standards": {
       "title": [
-        "Estándar ERC-3643:",
-        "Potenciando la",
-        "Tokenización de",
-        "Activos",
-        "del Mundo Real (RWA)"
+        "ERC-3643 Standard:",
+        "Empowering the",
+        "Tokenization",
+        "of Real-",
+        "World Assets (RWA)"
       ],
       "list": [
         "Provides a flexible and secure framework for digitally representing properties and other physical assets.",
@@ -160,7 +160,7 @@
         "ERC-3643 ensures legal compliance and enhances interoperability across different platforms."
       ],
       "benefits": {
-        "title": "Beneficios:",
+        "title": "Benefits:",
         "security": {
           "title": "Security:",
           "description": "Strengthens trust in transactions with tokenized assets."
@@ -252,7 +252,7 @@
       "description": "A digital trust is a legal tool that uses blockchain technology to securely and transparently manage and protect assets, such as money or properties. Everything is managed on digital platforms, making it faster, more accessible, and reliable."
     },
     "traditional": {
-      "title": ["Fideicomiso Tradicional", "VS", "Fideicomiso Digital"],
+      "title": ["Traditional Trust", "VS", "Digital Trust"],
       "creation": {
         "title": "Creation Process",
         "traditional": "Traditional: Requires paperwork and in-person legal procedures.",
