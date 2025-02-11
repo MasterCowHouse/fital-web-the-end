@@ -20,6 +20,7 @@ interface FAQItem {
 
 interface FAQProps {
   items: FAQItem[];
+  title: string;
 }
 
 const StyledFAQItem = styled(Box)(({ theme }) => ({
@@ -36,7 +37,7 @@ const QuestionButton = styled(IconButton)({
   },
 });
 
-export default function PrincipalQuestions({ items }: FAQProps) {
+export default function PrincipalQuestions({ items, title }: FAQProps) {
   const [expandedId, setExpandedId] = useState<number | null>(null);
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
@@ -67,7 +68,7 @@ export default function PrincipalQuestions({ items }: FAQProps) {
             fontSize={isSmallScreen ? "20px" : "30px"}
             color={"#7F4CA5"}
           >
-            Preguntas Frecuentes
+            {title}
           </Typography>
         </Box>
       </Box>

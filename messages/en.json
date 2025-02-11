@@ -29,7 +29,7 @@
         "PRIVACY POLICY AND NOTICE.",
         "By providing your contact information, which is considered personal data, you acknowledge and consent to our commitment to handle this data for the purposes of promotion or advertising, either for our own use or for third parties that may be of interest. This applies to our platform or website, and may include offering commercial promotions related to goods or services or any other information. By accepting these terms, you grant your consent.",
         "SENSITIVE PERSONAL DATA",
-        "Nuestro aviso de privacidad FINGANAS S.A.P.I DE CV SOFOM ENR denominado por el (responsable) será encargado de llevar los ciertos datos personales que serán proporcionados a través de usted denominado el (Titular), para efectos del presente aviso señala. Datos Personales que están sometidos a resguardo. Los datos proporcionados por parte del el Titular y revisión de los mismos en el sitio web son: Datos de identificación (Nombre (s), Apellido (s), Correo Electrónico y Número Telefónico, RFC). El Titular no deberá añadir, otorgar otros datos no requeridos o diferentes a los ya solicitados por el responsable.",
+        "Our privacy notice, issued by FINGANAS S.A.P.I DE CV SOFOM ENR (the \"Responsible Party\"), outlines the collection and handling of personal data provided by you, the \"Data Subject,\" as described in this notice. Personal data subject to protection includes: identification data (Name(s), Surname(s), Email Address, Phone Number, and Tax Identification Number (RFC)). The Data Subject is not required to provide additional data or data not explicitly requested by the Responsible Party.",
         "FINGANAS S.A.P.I DE CV SOFOM ENR ensures that personal data will be protected and handled confidentially and securely. At no point will sensitive or intimate personal data be requested, and we condemn any improper use that could lead to discrimination based on racial or ethnic origin, religious beliefs, sexual preference, or other factors.",
         "USE OF REMOTE DATA.",
         "When visiting our website or related sites, applications, and services, FINGANAS S.A.P.I DE CV SOFOM ENR may collect information sent from your access device, whether it’s a computer, mobile phone, or other devices, including: data on the pages accessed, IP address and/or device identifiers, operating system in use, location, mobile network information, standard web registration data, browser being used, and traffic to and from our site.",
@@ -134,7 +134,7 @@
     "advantages": {
       "title": "Advantages of Tokenization",
       "liquidity": {
-        "title": "Liquidez:",
+        "title": "Liquidity:",
         "description": "Tokenization allows physical properties to be divided into tokens (virtual assets) that can be easily bought and sold in secondary markets, enhancing liquidity and making it easier to convert profits into cash."
       },
       "security": {
@@ -148,11 +148,11 @@
     },
     "standards": {
       "title": [
-        "Estándar ERC-3643:",
-        "Potenciando la",
-        "Tokenización de",
-        "Activos",
-        "del Mundo Real (RWA)"
+        "ERC-3643 Standard:",
+        "Empowering the",
+        "Tokenization",
+        "of Real-",
+        "World Assets (RWA)"
       ],
       "list": [
         "Provides a flexible and secure framework for digitally representing properties and other physical assets.",
@@ -160,7 +160,7 @@
         "ERC-3643 ensures legal compliance and enhances interoperability across different platforms."
       ],
       "benefits": {
-        "title": "Beneficios:",
+        "title": "Benefits:",
         "security": {
           "title": "Security:",
           "description": "Strengthens trust in transactions with tokenized assets."
@@ -252,7 +252,7 @@
       "description": "A digital trust is a legal tool that uses blockchain technology to securely and transparently manage and protect assets, such as money or properties. Everything is managed on digital platforms, making it faster, more accessible, and reliable."
     },
     "traditional": {
-      "title": ["Fideicomiso Tradicional", "VS", "Fideicomiso Digital"],
+      "title": ["Traditional Trust", "VS", "Digital Trust"],
       "creation": {
         "title": "Creation Process",
         "traditional": "Traditional: Requires paperwork and in-person legal procedures.",
@@ -586,6 +586,94 @@
       "differences": "What are the Differences Between Traditional Property Sales and Tokenization?",
       "vs": ["Wallet vs. Banking App:", "What’s the Difference?"],
       "button": "Read More"
+    }
+  },
+  "Questions": {
+    "general": {
+      "title": "Frequent Questions",
+      "q1": {
+        "q": "Which entity regulates the trusts used by FITAL?",
+        "a": "The CNBV (National Banking and Securities Commission) and the Credit Institutions Law."
+      },
+      "q2": {
+        "q": "Are there specific clauses to protect investors in case of project non-compliance?",
+        "a": "Yes, there are clauses designed to safeguard investors' interests and prevent asset losses."
+      },
+      "q3": {
+        "q": "What legal framework supports tokenization in Mexico?",
+        "a": "The Law to Regulate Financial Technology Institutions (Fintech Law)."
+      },
+      "q4": {
+        "q": "How are token buyers' rights protected within the trusts?",
+        "a": "Through a contract that provides a flexible and secure legal framework, ensuring the protection of tokenized property."
+      },
+      "q5": {
+        "q": "What happens if a client wishes to revoke their participation in a trust?",
+        "a": "The trust is either liquidated or subdivided, with the necessary accommodations to avoid affecting the trust structure."
+      },
+      "q6": {
+        "q": "How are disputes related to tokenized property resolved?",
+        "a": "Resolution depends on the amount invested and the profits established at the time of creating the trust guarantee."
+      },
+      "q7": {
+        "q": "What legal obligations does the client have when signing a contract with FITAL?",
+        "a": "The client must maintain confidentiality and comply with the contractual obligations stated in the NDA (Non-Disclosure Agreement) and the trust agreement, ensuring compliance without complications."
+      },
+      "q8": {
+        "q": "What guarantees does FITAL provide regarding token management?",
+        "a": "FITAL guarantees transparency and security in transactions and data administration."
+      },
+      "q9": {
+        "q": "What happens if the project does not meet financial or sales expectations?",
+        "a": "FITAL adapts and seeks the best proposal to finalize the sale, ensuring commitment and facilitating investment while reducing costs."
+      },
+      "q10": {
+        "q": "Do trust contracts include confidentiality clauses?",
+        "a": "Yes, trust contracts include a confidentiality agreement that protects both the signer and the issuing company, ensuring security and guarantees for both the trust creator and its administrator."
+      },
+      "q11": {
+        "q": "How does FITAL ensure compliance with Mexico's Fintech Law?",
+        "a": "By providing transparency and clarity in trust creation, ensuring legal approval and validation in adherence to Mexican regulations and applicable laws, along with the necessary certifications."
+      }
+    },
+    "pti": {
+      "title": "Real Estate Tokenization Platform (PTI)",
+      "q1": {
+        "q": "What does the Real Estate Tokenization Platform (PTI) include?",
+        "a": "A practical and secure platform for trading tokens, viewing token collections, and accessing details of tokenized properties."
+      },
+      "q2": {
+        "q": "Is prior blockchain knowledge required to use the platform?",
+        "a": "No"
+      },
+      "q3": {
+        "q": "How is the value of a token determined?",
+        "a": "The token value corresponds to the value of the property."
+      },
+      "q4": {
+        "q": "How do you ensure ownership of a property when purchasing a token?",
+        "a": "Ownership rights and responsibilities are granted through a fiduciary certificate."
+      },
+      "q5": {
+        "q": "Can tokens be resold or transferred?",
+        "a": "Yes, tokens can be sold and transferred via FITAL’s wallet and in accordance with the trust agreement."
+      },
+      "q6": {
+        "q": "What payment methods are accepted on the platform?",
+        "a": "Cryptocurrencies and Mexican Pesos."
+      },
+      "q7": {
+        "q": "Does FITAL comply with legal regulations in Mexico?",
+        "a": "Yes, FITAL operates under the applicable Mexican legal framework, including regulations from the CNBV, the General Law of Credit Instruments and Operations (LGTOC), the Credit Institutions Law, and the Fintech Law, ensuring full compliance."
+      },
+      "q8": {
+        "q": "Is it possible to include customized clauses in the trust agreement?",
+        "a": "Yes, trust agreements can be customized."
+      },
+      "q9": {
+        "q": "Do you offer technical support and training for the platform?",
+        "a": "Yes, technical support is available for platform-related issues, along with training for proper platform usage."
+      }
     }
   }
 }

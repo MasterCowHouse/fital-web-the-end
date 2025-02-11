@@ -618,5 +618,93 @@
       "vs": ["Wallet vs. App Bancaria:", "¿Cuál es la diferencia?"],
       "button": "Leer más"
     }
+  },
+  "Questions": {
+    "general": {
+      "title": "Preguntas Generales",
+      "q1": {
+        "q": "¿Qué entidad regula los fideicomisos utilizados por FITAL?",
+        "a": "CNBV, Ley de Instituciones de Crédito"
+      },
+      "q2": {
+        "q": "¿Existen cláusulas específicas para proteger a los inversionistas en caso de incumplimiento del proyecto?",
+        "a": "Si son cláusulas que cuidan los intereses de los propios inversionistas paraevitar cualquier perdida de activos"
+      },
+      "q3": {
+        "q": "¿Cuál es el marco legal que respalda la tokenización en México?",
+        "a": "Ley Para Regular las Instituciones de Tecnología Financiera."
+      },
+      "q4": {
+        "q": "¿Cómo se aseguran los derechos de los compradores de tokens en los fideicomisos?",
+        "a": "Por medio de un contrato en el cual se le hay un marco flexible y seguro en protección jurídica, resguardando la propiedad tokenizada."
+      },
+      "q5": {
+        "q": "¿Qué sucede si un cliente desea revocar su participación en un fideicomiso?",
+        "a": "Se cobra el fideicomiso o se subdivide, con las facilidades correspondientes sin afectar el fideicomiso."
+      },
+      "q6": {
+        "q": "¿Cómo se resuelven los conflictos relacionados con la propiedad tokenizada?",
+        "a": "Depende de la inversión que se haya efectuado en cantidad y en ganancias establecidas al momento de generar el fideicomiso de garantía."
+      },
+      "q7": {
+        "q": "¿Qué obligaciones legales tiene el cliente al firmar el contrato con FITAL?",
+        "a": "No divulgar información y cumplir con las obligaciones respectivas en las cláusulas del contrato de confidencialidad denominado NDA y en el Fideicomiso que busca efectuar el mismo sin complicaciones respetando lo acordado dando su propio consentimiento."
+      },
+      "q8": {
+        "q": "¿Qué garantías ofrece FITAL sobre la administración de los tokens?",
+        "a": "Garantiza transparencia y seguridad en transacciones y administraciones de datos."
+      },
+      "q9": {
+        "q": "¿Qué sucede si el proyecto no cumple con las expectativas financieras o de venta?",
+        "a": "Fital se adapta y busca la mejor propuesta para que se concrete la venta, ofreciendo compromiso y facilitar la inversión y la reducción de costos"
+      },
+      "q10": {
+        "q": "¿Los contratos de fideicomiso incluyen cláusulas de confidencialidad?",
+        "a": "Cuentan con un contrato de confidencialidad que beneficia a la persona que lo firma y a la empresa que lo emite, tratándose de temas de seguridad y garantía. Protegiendo al que constituye el fideicomiso y a quien lo administra."
+      },
+      "q11": {
+        "q": "¿Cómo se asegura FITAL de cumplir con la Ley Fintech en México?",
+        "a": "Ofreciendo Transparencia y Claridad al generar dichos fideicomisos que cuenta con la aprobación y validación jurídica, apegada a las normas y leyes mexicanas vigentes, en todo momento con las respectivas regulaciones y certificaciones necesarias."
+      }
+    },
+    "pti": {
+      "title": "Plataforma de Tokenización Inmobiliaria (PTI)",
+      "q1": {
+        "q": "¿Qué incluye la Plataforma de Tokenización Inmobiliaria (PTI)?",
+        "a": "Una plataforma practica y segura para poder comercializar los tokens, colección de tokens, detalles de la propiedad tokenizada"
+      },
+      "q2": {
+        "q": "¿Es necesario contar con conocimientos previos de blockchain para usar la plataforma?",
+        "a": "No"
+      },
+      "q3": {
+        "q": "¿Cómo se determina el valor de un token?",
+        "a": "Corresponden al valor de la propiedad"
+      },
+      "q4": {
+        "q": "¿Cómo aseguramos que una propiedad es tuya al comprar un token?",
+        "a": "Los derechos y responsabilidades sobre la propiedad o inversión se otorgan por medio de un certificado fiduciario"
+      },
+      "q5": {
+        "q": "¿Los tokens pueden ser revendidos o transferidos?",
+        "a": "Pueden ser vendidos y transferidos por medio de la wallet de fital y conforme al fideicomiso"
+      },
+      "q6": {
+        "q": "¿Cuáles son los métodos de pago aceptados en la plataforma?",
+        "a": "Criptomonedas y pesos"
+      },
+      "q7": {
+        "q": "¿Cumple FITAL con las regulaciones legales en México?",
+        "a": "Fital cumple con las regulaciones legales pertinentes, bajo el regimen de las leyes aplicables en Mexico como lo son La CNBV, LGTOC, Ley de Instituciones de Credito, Ley Fintech , asi mismo estando en un marco regulatorio."
+      },
+      "q8": {
+        "q": "¿Es posible incluir cláusulas personalizadas en el fideicomiso?",
+        "a": "Si, el fideicomiso se puede personalizar"
+      },
+      "q9": {
+        "q": "¿Ofrecen soporte técnico y capacitación para la plataforma?",
+        "a": "Se ofrece soporte técnico para las complicaciones de la plataforma así como capacitación al personal para el correcto manejo de la plataforma"
+      }
+    }
   }
 }

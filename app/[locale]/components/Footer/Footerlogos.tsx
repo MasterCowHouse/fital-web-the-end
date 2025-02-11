@@ -2,11 +2,11 @@
 
 import { Box, Button, Fade, Modal, Typography } from "@mui/material";
 import Link from "@mui/material/Link";
-import { useState, useTransition } from "react";
+import { useState } from "react";
 import Backdrop from "@mui/material/Backdrop";
 import { useTranslations } from "next-intl";
-import { useRouter } from "next/router";
-import { useParams, usePathname } from "next/navigation";
+import { Link as AltLink } from "@/navigation";
+
 interface CustomLogosFooter {
   id: number;
   logosFooter: string;
@@ -71,7 +71,9 @@ const Footerlogos = () => {
         }}
       >
         <Link component={"button"} onClick={() => setOpenTerms(true)}>
-          <Typography>{t.raw("legal.options")[0]}</Typography>
+          <Typography sx={{ textDecoration: "underline" }}>
+            {t.raw("legal.options")[0]}
+          </Typography>
         </Link>
         <Modal
           aria-labelledby="transition-modal-title"
@@ -158,7 +160,9 @@ const Footerlogos = () => {
           </Fade>
         </Modal>
         <Link component={"button"} onClick={() => setOpenPrivacy(true)}>
-          <Typography>{t.raw("legal.options")[1]}</Typography>{" "}
+          <Typography sx={{ textDecoration: "underline" }}>
+            {t.raw("legal.options")[1]}
+          </Typography>{" "}
         </Link>
 
         <Modal
@@ -240,9 +244,17 @@ const Footerlogos = () => {
             </Box>
           </Fade>
         </Modal>
-        <Link href={"/es/Questions"}>
-          <Typography>{t.raw("legal.options")[2]}</Typography>
-        </Link>
+        <AltLink href={"/Questions"}>
+          <Typography
+            sx={{
+              color: "#1976d2",
+              textDecoration: "underline",
+              textDecorationThickness: 0,
+            }}
+          >
+            {t.raw("legal.options")[2]}
+          </Typography>
+        </AltLink>
       </Box>
       <Box
         sx={{
