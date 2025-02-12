@@ -50,6 +50,18 @@ export default async function RootLayout({
           })(window,document,'script','dataLayer','GTM-KMWMNCDC');`}
           </script>
           {/* End Google Tag Manager */}
+          {/* Google tag */}
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-JNJRZZHR94"
+          ></script>
+          <script>
+            {`window.dataLayer = window.dataLayer || [];
+           function gtag(){dataLayer.push(arguments);}
+           gtag('js', new Date());
+           gtag('config', 'G-JNJRZZHR94');`}
+          </script>
+          {/* End Google tag */}
           {/* Cookiebot */}
           <script
             id="Cookiebot"
