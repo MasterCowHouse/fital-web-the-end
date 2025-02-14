@@ -44,21 +44,22 @@ export default async function RootLayout({
           {/***********  inicio de todo tag manager ************/}
           {/* Google Tag Manager */}
           <script>
-            {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            {`function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
             j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-           'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-           })(window,document,'script','dataLayer','GTM-T3JW599M')`}
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-5BJNP277');`}
           </script>
           {/* End Google Tag Manager */}
           {/* Google Tag Manager noscript */}
           <noscript>
             <iframe
-              src="https://www.googletagmanager.com/ns.html?id=GTM-T3JW599M"
+              src="https://www.googletagmanager.com/ns.html?id=GTM-5BJNP277"
               height="0"
               width="0"
             ></iframe>
           </noscript>
+
           {/* End Google Tag Manager noscript */}
 
           {/***********  fin de todo tag manager ************/}
@@ -66,15 +67,17 @@ export default async function RootLayout({
           {/* Google tag */}
           <script
             async
-            src="https://www.googletagmanager.com/gtag/js?id=G-JNJRZZHR94"
+            src="https://www.googletagmanager.com/gtag/js?id=G-RJ92NGTRWX"
           ></script>
           <script>
-            {`window.dataLayer = window.dataLayer || [];
-           function gtag(){dataLayer.push(arguments);}
-           gtag('js', new Date());
-           gtag('config', 'G-JNJRZZHR94');`}
+            {`  window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-RJ92NGTRWX');
+           `}
           </script>
           {/* End Google tag */}
+
           {/* Cookiebot */}
           <script
             id="Cookiebot"
