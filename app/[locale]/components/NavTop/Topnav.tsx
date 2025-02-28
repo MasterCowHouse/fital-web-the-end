@@ -211,7 +211,7 @@ export default function TopNav() {
             {t.raw("items")[3]}
           </Link>
         </Box>
-        <Box display={"flex"}>
+        <Box display={"flex"} alignItems={"center"}>
           <Box className="flex">
             <Box
               className="timer-wrapper"
@@ -220,48 +220,20 @@ export default function TopNav() {
                 px: 2,
                 py: 0.5,
                 borderRadius: "100px",
+                cursor: "pointer",  
               }}
+              onClick={() =>
+                window.open("https://wallet.fitalmx.com", "_blank")
+              }
             >
-              <Box className="timer-inner">
-                <Box
-                  className="timer-segment"
-                  sx={{
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    flexDirection: "column",
-                  }}
-                >
-                  <Box
-                    sx={{
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                    }}
-                  >
-                    <Typography
-                      className="time"
-                      sx={{
-                        marginLeft: "10px",
-                        color: "white",
-                      }}
-                    >
-                      {/* {days} días */}
-                      {t("wallet.title")}
-                    </Typography>
-                  </Box>
-                  <Box>
-                    <Typography
-                      sx={{
-                        fontWeight: 900,
-                        color: "#FFC72C",
-                      }}
-                    >
-                      {t("wallet.description")}
-                    </Typography>
-                  </Box>
-                </Box>
-              </Box>
+              <Typography
+                sx={{
+                  fontWeight: 900,
+                  color: "#FFC72C",
+                }}
+              >
+                {t("wallet.description")}
+              </Typography>
             </Box>
           </Box>
 
